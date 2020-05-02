@@ -1,0 +1,19 @@
+{
+  "name": "ndm",
+  "version": "0.0.1",
+  "description": "NDM Law Firm & Associate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dandush03/ndm.git"
+  },
+  "author": "Daniel Laloush",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dandush03/ndm/issues"
+  },
+  "homepage": "https://github.com/Dandush03/ndm#readme"
+}
