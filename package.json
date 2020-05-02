@@ -1,0 +1,47 @@
+{
+  "name": "ndm",
+  "version": "0.0.1",
+  "description": "NDM Law Firm & Associate",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "w-jest": "jest --watch",
+    "dev": "webpack --mode development",
+    "w-web": "webpack --watch --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dandush03/Microverse-JS-Capstone.git"
+  },
+  "author": "Daniel Laloush",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dandush03/Microverse-JS-Capstone/issues"
+  },
+  "homepage": "https://github.com/Dandush03/Microverse-JS-Capstone#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.9.6",
+    "css-loader": "^3.5.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^25.5.1",
+    "sass": "^1.26.3",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.4",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "file-loader": "^6.0.0",
+    "url-loader": "^4.1.0"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(s?css|less)$": "identity-obj-proxy"
+    }
+  }
+}
