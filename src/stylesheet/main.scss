@@ -53,6 +53,15 @@ body {
   }
 }
 
+.hero-img {
+  bottom: 0;
+  height: auto;
+  opacity: .5;
+  padding: $space * 4;
+  position: fixed;
+  right: 0;
+  width: $space * 20;
+}
 
 @media only screen and (max-width: 767px) {
   .main {
@@ -74,5 +83,10 @@ body {
       margin: $space * 2;
       width: $space * 14;
     }
+  }
+
+  .hero-img {
+    padding: $space * 2;
+    width: $space * 14;
   }
 }

@@ -22,6 +22,11 @@ const bgImg = () => {
   divMedia.appendChild(fb);
   divMedia.appendChild(ig);
 
+  const heroImg = document.createElement('img');
+  heroImg.className = 'hero-img';
+  heroImg.src = '../src/media/DanielLogo.png';
+
+  document.body.appendChild(heroImg);
   document.body.appendChild(div);
   document.body.appendChild(divMedia);
 };
