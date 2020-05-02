@@ -3,3 +3,76 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: $vh-max;
+  justify-content: center;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  width: $vw-max;
+
+  >div {
+    align-self: center;
+    display: flex;
+    max-width: 1024px;
+    position: relative;
+  }
+}
+
+.main {
+  flex-direction: column;
+
+  :first-child {
+    height: auto;
+    position: absolute;
+    width: $p-max * .3;
+  }
+
+  :last-child {
+    height: auto;
+    width: $p-max;
+  }
+}
+
+.media {
+  a {
+    cursor: pointer;
+  }
+
+  .svg-inline--fa {
+    height: auto;
+    margin: $space * 2;
+    width: $space * 14;
+
+    path {
+      fill: $c-svg-color;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .main {
+    :first-child {
+      align-self: center;
+      margin: auto;
+      position: fixed;
+      top: $vh-max * .1;
+      width: $p-max * .8;
+    }
+  }
+
+  .media {
+    bottom: $vh-max * .1;
+    position: absolute;
+
+    .svg-inline--fa {
+      height: auto;
+      margin: $space * 2;
+      width: $space * 14;
+    }
+  }
+}
