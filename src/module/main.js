@@ -1,7 +1,3 @@
-import './vendor/fontawesome';
-
-import '../stylesheet/main.scss';
-
 const bgImg = () => {
   const div = document.createElement('div');
   div.className = 'main';
