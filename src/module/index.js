@@ -1,3 +1,5 @@
+import './vendor/fontawesome';
+
 import '../stylesheet/main.scss';
 
 const bgImg = () => {
