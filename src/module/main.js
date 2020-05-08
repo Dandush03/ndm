@@ -1,4 +1,5 @@
-const page = (element) => document.createElement(element);
+import page from './global';
+
 let body;
 
 const header = () => {
