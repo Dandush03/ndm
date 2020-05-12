@@ -1,6 +1,30 @@
+import '../../stylesheet/home.scss';
 import React, { Component } from 'react';
 
+import showSlides from '../slide-show';
 import Content from '../api';
+
+const SlideSection = () => (
+  <div className="slideshow-container">
+    <div className="my-slides fade">
+      <img src="" alt="Slider" />
+    </div>
+    <div className="my-slides fade">
+      <img src="" alt="Slider" />
+    </div>
+    <div className="my-slides fade">
+      <img src="" alt="Slider" />
+    </div>
+    <button type="button" className="next">&#10095;</button>
+    <button type="button" className="prev">&#10094;</button>
+
+    <div>
+      <span className="dot" onClick="currentSlide(1)" />
+      <span className="dot" onClick="currentSlide(2)" />
+      <span className="dot" onClick="currentSlide(3)" />
+    </div>
+  </div>
+);
 
 const BtnsSection = (data) => {
   const content = [];
@@ -30,8 +54,6 @@ const BtnsSection = (data) => {
 const TopSection = (data) => {
   const content = [];
   if (data.text !== null && data.text !== undefined) {
-    console.log(data);
-    console.log(data.text);
     content.push(
       <div className="content">
         <span>{data.text.span}</span>
@@ -48,6 +70,7 @@ const TopSection = (data) => {
 
 export default class Home extends Component {
   componentDidMount() {
+    showSlides();
     const loadContent = Content('en', 'home');
     loadContent((response) => {
       const tempData = JSON.parse(response);
@@ -66,17 +89,20 @@ export default class Home extends Component {
       topSection = data.topSection;
     }
     return (
-      <main>
+      <div className="main-container">
+        <img src="https://res.cloudinary.com/dl-cultures/image/upload/v1588615344/logo/HeroLogo.svg" alt="Hero Logo" className="hero-logo" />
         <header />
-        <section>
-          <div className="topSection">
+        <main>
+          <div className="top-section">
+            <img src="./media/logo.png" alt="Company Logo" className="brand-logo" />
+            <SlideSection />
             <TopSection text={topSection} />
             <BtnsSection btns={btns || null} />
           </div>
-          <div className="bottomSection" />
-        </section>
+          <div className="bottom-section" />
+        </main>
         <footer />
-      </main>
+      </div>
     );
   }
 }

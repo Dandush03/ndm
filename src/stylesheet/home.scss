@@ -1,3 +1,122 @@
-.fuck {
-  width: 1000px;
+@import './variables';
+
+@keyframes fade {
+  from { opacity: .4; }
+  to { opacity: 1; }
+}
+
+.top-section {
+  overflow: hidden;
+  position: relative;
+
+  > :last-child {
+    background-color: red;
+    display: flex;
+  }
+
+}
+
+@media only screen and (min-width: $desktop) {
+
+  .slideshow-container {
+    background-color: purple;
+    height: $p-max;
+    position: absolute;
+    width: $vw-max;
+    z-index: -1;
+
+    >:last-child {
+      text-align: center;
+    }
+
+    .prev,
+    .next {
+      background-color: transparent;
+      border: 0;
+      color: $c-slide-color;
+      cursor: pointer;
+      font-size: 4rem;
+      font-weight: bold;
+      padding: 16px;
+      position: absolute;
+      top: calc(#{$p-max / 2} - #{$p-max * .25} + 2rem);
+      transition: .6s ease;
+      user-select: none;
+      width: auto;
+    }
+
+    .my-slides {
+      display: none;
+    }
+
+    .next {
+      border-radius: 3px 0 0 3px;
+      right: 0;
+    }
+
+    .dot {
+      background-color: $c-slide-dots;
+      border-radius: 50%;
+      cursor: pointer;
+      display: inline-block;
+      height: 15px;
+      margin: 0 2px;
+      transition: background-color .6s ease;
+      width: 15px;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: $c-slide-dots-active;
+    }
+
+    .fade {
+      animation-duration: 1.5s;
+      animation-name: fade;
+    }
+
+    .prev:hover,
+    .next:hover {
+      background-color: $c-slide-next;
+    }
+  }
+
+  .top-section {
+    height: $vh-max * .7;
+
+    .brand-logo {
+      position: absolute;
+      width: $vw-max * .4;
+      z-index: 1;
+    }
+
+    > :last-child {
+      height: $p-max * .25;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      height: $p-max * .75;
+      justify-content: center;
+      margin-left: $p-max / 6;
+      width: $p-max * .5;
+    }
+
+    .btns {
+      background-color: green;
+      border: $border-btns;
+      display: flex;
+      width: $p-max / 3;
+
+      .icon {
+        height: $p-max;
+        overflow: hidden;
+      }
+
+      &:hover {
+        background-color: $c-btns-hover-bg;
+      }
+    }
+  }
 }
