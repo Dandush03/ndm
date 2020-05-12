@@ -23,10 +23,19 @@
     height: $p-max;
     position: absolute;
     width: $vw-max;
-    z-index: -1;
 
     >:last-child {
+      margin-top: $p-max * .55;
       text-align: center;
+    }
+
+    .next-btns {
+      display: flex;
+      height: $p-max * .75;
+      justify-content: space-between;
+      position: absolute;
+      top: 0;
+      width: $p-max;
     }
 
     .prev,
@@ -35,14 +44,12 @@
       border: 0;
       color: $c-slide-color;
       cursor: pointer;
-      font-size: 4rem;
+      font-size: 2rem;
       font-weight: bold;
-      padding: 16px;
-      position: absolute;
-      top: calc(#{$p-max / 2} - #{$p-max * .25} + 2rem);
       transition: .6s ease;
       user-select: none;
       width: auto;
+      z-index: 1;
     }
 
     .my-slides {
@@ -54,13 +61,20 @@
       right: 0;
     }
 
+    .dots-container {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      width: $p-max;
+      z-index: 2;
+    }
+
     .dot {
       background-color: $c-slide-dots;
       border-radius: 50%;
       cursor: pointer;
-      display: inline-block;
       height: 15px;
-      margin: 0 2px;
+      margin: 0 3px 3px 0;
       transition: background-color .6s ease;
       width: 15px;
     }
@@ -71,7 +85,7 @@
     }
 
     .fade {
-      animation-duration: 1.5s;
+      animation-duration: 2s;
       animation-name: fade;
     }
 
@@ -87,7 +101,7 @@
     .brand-logo {
       position: absolute;
       width: $vw-max * .4;
-      z-index: 1;
+      z-index: 2;
     }
 
     > :last-child {
@@ -101,6 +115,10 @@
       justify-content: center;
       margin-left: $p-max / 6;
       width: $p-max * .5;
+
+      >:nth-child(n+1) {
+        z-index: 1;
+      }
     }
 
     .btns {
@@ -108,6 +126,7 @@
       border: $border-btns;
       display: flex;
       width: $p-max / 3;
+      z-index: 1;
 
       .icon {
         height: $p-max;

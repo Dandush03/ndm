@@ -1,7 +1,7 @@
 import '../../stylesheet/home.scss';
 import React, { Component } from 'react';
 
-import showSlides from '../slide-show';
+import { TimingSlides, ShowSlides } from '../slide-show';
 import Content from '../api';
 
 const SlideSection = () => (
@@ -15,13 +15,14 @@ const SlideSection = () => (
     <div className="my-slides fade">
       <img src="" alt="Slider" />
     </div>
-    <button type="button" className="next">&#10095;</button>
-    <button type="button" className="prev">&#10094;</button>
-
-    <div>
-      <span className="dot" onClick="currentSlide(1)" />
-      <span className="dot" onClick="currentSlide(2)" />
-      <span className="dot" onClick="currentSlide(3)" />
+    <div className="next-btns">
+      <button type="button" className="prev">&#10094;</button>
+      <button type="button" className="next">&#10095;</button>
+    </div>
+    <div className="dots-container">
+      <span className="dot" />
+      <span className="dot" />
+      <span className="dot" />
     </div>
   </div>
 );
@@ -67,10 +68,31 @@ const TopSection = (data) => {
   );
 };
 
+const IntroSection = (data) => {
+  const content = [];
+  if (data.content !== null && data.content !== undefined) {
+    content.push(
+      <div className="content">
+        <div>
+          <h2>{data.content.title}</h2>
+        </div>
+        <div>
+          <h4>{data.content.firstLetter}</h4>
+          <span>{data.content.firstContent}</span>
+        </div>
+        <div>
+          <span>{data.content.secondContent}</span>
+        </div>
+      </div>,
+    );
+  }
+  return (
+    content
+  );
+};
 
 export default class Home extends Component {
   componentDidMount() {
-    showSlides();
     const loadContent = Content('en', 'home');
     loadContent((response) => {
       const tempData = JSON.parse(response);
@@ -78,28 +100,34 @@ export default class Home extends Component {
         this.setState(this.data = tempData);
       }
     });
+    ShowSlides();
+    TimingSlides();
   }
 
   render() {
     const { data } = this;
     let btns;
     let topSection;
+    let introSection;
     if (data !== undefined) {
       btns = data.btns;
       topSection = data.topSection;
+      introSection = data.introSection;
     }
     return (
       <div className="main-container">
         <img src="https://res.cloudinary.com/dl-cultures/image/upload/v1588615344/logo/HeroLogo.svg" alt="Hero Logo" className="hero-logo" />
         <header />
         <main>
-          <div className="top-section">
+          <section className="top-section">
             <img src="./media/logo.png" alt="Company Logo" className="brand-logo" />
             <SlideSection />
             <TopSection text={topSection} />
             <BtnsSection btns={btns || null} />
-          </div>
-          <div className="bottom-section" />
+          </section>
+          <section className="intro-section">
+            <IntroSection content={introSection} />
+          </section>
         </main>
         <footer />
       </div>

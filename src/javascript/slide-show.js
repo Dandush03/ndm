@@ -1,11 +1,48 @@
+
 let slideIndex = 0;
 
-export default function showSlides() {
+const ShowSlides = () => {
+  function showSlides(n) {
+    let i;
+    const slides = document.getElementsByClassName('my-slides');
+    const dots = document.getElementsByClassName('dot');
+    if (n > slides.length) { slideIndex = 1; }
+    if (n < 1) { slideIndex = slides.length; }
+    for (i = 0; i < slides.length; i += 1) {
+      slides[i].style.display = 'none';
+    }
+    for (i = 0; i < dots.length; i += 1) {
+      dots[i].className = dots[i].className.replace(' active', '');
+    }
+    slides[slideIndex - 1].style.display = 'block';
+    dots[slideIndex - 1].className += ' active';
+  }
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  const prev = document.getElementsByClassName('prev');
+  const next = document.getElementsByClassName('next');
+  const dots = document.getElementsByClassName('dot');
+
+  Object.keys(dots).forEach((dot, index) => {
+    dots[dot].onclick = () => currentSlide(index + 1);
+  });
+
+  prev[0].onclick = () => plusSlides(-1);
+  next[0].onclick = () => plusSlides(1);
+};
+
+const TimingSlides = () => {
   let i;
   const slides = document.getElementsByClassName('my-slides');
   const dots = document.getElementsByClassName('dot');
-  console.log(slides);
-  
+
   for (i = 0; i < slides.length; i += 1) {
     slides[i].style.display = 'none';
   }
@@ -16,5 +53,7 @@ export default function showSlides() {
   }
   slides[slideIndex - 1].style.display = 'block';
   dots[slideIndex - 1].className += ' active';
-  setTimeout(showSlides, 7000);
-}
+  setTimeout(TimingSlides, 7000);
+};
+
+export { TimingSlides, ShowSlides };
