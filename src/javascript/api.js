@@ -1,8 +1,8 @@
-const lg = (lg) => {
+const Content = (lg) => {
   const loadJSON = (callback) => {
     const obj = new XMLHttpRequest();
     obj.overrideMimeType('application/json');
-    obj.open('GET', `./src/module/${lg}/content.json`, true);
+    obj.open('GET', `./${lg}/home.json`, true);
 
     obj.onreadystatechange = () => {
       if (obj.readyState === 4 && obj.status === 200) {
@@ -15,4 +15,4 @@ const lg = (lg) => {
   return loadJSON;
 };
 
-export default lg;
+export default Content;
