@@ -138,4 +138,14 @@
       }
     }
   }
+
+  .intro-section {
+    .content {
+      display: flex;
+
+      >div {
+        width: $p-max / 3;
+      }
+    }
+  }
 }
