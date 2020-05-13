@@ -42,6 +42,23 @@
     "work": "Work",
     "new": "News",
     "contact": "Contacts"
+  },
+  "practiceAreas": {
+    "title": "Practice Areas",
+    "brief": "If you are accused of committing a crime, you will need the very beset criminal defense attorneys in Panama. We are especially as killed in the following practice areas",
+    "list": {
+      "1": "Domestics Violence",
+      "2": "Fraud",
+      "3": "Domestic Violence",
+      "4": "Driving Crimes & DUI",
+      "5": "Drug Crimes",
+      "6": "Personal Injury",
+      "7": "Gun Crime",
+      "8": "Administrative Hearings",
+      "9": "Gun Crimes",
+      "10": "Theft",
+      "11": "Juvenile Crimes",
+      "12": "Theft"
+    }
   }
-  
 }

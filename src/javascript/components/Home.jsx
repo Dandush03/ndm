@@ -98,6 +98,36 @@ const IntroSection = (data) => {
   );
 };
 
+const HomeFooter = (data) => {
+  const areasList = [];
+  let title;
+  let brief;
+  if (data.data !== null && data.data !== undefined) {
+    title = data.data.title;
+    brief = data.data.brief;
+    const { list } = data.data;
+    console.log(data.data);
+    Object.keys(list).forEach((item) => {
+      areasList.push(
+        <li>{list[item]}</li>,
+      );
+    });
+  }
+  return (
+    <footer>
+      <div>
+        <h2>{title}</h2>
+        <p>{brief}</p>
+      </div>
+      <div>
+        <ul>
+          {areasList}
+        </ul>
+      </div>
+    </footer>
+  );
+};
+
 export default class Home extends Component {
   componentDidMount() {
     const loadContent = Content('en', 'home');
@@ -117,11 +147,13 @@ export default class Home extends Component {
     let topSection;
     let introSection;
     let menu;
+    let footer;
     if (data !== undefined) {
       btns = data.btns;
       topSection = data.topSection;
       introSection = data.introSection;
       menu = JSON.stringify(data.menu);
+      footer = data.practiceAreas;
     }
     return (
       <div className="main-container">
@@ -136,7 +168,7 @@ export default class Home extends Component {
             <IntroSection content={introSection} />
           </section>
         </main>
-        <footer />
+        <HomeFooter data={footer} />
       </div>
     );
   }
