@@ -1,0 +1,32 @@
+@import './variables';
+
+header {
+  background-color: violet;
+
+  >div {
+    display: flex;
+
+    >div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  .brand-info {
+    color: white;
+  }
+}
+
+.brand-logo {
+  margin-top: $vw-max * .02;
+  position: absolute;
+  width: $vw-max * .25;
+  z-index: 2;
+}
+
+.media-icons {
+  svg {
+    height: $space * 5;
+  }
+}

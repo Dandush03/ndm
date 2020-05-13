@@ -3,6 +3,7 @@ const path = require('path');
 module.exports = {
   entry: {
     main: './src/index.jsx',
+    vendor: './src/vendor.js',
   },
   output: {
     filename: '[name].bundle.js',

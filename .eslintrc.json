@@ -20,8 +20,10 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "babel"
     ],
+    "parser": "babel-eslint",
     "rules": {
     }
 }

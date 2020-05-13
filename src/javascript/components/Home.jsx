@@ -4,44 +4,7 @@ import React, { Component } from 'react';
 import { TimingSlides, ShowSlides } from '../slide-show';
 import Content from '../api';
 
-
-const HeaderSection = (data) => {
-  const content = [];
-  if (data.text !== null && data.text !== undefined) {
-    content.push(
-      <div>
-        <div>
-          <div className="brand-info">
-            <p>Paitilla</p>
-            <p>info@ndm.com.pa</p>
-          </div>
-          <div className="media-icons">
-            <icons />
-            <icons />
-            <icons />
-          </div>
-        </div>
-        <div className="menu">
-          <div className="brand-logo">
-            <img src="./media/logo.png" alt="Company Logo" className="brand-logo" />
-          </div>
-          <div>
-            <ul>
-              <li><button type="button">{data.text.home}</button></li>
-              <li><button type="button">{data.text.about}</button></li>
-              <li><button type="button">{data.text.work}</button></li>
-              <li><button type="button">{data.text.contact}</button></li>
-            </ul>
-            <p>800.800.8000</p>
-          </div>
-        </div>
-      </div>,
-    );
-  }
-  return (
-    content
-  );
-};
+import Header from './Header.jsx';
 
 const TopSection = (data) => {
   const content = [];
@@ -155,14 +118,12 @@ export default class Home extends Component {
       btns = data.btns;
       topSection = data.topSection;
       introSection = data.introSection;
-      menu = data.menu;
+      menu = JSON.stringify(data.menu);
     }
     return (
       <div className="main-container">
         <img src="https://res.cloudinary.com/dl-cultures/image/upload/v1588615344/logo/HeroLogo.svg" alt="Hero Logo" className="hero-logo" />
-        <header>
-          <HeaderSection text={menu} />
-        </header>
+        <Header text={menu} />
         <main>
           <section className="top-section">
             <SlideSection />
