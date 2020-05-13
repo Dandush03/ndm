@@ -8,17 +8,16 @@
 .slideshow-container {
   background-color: purple;
   height: $p-max;
-  position: absolute;
   width: $vw-max;
 
   >:last-child {
+    bottom: $p-max * .2;
     text-align: center;
-    top: $p-max * .7;
   }
 
   .next-btns {
     display: flex;
-    height: $p-max * .75;
+    height: $p-max * .8;
     justify-content: space-between;
     position: absolute;
     top: 0;
@@ -41,6 +40,7 @@
 
   .my-slides {
     display: none;
+    height: $p-max * .8;
   }
 
   .next {
@@ -90,8 +90,10 @@
 
   > :last-child {
     background-color: red;
+    bottom: 0;
     display: flex;
     height: $p-max * .2;
+    position: absolute;
   }
 
   .content {

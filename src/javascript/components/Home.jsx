@@ -4,46 +4,49 @@ import React, { Component } from 'react';
 import { TimingSlides, ShowSlides } from '../slide-show';
 import Content from '../api';
 
+// eslint-disable-next-line import/extensions
 import Header from './Header.jsx';
 
 const TopSection = (data) => {
   const content = [];
   if (data.text !== null && data.text !== undefined) {
-    content.push(
-      <div className="content">
-        <span className="span">{data.text.span}</span>
-        <h2>{data.text.title}</h2>
-        <button type="button">{data.text.btn}</button>
-      </div>,
-    );
+    const { text } = data;
+    Object.keys(text).forEach((obj) => {
+      content.push(
+        <div className="content">
+          <span className="span">{text[obj].span}</span>
+          <h2>{text[obj].title}</h2>
+          <button type="button">{text[obj].btn}</button>
+        </div>,
+      );
+    });
   }
   return (
-    content
+    <div className="slideshow-container">
+      <div className="my-slides fade">
+        <img src="" alt="Slider" />
+        {content[0]}
+      </div>
+      <div className="my-slides fade">
+        <img src="" alt="Slider" />
+        {content[1]}
+      </div>
+      <div className="my-slides fade">
+        <img src="" alt="Slider" />
+        {content[2]}
+      </div>
+      <div className="next-btns">
+        <button type="button" className="prev">&#10094;</button>
+        <button type="button" className="next">&#10095;</button>
+      </div>
+      <div className="dots-container">
+        <span className="dot" />
+        <span className="dot" />
+        <span className="dot" />
+      </div>
+    </div>
   );
 };
-
-const SlideSection = () => (
-  <div className="slideshow-container">
-    <div className="my-slides fade">
-      <img src="" alt="Slider" />
-    </div>
-    <div className="my-slides fade">
-      <img src="" alt="Slider" />
-    </div>
-    <div className="my-slides fade">
-      <img src="" alt="Slider" />
-    </div>
-    <div className="next-btns">
-      <button type="button" className="prev">&#10094;</button>
-      <button type="button" className="next">&#10095;</button>
-    </div>
-    <div className="dots-container">
-      <span className="dot" />
-      <span className="dot" />
-      <span className="dot" />
-    </div>
-  </div>
-);
 
 const BtnsSection = (data) => {
   const content = [];
@@ -126,7 +129,6 @@ export default class Home extends Component {
         <Header text={menu} />
         <main>
           <section className="top-section">
-            <SlideSection />
             <TopSection text={topSection} />
             <BtnsSection btns={btns} />
           </section>

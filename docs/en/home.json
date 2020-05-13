@@ -1,8 +1,20 @@
 {
   "topSection": {
-    "span": "Leading Criminal Defense Lawyer Team",
-    "title": "You Deserve Fair Trial",
-    "btn": "get in touch"
+    "slide0": {
+      "span": "Leading Criminal Defense Lawyer Team",
+      "title": "You Deserve Fair Trial",
+      "btn": "get in touch"
+    },
+    "slide1": {
+      "span": "Leading Criminal Defense Lawyer Team",
+      "title": "You Deserve Fair Trial",
+      "btn": "get in touch"
+    },
+    "slide2": {
+      "span": "Leading Criminal Defense Lawyer Team",
+      "title": "You Deserve Fair Trial",
+      "btn": "get in touch"
+    }
   },
   "btns": {
     "app": {
