@@ -202,3 +202,19 @@
     margin: 0 $space * 2;
   }
 }
+
+footer {
+  display: flex;
+
+  :first-child {
+    display: flex;
+    flex-direction: column;
+    width: $p-max / 3;
+  }
+
+  :last-child {
+    display: flex;
+    flex-direction: column;
+    width: ($p-max / 3) * 2;
+  }
+}

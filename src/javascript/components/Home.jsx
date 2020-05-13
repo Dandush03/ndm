@@ -106,7 +106,6 @@ const HomeFooter = (data) => {
     title = data.data.title;
     brief = data.data.brief;
     const { list } = data.data;
-    console.log(data.data);
     Object.keys(list).forEach((item) => {
       areasList.push(
         <li>{list[item]}</li>,
