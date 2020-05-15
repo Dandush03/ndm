@@ -1,11 +1,6 @@
 @import './variables';
 
-@keyframes fadeIn {
-  from { opacity: .0; }
-  to { opacity: 1; }
-}
-
-@keyframes fadeOut {
+@keyframes fade {
   from { opacity: .0; }
   to { opacity: 1; }
 }
@@ -56,7 +51,6 @@
   .my-slides {
     display: none;
     height: $p-max * .8;
-
     /* p,
     h2,
     button {
@@ -104,10 +98,10 @@
   }
 
   img {
-    height: 100%;
     left: 0;
     position: absolute;
     top: 0;
+    width: 100%;
   }
 }
 
