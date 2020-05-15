@@ -59,7 +59,7 @@ const BtnsSection = (data) => {
           <div className="icon">
             <img src={url} alt="" />
           </div>
-          <div className="content">
+          <div>
             <p>{btns[e].text}</p>
             <p>{btns[e].span}</p>
           </div>
