@@ -8,14 +8,19 @@ $vw-max: 100vw;
 
 $c-font: #fff;
 $c-btns-hover-bg: #272b2e;
+$c-btns-bg: #383b3d;
 $c-slide-color: #fff;
 $c-slide-dots: #bbb;
-$c-slide-dots-active: #717171;
+$c-slide-dots-active: #fff;
 $c-slide-next: rgba(0, 0, 0, .8);
+$c-practice-font: #ddae71;
+$c-practice-bg: #484250;
 
 $c-intro-h2: #c2b793;
 
 $border-header:  rgba(255, 255, 255, .376) 1px solid;
 $border-header-active:  #fff 2px solid;
-$border-btns: #1d2125 1px solid;
+$border-practices: rgba(160, 160, 160, .376) 1px solid;
+$border-btns: rgba(255, 255, 255, .1) 1px solid;
 $border-vertical-line: 2px solid #d4d4d4;
+$border-vertical-line-practices: 2px solid $c-practice-font;

@@ -24,16 +24,16 @@ const TopSection = (data) => {
   return (
     <div className="slideshow-container">
       <div className="my-slides fade">
-        <img src="" alt="Slider" />
         {content[0]}
+        <img src="./media/slide1.jpg" alt="Slider" />
       </div>
       <div className="my-slides fade">
-        <img src="" alt="Slider" />
         {content[1]}
+        <img src="./media/slide2.jpg" alt="Slider" />
       </div>
       <div className="my-slides fade">
-        <img src="" alt="Slider" />
         {content[2]}
+        <img src="./media/slide3.jpg" alt="Slider" />
       </div>
       <div className="next-btns">
         <button type="button" className="prev">&#10094;</button>
@@ -53,10 +53,11 @@ const BtnsSection = (data) => {
   if (data.btns !== null && data.btns !== undefined) {
     const { btns } = data;
     Object.keys(btns).forEach((e) => {
+      const url = `./media/${btns[e].icon}`;
       content.push(
         <div className="btns">
           <div className="icon">
-            <svg />
+            <img src={url} alt="" />
           </div>
           <div className="content">
             <p>{btns[e].text}</p>
@@ -99,16 +100,23 @@ const IntroSection = (data) => {
 };
 
 const HomeFooter = (data) => {
-  const areasList = [];
+  const areasList1 = [];
+  const areasList2 = [];
   let title;
   let brief;
   if (data.data !== null && data.data !== undefined) {
     title = data.data.title;
     brief = data.data.brief;
-    const { list } = data.data;
-    Object.keys(list).forEach((item) => {
-      areasList.push(
-        <li>{list[item]}</li>,
+    const { list1 } = data.data;
+    Object.keys(list1).forEach((item) => {
+      areasList1.push(
+        <li>{list1[item]}</li>,
+      );
+    });
+    const { list2 } = data.data;
+    Object.keys(list2).forEach((item) => {
+      areasList2.push(
+        <li>{list2[item]}</li>,
       );
     });
   }
@@ -120,7 +128,10 @@ const HomeFooter = (data) => {
       </div>
       <div>
         <ul>
-          {areasList}
+          {areasList1}
+        </ul>
+        <ul>
+          {areasList2}
         </ul>
       </div>
     </footer>

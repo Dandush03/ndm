@@ -53,7 +53,7 @@ const TimingSlides = () => {
   }
   slides[slideIndex - 1].style.display = 'block';
   dots[slideIndex - 1].className += ' active';
-  setTimeout(TimingSlides, 7000);
+  setTimeout(TimingSlides, 14000);
 };
 
 export { TimingSlides, ShowSlides };

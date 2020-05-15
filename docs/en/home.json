@@ -18,14 +18,17 @@
   },
   "btns": {
     "app": {
+      "icon": "user.png",
       "span": "book an",
       "text": "appointment"
     },
     "ev": {
+      "icon": "check.png",
       "span": "get free case",
       "text": "evaluation"
     },
     "pay": {
+      "icon": "pay.png",
       "span": "pay bill",
       "text": "online"
     }
@@ -46,13 +49,15 @@
   "practiceAreas": {
     "title": "Practice Areas",
     "brief": "If you are accused of committing a crime, you will need the very beset criminal defense attorneys in Panama. We are especially as killed in the following practice areas",
-    "list": {
+    "list1": {
       "1": "Domestics Violence",
       "2": "Fraud",
       "3": "Domestic Violence",
       "4": "Driving Crimes & DUI",
       "5": "Drug Crimes",
-      "6": "Personal Injury",
+      "6": "Personal Injury"
+    },
+    "list2": {
       "7": "Gun Crime",
       "8": "Administrative Hearings",
       "9": "Gun Crimes",

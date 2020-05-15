@@ -1,23 +1,38 @@
 @import './variables';
 
-@keyframes fade {
-  from { opacity: .4; }
+@keyframes fadeIn {
+  from { opacity: .0; }
   to { opacity: 1; }
 }
 
+@keyframes fadeOut {
+  from { opacity: .0; }
+  to { opacity: 1; }
+}
+
+@keyframes btns {
+  from { background-color: $c-btns-bg; }
+  to {background-color: $c-btns-hover-bg; }
+}
+
+@keyframes display-txt {
+  from { height: 300%; }
+  to { height: 80%; }
+}
+
 .slideshow-container {
-  background-color: purple;
-  height: $p-max;
+  height: $p-max * .8;
+  position: relative;
   width: $vw-max;
 
   >:last-child {
-    bottom: $p-max * .2;
+    bottom: 0;
     text-align: center;
   }
 
   .next-btns {
     display: flex;
-    height: $p-max * .8;
+    height: $p-max;
     justify-content: space-between;
     position: absolute;
     top: 0;
@@ -41,6 +56,13 @@
   .my-slides {
     display: none;
     height: $p-max * .8;
+
+    /* p,
+    h2,
+    button {
+      animation-duration: 4s;
+      animation-name: fade;
+    } */
   }
 
   .next {
@@ -72,13 +94,20 @@
   }
 
   .fade {
-    animation-duration: 2s;
+    animation-duration: 4s;
     animation-name: fade;
   }
 
   .prev:hover,
   .next:hover {
     background-color: $c-slide-next;
+  }
+
+  img {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
   }
 }
 
@@ -89,19 +118,21 @@
   position: relative;
 
   > :last-child {
-    background-color: red;
     bottom: 0;
     display: flex;
     height: $p-max * .2;
-    position: absolute;
+    width: 100%;
   }
 
   .content {
+    animation-duration: 2s;
+    animation-name: display-txt;
     display: flex;
     flex-direction: column;
     height: $p-max * .8;
     justify-content: center;
     margin-left: $p-max / 6;
+    padding-top: $space * 35;
     width: $p-max * .3;
 
     >:nth-child(n+1) {
@@ -127,8 +158,9 @@
   }
 
   .btns {
-    background-color: green;
+    background-color: $c-btns-bg;
     border: $border-btns;
+    cursor: pointer;
     display: flex;
     width: $p-max / 3;
     z-index: 1;
@@ -139,7 +171,21 @@
     }
 
     &:hover {
-      background-color: $c-btns-hover-bg;
+      animation-duration: 2s;
+      animation-name: btns;
+    }
+  }
+
+  .icon {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 40%;
+
+    img {
+      align-self: center;
+      height: 70px;
+      width: 70px;
     }
   }
 }
@@ -179,7 +225,7 @@
       position: absolute;
       right: $p-max * 1.05;
       top: $space * 3;
-      width: $p-max * .2;
+      width: $vw-max * .05;
     }
   }
 
@@ -204,17 +250,76 @@
 }
 
 footer {
+  background-color: $c-practice-bg;
   display: flex;
+  overflow: hidden;
+  padding: $space * 4 15vw;
 
-  :first-child {
+  >:first-child {
     display: flex;
     flex-direction: column;
     width: $p-max / 3;
+
+    p {
+      color: $c-practice-font;
+    }
   }
 
-  :last-child {
+  >:last-child {
+    display: flex;
+    padding: 0 $space * 6;
+    width: ($p-max / 3) * 2;
+  }
+
+  ul {
     display: flex;
     flex-direction: column;
-    width: ($p-max / 3) * 2;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: $space * 4 0;
+    width: 50%;
+  }
+
+  li {
+    border-top: $border-practices;
+    color: $c-font;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 90%;
+    padding: $space * 4 0;
+    width: 95%;
+
+    &::before {
+      color: $c-font;
+      content: url('./list.svg');
+      height: 8px;
+      margin-right: 5px;
+      width: 16px;
+    }
+  }
+
+  h2 {
+    color: $c-font;
+    font-size: $p-max * 2;
+    font-weight: normal;
+    margin-bottom: 0;
+    position: relative;
+
+    &::before {
+      border-top: $border-vertical-line-practices;
+      content: '';
+      position: absolute;
+      right: $p-max * 1.05;
+      top: $space * 3;
+      width: $vw-max * .05;
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin: auto;
+    padding-right: $p-max * .15;
   }
 }
