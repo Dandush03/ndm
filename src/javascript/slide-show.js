@@ -1,7 +1,8 @@
 
 let newI;
+let timer;
 
-const ShowSlides = (n) => {
+const Program = (n) => {
   const img = document.getElementsByClassName('slide-img');
   const dots = document.getElementsByClassName('dot');
 
@@ -24,17 +25,24 @@ const ShowSlides = (n) => {
 
   img[newI].className = 'slide-img active';
   dots[newI].className = 'dot active';
-  // eslint-disable-next-line no-use-before-define
-};
-
-const CurrentSlide = (current) => {
-  newI = current - 1;
-  ShowSlides(1);
 };
 
 const TimingSlides = () => {
-  ShowSlides(1);
-  setTimeout(TimingSlides, 10000);
+  Program(1);
+  timer = setTimeout(TimingSlides, 10000);
+};
+
+const ShowSlides = (n) => {
+  clearTimeout(timer);
+  Program(n);
+  TimingSlides();
+};
+
+const CurrentSlide = (current) => {
+  clearTimeout(timer);
+  newI = current - 1;
+  Program(1);
+  TimingSlides();
 };
 
 export { TimingSlides, ShowSlides, CurrentSlide };

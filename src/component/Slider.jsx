@@ -5,9 +5,9 @@ import '../stylesheet/slider.scss';
 
 import { ShowSlides, TimingSlides, CurrentSlide } from '../javascript/slide-show';
 
-import img1 from '../media/slider/slide1.jpg';
-import img2 from '../media/slider/slide2.jpg';
-import img3 from '../media/slider/slide3.jpg';
+import img1 from '../media/slider/panama1.jpg';
+import img2 from '../media/slider/panama2.jpg';
+import img3 from '../media/slider/panama3.jpg';
 
 import icon1 from '../media/slider/check.png';
 import icon2 from '../media/slider/user.png';

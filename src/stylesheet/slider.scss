@@ -1,5 +1,7 @@
 @import './global';
 
+$image-cover: rgba(0, 0, 0, .418);
+
 $c-font: #fff;
 $c-btns-font: #ad8f57;
 $c-slide-dots: #bbb;
@@ -148,6 +150,7 @@ $border-btns-section: 1px solid #727272;
 }
 
 .slider-changer {
+  background-color: $image-cover;
   display: flex;
   height: 80vh;
   justify-content: space-between;
