@@ -1,10 +1,12 @@
-@import './variables';
+$c-font: #fff;
+$border-header: 1px rgba(255, 255, 255, .363) solid;
+$border-header-active: 3px #fff solid;
 
 header {
   color: $c-font;
   position: absolute;
   top: 0;
-  width: $p-max;
+  width: 100%;
   z-index: 99;
 
   >div {
@@ -16,7 +18,7 @@ header {
       display: flex;
       flex-direction: row;
       margin: 0;
-      padding: 0 $space * 5;
+      padding: 0 25px;
     }
 
     >div {
@@ -35,28 +37,28 @@ header {
   }
 
   p {
-    margin: auto $space * 2;
+    margin: auto 10px;
   }
 
   :first-child {
-    width: $p-max * .4;
+    width: 40%;
   }
 
   :last-child {
-    width: $p-max * .6;
+    width: 60%;
   }
 }
 
 .media-icons {
-  width: $p-max / 3;
+  width: calc(100% / 3);
 
   a {
     align-self: center;
-    margin: $space;
+    margin: 5px;
   }
 
   svg {
-    height: $space * 5;
+    height: 25px;
 
     path {
       fill: $c-font;
@@ -67,10 +69,10 @@ header {
 .languages {
   display: flex;
   justify-content: flex-end;
-  width: $p-max / 3;
+  width: calc(100% / 3);
 
   p {
-    margin: auto $space;
+    margin: auto 5px;
   }
 
   :last-child {
@@ -82,7 +84,7 @@ header {
 .media-icons {
   display: flex;
   justify-content: center;
-  width: $p-max / 3;
+  width: calc(100% / 3);
 }
 
 menu {
@@ -90,10 +92,10 @@ menu {
   justify-content: space-between;
 
   .brand-logo {
-    padding: $space 0;
+    padding: 5px 0;
 
     img {
-      width: $vw-max * .2;
+      width: 20vw;
       z-index: 2;
     }
   }
@@ -105,17 +107,18 @@ menu {
     p {
       align-self: center;
       margin: 0;
-      margin-left: $space * 5;
+      margin-left: 25px;
     }
   }
 
   ul {
     display: flex;
     padding: 0;
-  }
 
-  .active {
-    border-top: $border-header-active;
+    .active {
+      border-top: $border-header-active;
+      padding-bottom: 3px;
+    }
   }
 
   li {

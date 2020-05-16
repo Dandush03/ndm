@@ -20,10 +20,9 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react",
-        "babel"
+        "react"
     ],
-    "parser": "babel-eslint",
     "rules": {
+        "import/no-unresolved": 1
     }
 }

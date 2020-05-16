@@ -1,0 +1,44 @@
+$c-display-bg: #808080;
+$c-font-color: #fff;
+$c-last-btn: #ffa500;
+
+.calculator {
+  width: 700px;
+}
+
+.display {
+  background-color: $c-display-bg;
+  color: $c-font-color;
+  display: flex;
+  font-size: xx-large;
+  font-weight: bold;
+  height: 100px;
+  justify-content: flex-end;
+  padding: 20px;
+  text-align: right;
+
+  h2 {
+    align-self: center;
+    height: fit-content;
+    margin: 0;
+  }
+}
+
+.group-container {
+  >div {
+    align-items: stretch;
+    display: flex;
+    height: 100px;
+    width: 100%;
+
+    >:last-child {
+      background-color: $c-last-btn;
+    }
+  }
+
+  button {
+    font-size: xx-large;
+    height: 100px;
+    width: 25%;
+  }
+}

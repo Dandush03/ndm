@@ -1,20 +1,34 @@
-import '../../stylesheet/header.scss';
+import '../stylesheet/header.scss';
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+const MenuElement = (arg) => {
+  const content = [];
+  const { menu } = arg;
+  Object.keys(menu).forEach((li, index) => {
+    let className;
+    if (index === 0) {
+      className = 'active';
+    }
+    content.push(<li className={className}><button type="button">{menu[li]}</button></li>);
+  });
+  return (
+    <ul>
+      { content }
+    </ul>
+  );
+};
+
+
 export default class Header extends Component {
   constructor(props) {
     super(props);
-    this.props.text = null;
+    this.menu = props.menu;
   }
 
+
   render() {
-    const { text } = this.props;
-    this.data = JSON.parse(text);
-    if (!this.data) {
-      return null;
-    }
     return (
       <header>
         <div>
@@ -42,12 +56,7 @@ export default class Header extends Component {
               <img src="./media/logo.png" alt="Company Logo" className="brand-img" />
             </div>
             <div className="items">
-              <ul>
-                <li className="active"><button type="button">{this.data.home}</button></li>
-                <li><button type="button">{this.data.about}</button></li>
-                <li><button type="button">{this.data.work}</button></li>
-                <li><button type="button">{this.data.contact}</button></li>
-              </ul>
+              <MenuElement menu={this.menu} />
               <p>800.800.8000</p>
             </div>
           </menu>
@@ -58,5 +67,5 @@ export default class Header extends Component {
 }
 
 Header.propTypes = {
-  text: PropTypes.string.isRequired,
+  menu: PropTypes.objectOf(PropTypes.object).isRequired,
 };

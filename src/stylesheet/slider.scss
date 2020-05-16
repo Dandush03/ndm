@@ -1,0 +1,98 @@
+$c-font: #fff;
+$c-slide-dots: #bbb;
+$c-slide-dots-active: #fff;
+$c-bg: #000;
+
+@keyframes showIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.slider {
+  background-color: $c-bg;
+  display: flex;
+  height: 75vh;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    bottom: -9999px;
+    left: -9999px;
+    margin: auto;
+    position: absolute;
+    right: -9999px;
+    top: -9999px;
+  }
+
+  .enactive {
+    animation-duration: 2s;
+    animation-name: showOut;
+    opacity: 0;
+  }
+
+  .active {
+    animation-duration: 2s;
+    animation-name: showIn;
+    opacity: 1;
+  }
+}
+
+.slider-changer {
+  display: flex;
+  height: 75vh;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  .prev,
+  .next {
+    background-color: transparent;
+    border: 0;
+    color: $c-font;
+    cursor: pointer;
+    font-size: xx-large;
+    z-index: 1;
+  }
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 72%;
+  width: 100%;
+  z-index: 2;
+
+  .dot {
+    background-color: $c-slide-dots;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 15px;
+    margin: 0 3px 3px 0;
+    transition: background-color .6s ease;
+    width: 15px;
+  }
+
+  .active,
+  .dot:hover {
+    background-color: $c-slide-dots-active;
+  }
+}
+
