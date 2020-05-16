@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Dandush03/ndm/public/index.html/static/css/main.612c396c.chunk.css",
+    "main.js": "/Dandush03/ndm/public/index.html/static/js/main.f11c8c3e.chunk.js",
+    "main.js.map": "/Dandush03/ndm/public/index.html/static/js/main.f11c8c3e.chunk.js.map",
+    "runtime-main.js": "/Dandush03/ndm/public/index.html/static/js/runtime-main.bb06e216.js",
+    "runtime-main.js.map": "/Dandush03/ndm/public/index.html/static/js/runtime-main.bb06e216.js.map",
+    "static/js/2.9f1f32a1.chunk.js": "/Dandush03/ndm/public/index.html/static/js/2.9f1f32a1.chunk.js",
+    "static/js/2.9f1f32a1.chunk.js.map": "/Dandush03/ndm/public/index.html/static/js/2.9f1f32a1.chunk.js.map",
+    "index.html": "/Dandush03/ndm/public/index.html/index.html",
+    "precache-manifest.83d2efe71b7972fcf7175801e5337de2.js": "/Dandush03/ndm/public/index.html/precache-manifest.83d2efe71b7972fcf7175801e5337de2.js",
+    "service-worker.js": "/Dandush03/ndm/public/index.html/service-worker.js",
+    "static/css/main.612c396c.chunk.css.map": "/Dandush03/ndm/public/index.html/static/css/main.612c396c.chunk.css.map",
+    "static/js/2.9f1f32a1.chunk.js.LICENSE.txt": "/Dandush03/ndm/public/index.html/static/js/2.9f1f32a1.chunk.js.LICENSE.txt",
+    "static/media/areas.scss": "/Dandush03/ndm/public/index.html/static/media/list-type.231c34bb.svg",
+    "static/media/logo.png": "/Dandush03/ndm/public/index.html/static/media/logo.d1cbca6c.png",
+    "static/media/panama1.jpg": "/Dandush03/ndm/public/index.html/static/media/panama1.ce7b6fde.jpg",
+    "static/media/panama2.jpg": "/Dandush03/ndm/public/index.html/static/media/panama2.2444d6b0.jpg",
+    "static/media/panama3.jpg": "/Dandush03/ndm/public/index.html/static/media/panama3.ff15a53e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bb06e216.js",
+    "static/js/2.9f1f32a1.chunk.js",
+    "static/css/main.612c396c.chunk.css",
+    "static/js/main.f11c8c3e.chunk.js"
+  ]
+}
