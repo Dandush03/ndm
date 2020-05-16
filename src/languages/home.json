@@ -29,17 +29,14 @@
       },
       "btns": {
         "app": {
-          "icon": "user.png",
           "span": "book an",
           "text": "appointment"
         },
         "ev": {
-          "icon": "check.png",
           "span": "get free case",
           "text": "evaluation"
         },
         "pay": {
-          "icon": "pay.png",
           "span": "pay bill",
           "text": "online"
         }

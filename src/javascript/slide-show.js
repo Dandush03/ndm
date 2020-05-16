@@ -24,6 +24,7 @@ const ShowSlides = (n) => {
 
   img[newI].className = 'slide-img active';
   dots[newI].className = 'dot active';
+  // eslint-disable-next-line no-use-before-define
 };
 
 const CurrentSlide = (current) => {

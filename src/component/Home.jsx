@@ -8,15 +8,16 @@ import Slider from './Slider';
 import Header from './Header';
 
 
-function App() {
-  let language = content.en;
-  const { header } = language;
+function Home() {
+  const language = content.en;
+  const { header: { menu }, home: { topSection, btns } } = language;
+
   return (
     <div className="top-section">
-      <Header menu={header.menu}/>
-      <Slider />
+      <Header menu={JSON.stringify(menu)} />
+      <Slider content={topSection} btns={btns} />
     </div>
   );
 }
 
-export default App;
+export default Home;
