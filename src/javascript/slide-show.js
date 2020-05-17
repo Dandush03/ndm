@@ -35,14 +35,14 @@ const TimingSlides = () => {
 const ShowSlides = (n) => {
   clearTimeout(timer);
   Program(n);
-  TimingSlides();
+  TimingSlides(0);
 };
 
 const CurrentSlide = (current) => {
   clearTimeout(timer);
   newI = current - 1;
   Program(1);
-  TimingSlides();
+  TimingSlides(0);
 };
 
 export { TimingSlides, ShowSlides, CurrentSlide };

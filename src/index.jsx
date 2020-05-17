@@ -4,6 +4,12 @@ import './index.scss';
 import Home from './component/Home';
 import * as serviceWorker from './serviceWorker';
 
+const language = localStorage.getItem('lang');
+
+if (!language) {
+  localStorage.setItem('lang', 'en');
+}
+
 ReactDOM.render(
   <React.StrictMode>
     <Home />

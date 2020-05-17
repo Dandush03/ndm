@@ -21,6 +21,11 @@ const Instagram = () => (
   </a>
 );
 
+const languagesChanger = (id) => {
+  localStorage.setItem('lang', id);
+  window.location.reload(false);
+};
+
 const MenuElement = (arg) => {
   const content = [];
   const { menu } = arg;
@@ -68,8 +73,8 @@ export default class Header extends Component {
               <Instagram />
             </div>
             <div className="languages">
-              <p>spanish</p>
-              <p>english</p>
+              <button type="button" onClick={() => languagesChanger('sp')}>spanish</button>
+              <button type="button" onClick={() => languagesChanger('en')}>english</button>
             </div>
           </div>
           <MenuElement menu={this.menu} />

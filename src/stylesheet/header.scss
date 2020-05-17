@@ -71,7 +71,11 @@ header {
   justify-content: flex-end;
   width: calc(100% / 3);
 
-  p {
+  button {
+    background-color: transparent;
+    border: 0;
+    color: $c-font;
+    cursor: pointer;
     margin: auto 5px;
   }
 

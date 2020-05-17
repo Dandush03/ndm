@@ -5,7 +5,7 @@ import '../stylesheet/slider.scss';
 
 import { ShowSlides, TimingSlides, CurrentSlide } from '../javascript/slide-show';
 
-import img1 from '../media/slider/panama1.jpg';
+import img1 from '../media/slider/panama1.png';
 import img2 from '../media/slider/panama2.jpg';
 import img3 from '../media/slider/panama3.jpg';
 
@@ -74,6 +74,7 @@ export default class TopSlider extends Component {
 
   componentDidMount() {
     TimingSlides();
+    CurrentSlide(0);
   }
 
   render() {
@@ -83,8 +84,8 @@ export default class TopSlider extends Component {
           <ImageElement topSection={this.topContent} />
         </div>
         <div className="slider-changer">
-          <button type="button" className="prev" onClick={() => ShowSlides(-1)}>&#10094;</button>
-          <button type="button" className="next" onClick={() => ShowSlides(1)}>&#10095;</button>
+          <button type="button" className="prev" onClick={() => ShowSlides(-2)}>&#10094;</button>
+          <button type="button" className="next" onClick={() => ShowSlides(0)}>&#10095;</button>
         </div>
         <div className="dots-container">
           <button className="dot active" onClick={() => CurrentSlide(0)} type="button"> </button>
