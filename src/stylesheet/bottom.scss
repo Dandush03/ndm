@@ -45,6 +45,7 @@ $small-line: 1px solid #fff;
   >div {
     display: flex;
     justify-content: center;
+    margin-left: 7%;
     width: fit-content;
 
     >img {
@@ -88,15 +89,16 @@ $small-line: 1px solid #fff;
     color: $c-content;
     font-family: $palanquin-font;
     font-size: 150%;
+    margin-left: 7%;
     position: relative;
 
     &::before {
       color: $c-h2-font;
       content: '”';
-      font-size: 400%;
+      font-size: 500%;
       position: absolute;
-      right: 101%;
-      top: -10px;
+      right: 103%;
+      top: -40px;
       width: 40px;
     }
   }
