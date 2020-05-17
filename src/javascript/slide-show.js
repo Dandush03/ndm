@@ -2,7 +2,7 @@
 let newI;
 let timer;
 
-const Program = (n) => {
+const Program = (n, current = null) => {
   const img = document.getElementsByClassName('slide-img');
   const dots = document.getElementsByClassName('dot');
 
@@ -10,12 +10,16 @@ const Program = (n) => {
     const classes = img[e].className.split(' ');
     classes.forEach((c) => {
       if (c === 'active') {
-        newI = i + n;
-        if (newI > 2) {
-          newI -= 3;
-        }
-        if (newI < 0) {
-          newI += 3;
+        if (current === null) {
+          newI = i + n;
+          if (newI > 3) {
+            newI -= 4;
+          }
+          if (newI < 0) {
+            newI += 4;
+          }
+        } else {
+          newI = current;
         }
       }
       img[e].className = 'slide-img enactive';
@@ -35,14 +39,12 @@ const TimingSlides = () => {
 const ShowSlides = (n) => {
   clearTimeout(timer);
   Program(n);
-  TimingSlides(0);
+  TimingSlides();
 };
 
 const CurrentSlide = (current) => {
-  clearTimeout(timer);
-  newI = current - 1;
-  Program(1);
-  TimingSlides(0);
+  newI = current;
+  Program(0, current);
 };
 
 export { TimingSlides, ShowSlides, CurrentSlide };

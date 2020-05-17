@@ -1,0 +1,103 @@
+@import './global';
+
+
+$c-h2-font: #ad8f57;
+$c-content: #fff;
+
+$line: 1px solid #ad8f57;
+$small-line: 1px solid #fff;
+
+.quote-container {
+  >:first-child {
+    display: flex;
+    flex-direction: column;
+    font-family: $gilda-font;
+    height: 60vh;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .bg-image {
+    bottom: -9999px;
+    height: 100%;
+    left: -9999px;
+    margin: auto;
+    position: absolute;
+    right: -9999px;
+    top: -9999px;
+    z-index: -1;
+
+    @media only screen and (min-width: 1500px) {
+      width: 100%;
+    }
+  }
+}
+
+.quote-content {
+  color: $c-content;
+  display: flex;
+  flex-direction: column;
+  margin-left: 12%;
+  width: 40%;
+  z-index: 2;
+
+  >div {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+
+    >img {
+      border-radius: 50%;
+      width: 70px;
+    }
+
+    span {
+      align-self: center;
+      margin-left: 40px;
+      position: relative;
+    }
+
+    span::before {
+      border-top: $small-line;
+      content: '';
+      position: absolute;
+      right: 105%;
+      top: 10px;
+      width: 10px;
+    }
+  }
+
+  h2 {
+    color: $c-h2-font;
+    font-size: 300%;
+    position: relative;
+    width: fit-content;
+
+    &::before {
+      border-top: $line;
+      content: '';
+      position: absolute;
+      right: 105%;
+      top: 30px;
+      width: 40px;
+    }
+  }
+
+  p {
+    color: $c-content;
+    font-family: $palanquin-font;
+    font-size: 150%;
+    position: relative;
+
+    &::before {
+      color: $c-h2-font;
+      content: '”';
+      font-size: 400%;
+      position: absolute;
+      right: 101%;
+      top: -10px;
+      width: 40px;
+    }
+  }
+}

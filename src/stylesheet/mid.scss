@@ -1,0 +1,138 @@
+@import './global';
+
+$border-images: 5px solid #fff;
+$background-c: rgba(0, 0, 0, .349);
+$font-c: #fff;
+$c-button: #bdac86;
+
+.row-images {
+  display: flex;
+  height: 25vw;
+  overflow: hidden;
+
+  >div {
+    position: relative;
+    width: calc(100%/4);
+  }
+
+  .bg-image {
+    bottom: -9999px;
+    height: 100%;
+    left: -9999px;
+    margin: auto;
+    position: absolute;
+    right: -9999px;
+    top: -9999px;
+  }
+
+  .logo {
+    left: 10%;
+    position: absolute;
+    width: 80%;
+    z-index: 3;
+  }
+
+  .images-text {
+    border: $border-images;
+    display: flex;
+    height: 70%;
+    justify-content: center;
+    left: 0;
+    margin: 10%;
+    position: absolute;
+    width: 80%;
+  }
+
+  p {
+    align-self: center;
+    font-size: 200%;
+    width: 100%;
+  }
+}
+
+.images-container {
+  overflow: hidden;
+
+  >div {
+    background-color: $background-c;
+    color: $font-c;
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    transition: opacity 1s ease;
+    width: 100%;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+}
+
+.images-container:nth-child(n+1) {
+  justify-items: center;
+
+  .logo {
+    bottom: 5%;
+  }
+
+  .images-text {
+    border-bottom: 0;
+    bottom: 17%;
+  }
+
+  p {
+    margin: 0;
+    padding: 0 5%;
+    text-align: left;
+  }
+}
+
+.contact-now {
+  display: flex;
+  flex-direction: column;
+  font-family: $gilda-font;
+  height: 40vh;
+  padding: 40px;
+
+  img {
+    align-self: center;
+    width: 70px;
+  }
+
+  p,
+  h3,
+  h4 {
+    align-self: center;
+    margin: 0;
+    width: fit-content;
+  }
+
+  h3 {
+    font-size: 200%;
+  }
+
+  h4 {
+    font-size: 150%;
+  }
+
+  p {
+    font-size: 80%;
+    font-weight: bold;
+    padding: 15px;
+    text-transform: uppercase;
+  }
+
+  button {
+    align-self: center;
+    background-color: $c-button;
+    color: $font-c;
+    font-family: $suez-font;
+    margin: 15px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    width: fit-content;
+  }
+}

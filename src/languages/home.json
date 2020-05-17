@@ -25,6 +25,11 @@
           "span": "Leading Criminal Defense Lawyer Team",
           "title": "You Deserve Fair Trial",
           "btn": "get in touch"
+        },
+        "slide3": {
+          "span": "Leading Criminal Defense Lawyer Team",
+          "title": "You Deserve Fair Trial",
+          "btn": "get in touch"
         }
       },
       "btns": {
@@ -71,6 +76,28 @@
             "11": "Juvenile Crimes",
             "12": "Theft"
           }
+        }
+      },
+      "mid": {
+        "images": {
+          "image1": "some text over here madafucker",
+          "image2": "some text over here madafucker",
+          "image3": "some text over here madafucker",
+          "image4": "some text over here madafucker"
+        },
+        "content": {
+          "span1": "call us 24/7",
+          "phone": "0800-DALE-NISIM",
+          "span2": "OR",
+          "h4": "Schedule a Free Consultation",
+          "btn": "make an appointment"
+        }
+      },
+      "bottom": {
+        "quote": {
+          "title": "What People Say",
+          "content":"Nisim dale dale dale dale dale dale dale dale dale dale dale dale",
+          "author": "by Nisim Lici, Company CEO"
         }
       }
     }

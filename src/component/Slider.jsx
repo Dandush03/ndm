@@ -8,12 +8,14 @@ import { ShowSlides, TimingSlides, CurrentSlide } from '../javascript/slide-show
 import img1 from '../media/slider/panama1.png';
 import img2 from '../media/slider/panama2.jpg';
 import img3 from '../media/slider/panama3.jpg';
+import img4 from '../media/slider/panama4.jpg';
 
 import icon1 from '../media/slider/check.png';
 import icon2 from '../media/slider/user.png';
+import icon3 from '../media/slider/pay.png';
 
-const imgGroup = [img1, img2, img3];
-const btnGroup = [icon1, icon2, 0];
+const imgGroup = [img1, img2, img3, img4];
+const btnGroup = [icon1, icon2, icon3];
 
 const ImageElement = (arg) => {
   const content = [];
@@ -91,6 +93,7 @@ export default class TopSlider extends Component {
           <button className="dot active" onClick={() => CurrentSlide(0)} type="button"> </button>
           <button className="dot" onClick={() => CurrentSlide(1)} type="button"> </button>
           <button className="dot" onClick={() => CurrentSlide(2)} type="button"> </button>
+          <button className="dot" onClick={() => CurrentSlide(3)} type="button"> </button>
         </div>
         <BottomSection content={this.btns} />
       </section>

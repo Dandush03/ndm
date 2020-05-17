@@ -67,10 +67,10 @@ $border-practices: 1px solid #8d7e7e;
   background-color: $c-bg;
   display: flex;
   height: 50vh;
-  padding: 0 40px;
 
   >div {
     display: flex;
+    padding: 0 40px;
 
     >div,
     ul {

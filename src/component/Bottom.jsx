@@ -3,31 +3,37 @@ import PropTypes from 'prop-types';
 
 import '../stylesheet/bottom.scss';
 
-import img1 from '../media/bottom/gallery_01.jpg';
-import img2 from '../media/bottom/gallery_02.jpg';
-import img3 from '../media/bottom/gallery_03.jpg';
-import img4 from '../media/bottom/gallery_04.jpg';
-
-const imgGroup = [img1, img2, img3, img4];
-
+import quote from '../media/bottom/quote.jpg';
+import subHero from '../media/bottom/sub-hero.jpg';
 
 export default class Bottom extends Component {
   constructor(props) {
     super(props);
-    this.brief = props.brief;
-    this.areas = props.areas;
+    const { data: { quote: { title, author, content } } } = props;
+    this.title = title;
+    this.author = author;
+    this.quote = content;
   }
 
   render() {
     return (
-      <section className="practice-areas-section">
-        {}
+      <section className="quote-container">
+        <div>
+          <img src={quote} alt="bg-img" className="bg-image" />
+          <div className="quote-content">
+            <h2>{this.title}</h2>
+            <p>{this.quote}</p>
+            <div>
+              <img src={subHero} alt="sub Hero" />
+              <span>{this.author}</span>
+            </div>
+          </div>
+        </div>
       </section>
     );
   }
 }
 
 Bottom.propTypes = {
-  brief: PropTypes.objectOf(PropTypes.object).isRequired,
-  areas: PropTypes.objectOf(PropTypes.object).isRequired,
+  data: PropTypes.objectOf(PropTypes.object).isRequired,
 };
