@@ -76,9 +76,11 @@ $border-btns-section: 1px solid #727272;
     bottom: -9999px;
     left: -9999px;
     margin: auto;
+    min-height: 100%;
     position: absolute;
     right: -9999px;
     top: -9999px;
+    width: 100%;
   }
 
   .enactive {
