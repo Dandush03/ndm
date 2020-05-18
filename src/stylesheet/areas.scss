@@ -13,35 +13,19 @@ $border-practices: 1px solid #8d7e7e;
 
   h2 {
     margin: 0;
-    position: relative;
-
-    &::before {
-      border-top: $line;
-      content: '';
-      position: absolute;
-      right: 105%;
-      top: 12px;
-      width: 40px;
-    }
   }
 }
 
 .brief-section {
-  display: flex;
-  height: 30vh;
-  justify-content: center;
   padding: 0 40px;
   width: 100%;
 
   >div {
-    align-self: center;
-    display: flex;
     height: fit-content;
 
     >div {
       height: fit-content;
       padding: 25px;
-      width: calc(100% / 3);
     }
   }
 
@@ -66,11 +50,8 @@ $border-practices: 1px solid #8d7e7e;
 .practice-areas {
   background-color: $c-bg;
   display: flex;
-  height: 50vh;
-  min-height: 420px;
 
   >div {
-    display: flex;
     padding: 0 40px;
 
     >div,
@@ -80,7 +61,10 @@ $border-practices: 1px solid #8d7e7e;
       list-style: none;
       margin-top: 5%;
       padding: 0 25px;
-      width: calc(100% / 3);
+    }
+
+    ul {
+      margin: 0 auto;
     }
   }
 
@@ -111,6 +95,55 @@ $border-practices: 1px solid #8d7e7e;
       position: absolute;
       right: 95%;
       top: 30%;
+    }
+  }
+}
+
+@media only screen and (min-width: $pad-width){
+
+  .practice-areas-section {
+
+    h2 {
+      position: relative;
+
+      &::before {
+        border-top: $line;
+        content: '';
+        position: absolute;
+        right: 105%;
+        top: 12px;
+        width: 40px;
+      }
+    }
+  }
+
+  .brief-section {
+    display: flex;
+    height: 30vh;
+    justify-content: center;
+
+    >div {
+      align-self: center;
+      display: flex;
+
+      >div {
+        width: calc(100% / 3);
+      }
+    }
+  }
+
+  .practice-areas {
+    height: 50vh;
+    min-height: 420px;
+
+    >div {
+      display: flex;
+
+      >div,
+      ul {
+        margin-top: 5%;
+        width: calc(100% / 3);
+      }
     }
   }
 }
