@@ -1,16 +1,19 @@
+@import './global';
+
+$c-bg: #271818;
+$c-bars: #fff;
 $c-font: #fff;
 $border-header: 1px rgba(255, 255, 255, .363) solid;
 $border-header-active: 3px #fff solid;
 
 header {
   color: $c-font;
-  position: absolute;
-  top: 0;
+  height: 70px;
+  position: relative;
   width: 100%;
-  z-index: 99;
 
-  >div {
-    display: flex;
+  >:first-child {
+    display: none;
     flex-direction: column;
 
     >div,
@@ -25,6 +28,13 @@ header {
       border: $border-header;
       border-top: 0;
     }
+  }
+
+  >:last-child {
+    background-color: $c-bg;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
   }
 }
 
@@ -136,5 +146,83 @@ menu {
     border: 0;
     color: $c-font;
     cursor: pointer;
+  }
+}
+
+.phone-menu {
+  display: flex;
+  height: 70px;
+  justify-content: flex-start;
+  overflow: hidden;
+  transition: height .4s ease-in;
+
+  >div {
+    display: flex;
+  }
+
+  >:first-child {
+    height: 70px;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .media-icons svg {
+    height: 35px;
+  }
+
+  .hamburger {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 20px;
+
+    .bar1,
+    .bar2,
+    .bar3 {
+      background-color: $c-bars;
+      border-radius: 2px;
+      height: 5px;
+      margin: 6px 0;
+      transition: .4s;
+      width: 35px;
+    }
+  }
+
+  .change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+}
+
+.expand {
+  height: 300px;
+}
+
+
+
+
+@media only screen and (min-width: $pad-width){
+  header {
+    height: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+
+    >:first-child {
+      display: flex;
+    }
+
+    >:last-child {
+      display: none;
+    }
   }
 }

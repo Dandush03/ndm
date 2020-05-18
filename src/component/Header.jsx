@@ -3,6 +3,8 @@ import '../stylesheet/header.scss';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import toggleFunction from '../javascript/header';
+
 import BrandLogo from '../media/header/logo.png';
 
 const Facebook = () => (
@@ -78,6 +80,19 @@ export default class Header extends Component {
             </div>
           </div>
           <MenuElement menu={this.menu} />
+        </div>
+        <div className="phone-menu">
+          <div>
+            <button type="button" className="hamburger" onClick={toggleFunction}>
+              <div className="bar1" />
+              <div className="bar2" />
+              <div className="bar3" />
+            </button>
+            <div className="media-icons">
+              <Facebook />
+              <Instagram />
+            </div>
+          </div>
         </div>
       </header>
     );

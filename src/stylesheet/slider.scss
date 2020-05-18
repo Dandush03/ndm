@@ -176,7 +176,7 @@ $border-btns-section: 1px solid #727272;
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 47%;
+  top: 57%;
   width: 100%;
   z-index: 2;
 
@@ -219,6 +219,7 @@ $border-btns-section: 1px solid #727272;
     flex-direction: column;
     justify-content: center;
     padding-right: 20px;
+    width: 50%;
   }
 
   span {
