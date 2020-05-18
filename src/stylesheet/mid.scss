@@ -1,6 +1,6 @@
 @import './global';
 
-$border-images: 5px solid #fff;
+$border-images: 2px solid #fff;
 $background-c: rgba(0, 0, 0, .349);
 $font-c: #fff;
 $c-button: #bdac86;
@@ -51,6 +51,7 @@ $c-button: #bdac86;
 }
 
 .images-container {
+  justify-items: center;
   overflow: hidden;
 
   >div {
@@ -69,17 +70,13 @@ $c-button: #bdac86;
     }
   }
 
-}
-
-.images-container:nth-child(n+1) {
-  justify-items: center;
-
   .logo {
     bottom: 5%;
   }
 
   .images-text {
     border-bottom: 0;
+    border-top: 0;
     bottom: 17%;
   }
 
@@ -95,6 +92,7 @@ $c-button: #bdac86;
   flex-direction: column;
   font-family: $gilda-font;
   height: 40vh;
+  min-height: 400px;
   padding: 40px;
 
   img {

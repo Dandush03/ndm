@@ -67,6 +67,7 @@ $border-practices: 1px solid #8d7e7e;
   background-color: $c-bg;
   display: flex;
   height: 50vh;
+  min-height: 420px;
 
   >div {
     display: flex;
