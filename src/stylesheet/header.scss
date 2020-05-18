@@ -8,7 +8,7 @@ $border-header-active: 3px #fff solid;
 
 header {
   color: $c-font;
-  height: 70px;
+  height: 50px;
   position: relative;
   width: 100%;
 
@@ -31,7 +31,6 @@ header {
   }
 
   >:last-child {
-    background-color: $c-bg;
     position: fixed;
     width: 100%;
     z-index: 9999;
@@ -151,17 +150,19 @@ menu {
 
 .phone-menu {
   display: flex;
-  height: 70px;
+  flex-direction: column;
+  height: 50px;
   justify-content: flex-start;
   overflow: hidden;
   transition: height .4s ease-in;
 
   >div {
+    background-color: $c-bg;
     display: flex;
   }
 
   >:first-child {
-    height: 70px;
+    height: 50px;
     justify-content: space-between;
     width: 100%;
   }
@@ -206,6 +207,10 @@ menu {
   height: 300px;
 }
 
+.phone-link {
+  height: calc(100% - 50px);
+  width: 70%;
+}
 
 
 

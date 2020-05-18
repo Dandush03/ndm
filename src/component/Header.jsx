@@ -93,6 +93,9 @@ export default class Header extends Component {
               <Instagram />
             </div>
           </div>
+          <div className="phone-link">
+            {}
+          </div>
         </div>
       </header>
     );

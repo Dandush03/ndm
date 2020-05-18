@@ -84,16 +84,16 @@ export default class TopSlider extends Component {
       <section>
         <div className="slider">
           <ImageElement topSection={this.topContent} />
+          <div className="dots-container">
+            <button className="dot active" onClick={() => CurrentSlide(0)} type="button"> </button>
+            <button className="dot" onClick={() => CurrentSlide(1)} type="button"> </button>
+            <button className="dot" onClick={() => CurrentSlide(2)} type="button"> </button>
+            <button className="dot" onClick={() => CurrentSlide(3)} type="button"> </button>
+          </div>
         </div>
         <div className="slider-changer">
           <button type="button" className="prev" onClick={() => ShowSlides(-2)}>&#10094;</button>
           <button type="button" className="next" onClick={() => ShowSlides(0)}>&#10095;</button>
-        </div>
-        <div className="dots-container">
-          <button className="dot active" onClick={() => CurrentSlide(0)} type="button"> </button>
-          <button className="dot" onClick={() => CurrentSlide(1)} type="button"> </button>
-          <button className="dot" onClick={() => CurrentSlide(2)} type="button"> </button>
-          <button className="dot" onClick={() => CurrentSlide(3)} type="button"> </button>
         </div>
         <BottomSection content={this.btns} />
       </section>
