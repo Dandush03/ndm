@@ -68,7 +68,7 @@ $border-btns-section: 1px solid #727272;
 .slider {
   background-color: $c-bg;
   display: flex;
-  height: 80vh;
+  height: 50vh;
   overflow: hidden;
   position: relative;
 
@@ -111,6 +111,7 @@ $border-btns-section: 1px solid #727272;
 .slide-img-content {
   animation: downToTop 2s;
   color: $c-font;
+  display: none;
   left: 20%;
   position: absolute;
   top: 20%;
@@ -153,7 +154,7 @@ $border-btns-section: 1px solid #727272;
 
 .slider-changer {
   background-color: $image-cover;
-  display: flex;
+  display: none;
   height: 80vh;
   justify-content: space-between;
   position: absolute;
@@ -175,7 +176,7 @@ $border-btns-section: 1px solid #727272;
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 78%;
+  top: 47%;
   width: 100%;
   z-index: 2;
 
@@ -198,8 +199,6 @@ $border-btns-section: 1px solid #727272;
 
 .btns-section {
   background-color: $c-btn-bg;
-  display: flex;
-  height: 20vh;
   width: 100%;
 
   >div {
@@ -208,12 +207,6 @@ $border-btns-section: 1px solid #727272;
     display: flex;
     justify-content: center;
     transition: background-color 1s ease;
-    width: calc(100% / 3);
-
-    >:nth-child(even) {
-      border-left: 0;
-      border-right: 0;
-    }
   }
 
   img {
@@ -243,5 +236,37 @@ $border-btns-section: 1px solid #727272;
 
   >:hover {
     background-color: $c-btn-bg-hover;
+  }
+}
+
+@media only screen and (min-width: $pad-width){
+  .slider {
+    height: 80vh;
+  }
+
+  .slide-img-content {
+    display: block;
+  }
+
+  .slider-changer {
+    display: flex;
+  }
+
+  .dots-container {
+    top: 78%;
+  }
+
+  .btns-section {
+    display: flex;
+    height: 20vh;
+
+    >div {
+      width: calc(100% / 3);
+
+      >:nth-child(even) {
+        border-left: 0;
+        border-right: 0;
+      }
+    }
   }
 }

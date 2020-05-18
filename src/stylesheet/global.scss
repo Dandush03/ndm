@@ -1,18 +1,18 @@
+$pad-width: 768px;
+
 $suez-font: 'SuezOne Regular';
+$gilda-font: 'Gilda Regular';
+$palanquin-font: 'Palanquin Regular';
 
 @font-face {
   font-family: 'SuezOne Regular';
   src: url('./fonts/SuezOne-Regular.ttf') format('truetype');
 }
 
-$gilda-font: 'Gilda Regular';
-
 @font-face {
   font-family: 'Gilda Regular';
   src: url('./fonts/GildaDisplay-Regular.ttf') format('truetype');
 }
-
-$palanquin-font: 'Palanquin Regular';
 
 @font-face {
   font-family: 'Palanquin Regular';
