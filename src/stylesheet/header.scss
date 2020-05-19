@@ -78,6 +78,7 @@ header {
 .languages {
   display: flex;
   justify-content: flex-end;
+  list-style: none;
   width: calc(100% / 3);
 
   button {
@@ -86,6 +87,7 @@ header {
     color: $c-font;
     cursor: pointer;
     margin: auto 5px;
+    text-transform: capitalize;
   }
 
   :last-child {
@@ -211,6 +213,7 @@ menu {
   display: flex;
   flex-direction: column;
   height: calc(100% - 50px);
+  text-transform: capitalize;
   width: 200px;
 
   >.languages {
