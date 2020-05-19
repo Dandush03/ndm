@@ -22,18 +22,6 @@ export default class Swipe {
     return this;
   }
 
-  onUp(callback) {
-    this.onUp = callback;
-
-    return this;
-  }
-
-  onDown(callback) {
-    this.onDown = callback;
-
-    return this;
-  }
-
   handleTouchMove(evt) {
     if (!this.xDown || !this.yDown) {
       return;
@@ -45,19 +33,14 @@ export default class Swipe {
     this.xDiff = this.xDown - xUp;
     this.yDiff = this.yDown - yUp;
 
-    if (Math.abs(this.xDiff) > Math.abs(this.yDiff)) { // Most significant.
+    if (Math.abs(this.xDiff) > Math.abs(this.yDiff)) {
       if (this.xDiff > 0) {
         this.onLeft();
       } else {
         this.onRight();
       }
-    } else if (this.yDiff > 0) {
-      this.onUp();
-    } else {
-      this.onDown();
     }
 
-    // Reset values.
     this.xDown = null;
     this.yDown = null;
   }

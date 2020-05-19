@@ -204,12 +204,43 @@ menu {
 }
 
 .expand {
-  height: 300px;
+  height: 310px;
 }
 
 .phone-link {
+  display: flex;
+  flex-direction: column;
   height: calc(100% - 50px);
-  width: 70%;
+  width: 200px;
+
+  >.languages {
+    border-top: $border-header-active;
+  }
+
+  >ul,
+  li {
+    display: flex;
+    flex-direction: column;
+    list-style: 0;
+    margin: 0;
+  }
+
+  >ul {
+    align-self: center;
+    padding: 20px 0;
+    width: 80%;
+  }
+
+  button {
+    background-color: transparent;
+    border: 0;
+    color: $c-font;
+    font-size: 120%;
+    font-weight: 600;
+    padding: 5px 20px;
+    text-align: left;
+    text-transform: capitalize;
+  }
 }
 
 
