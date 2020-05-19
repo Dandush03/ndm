@@ -79,10 +79,10 @@ export default class TopSlider extends Component {
     TimingSlides();
     CurrentSlide(0);
 
-    const e = document.getElementsByClassName('slider-changer')[0];
+    const e = document.getElementsByClassName('slider')[0];
     const swipe = new Swipe(e);
-    swipe.onLeft(() => ShowSlides(-2)).run();
-    swipe.onRight(() => ShowSlides(0)).run();
+    swipe.onLeft(() => ShowSlides(0)).run();
+    swipe.onRight(() => ShowSlides(-2)).run();
   }
 
   render() {

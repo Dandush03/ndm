@@ -64,7 +64,7 @@ export default class Swipe {
 
   run() {
     this.element.addEventListener('touchmove', (evt) => {
-      this.handleTouchMove(evt).bind(this);
+      this.handleTouchMove(evt);
     }, false);
   }
 }
