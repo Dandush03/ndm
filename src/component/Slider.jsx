@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import '../stylesheet/slider.scss';
 
 import { ShowSlides, TimingSlides, CurrentSlide } from '../javascript/slide-show';
+import Swipe from '../javascript/swiped-event';
 
 import img1 from '../media/slider/panama1.png';
 import img2 from '../media/slider/panama2.jpg';
@@ -77,6 +78,11 @@ export default class TopSlider extends Component {
   componentDidMount() {
     TimingSlides();
     CurrentSlide(0);
+
+    const e = document.getElementsByClassName('slider-changer')[0];
+    const swipe = new Swipe(e);
+    swipe.onLeft(() => ShowSlides(-2)).run();
+    swipe.onRight(() => ShowSlides(0)).run();
   }
 
   render() {
