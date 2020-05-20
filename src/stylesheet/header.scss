@@ -5,6 +5,8 @@ $c-bars: #fff;
 $c-font: #fff;
 $border-header: 1px rgba(255, 255, 255, .363) solid;
 $border-header-active: 3px #fff solid;
+$line: 1px #fff solid;
+$active-bg-color: rgba(0, 0, 0, .5);
 
 header {
   color: $c-font;
@@ -75,6 +77,21 @@ header {
   }
 }
 
+li >button {
+  display: flex;
+
+  >p {
+    margin: 0;
+  }
+
+  svg {
+    align-self: center;
+    height: 1rem;
+    margin-right: 5px;
+    width: 1rem;
+  }
+}
+
 .languages {
   display: flex;
   justify-content: flex-end;
@@ -122,6 +139,10 @@ menu {
     p {
       align-self: center;
       margin: 0;
+    }
+
+    >p {
+      font-size: 120%;
       margin-left: 25px;
     }
   }
@@ -185,15 +206,15 @@ menu {
     .bar3 {
       background-color: $c-bars;
       border-radius: 2px;
-      height: 5px;
+      height: 3px;
       margin: 6px 0;
       transition: .4s;
-      width: 35px;
+      width: 30px;
     }
   }
 
   .change .bar1 {
-    transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
   }
 
   .change .bar2 {
@@ -201,7 +222,7 @@ menu {
   }
 
   .change .bar3 {
-    transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-6px, -6px);
   }
 }
 
@@ -214,10 +235,16 @@ menu {
   flex-direction: column;
   height: calc(100% - 50px);
   text-transform: capitalize;
-  width: 200px;
+  width: 250px;
 
   >.languages {
-    border-top: $border-header-active;
+    border-top: $line;
+    padding-left: 1rem;
+  }
+
+  .active {
+    background-color: $active-bg-color;
+    width: 100%;
   }
 
   >ul,
@@ -225,13 +252,17 @@ menu {
     display: flex;
     flex-direction: column;
     list-style: 0;
-    margin: 0;
+  }
+
+  li {
+    padding-left: 20px;
   }
 
   >ul {
     align-self: center;
+    margin: 0;
     padding: 20px 0;
-    width: 80%;
+    width: 100%;
   }
 
   button {
@@ -239,7 +270,6 @@ menu {
     border: 0;
     color: $c-font;
     font-size: 120%;
-    font-weight: 600;
     padding: 5px 20px;
     text-align: left;
     text-transform: capitalize;

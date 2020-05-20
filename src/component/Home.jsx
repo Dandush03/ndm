@@ -4,17 +4,24 @@ import React, { Component } from 'react';
 
 import languagesPack from '../languages/home.json';
 
-import Slider from './Slider';
 import Header from './Header';
+import Slider from './Slider';
 import PracticeAreas from './Areas';
 import Mid from './Mid';
 import Bottom from './Bottom';
+import Footer from './Footer';
 
 
 export default class Home extends Component {
   componentDidMount() {
-    const btn = document.getElementsByClassName('menu-items');
+    const btn = document.getElementsByClassName('page-menu-items');
+
+    Object.keys(btn).forEach((element) => {
+      btn[element].classList.remove('active');
+    });
+
     btn[0].classList.add('active');
+    btn[3].classList.add('active');
   }
 
   render() {
@@ -35,6 +42,7 @@ export default class Home extends Component {
         <PracticeAreas brief={brief} areas={practiceAreas} />
         <Mid data={mid} />
         <Bottom data={bottom} />
+        <Footer />
       </div>
     );
   }
