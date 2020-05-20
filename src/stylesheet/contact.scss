@@ -2,6 +2,7 @@
 
 $c-bg-header: #312121;
 $border-vertical-line: 2px solid #a3a3a3;
+$c-font: #000;
 
 .contact {
   background-color: $c-bg-header;
@@ -70,6 +71,21 @@ $border-vertical-line: 2px solid #a3a3a3;
   h3 {
     font-size: 200%;
     font-weight: normal;
+  }
+}
+
+.media-contact-icons {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+
+  svg {
+    height: 35px;
+    margin-right: 5px;
+
+    path {
+      fill: $c-font;
+    }
   }
 }
 
