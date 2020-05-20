@@ -23,12 +23,17 @@ header {
       display: flex;
       flex-direction: row;
       margin: 0;
-      padding: 0 25px;
     }
 
     >div {
       border: $border-header;
       border-top: 0;
+      justify-content: space-between;
+      padding: 0;
+    }
+
+    >menu {
+      padding: 0 25px;
     }
   }
 
@@ -50,19 +55,9 @@ header {
   p {
     margin: auto 10px;
   }
-
-  :first-child {
-    width: 40%;
-  }
-
-  :last-child {
-    width: 60%;
-  }
 }
 
 .media-icons {
-  width: calc(100% / 3);
-
   a {
     align-self: center;
     margin: 5px;
@@ -96,7 +91,6 @@ li >button {
   display: flex;
   justify-content: flex-end;
   list-style: none;
-  width: calc(100% / 3);
 
   button {
     background-color: transparent;
@@ -116,12 +110,22 @@ li >button {
 .media-icons {
   display: flex;
   justify-content: center;
-  width: calc(100% / 3);
+}
+
+.contact > :first-child >.scrolling-menu,
+.scrolling-menu {
+  background-color: $c-bg;
+  position: fixed;
+  top: 0;
 }
 
 menu {
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  top: 50px;
+  transition: all .3s ease-in;
+  width: 100%;
 
   .brand-logo {
     padding: 5px 0;
@@ -142,7 +146,7 @@ menu {
     }
 
     >p {
-      font-size: 120%;
+      font-size: 150%;
       margin-left: 25px;
     }
   }

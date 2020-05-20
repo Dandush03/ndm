@@ -98,6 +98,17 @@
           "author": "by Nisim Lici, Company CEO"
         }
       }
+    },
+    "contact": {
+      "title": "Our Contacts",
+      "brief": "We have world-class, flexible support via live chat, email, and phone. We guarantee that you’ll be able to have any issue resolved within 24 hours. You can contact our support immediately here.",
+      "lblAddress": "Address",
+      "address": "Oceania Business Plaza, Torre 1000, 15th floor, Office 15-C1",
+      "lblPhone": "Phones",
+      "phone": "+(507) 830 2656",
+      "fax": "+(597) 830 2655",
+      "lblEmail": "Email",
+      "email": "info@ndm.com.pa"
     }
   },
   "sp": {

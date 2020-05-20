@@ -27,8 +27,12 @@ const Program = (n, current = null) => {
     });
   });
 
-  img[newI].className = 'slide-img active';
-  dots[newI].className = 'dot active';
+  if (img[newI] !== undefined) {
+    img[newI].className = 'slide-img active';
+    dots[newI].className = 'dot active';
+  } else {
+    clearTimeout(timer);
+  }
 };
 
 const TimingSlides = () => {

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import Home from './component/Home';
 import * as serviceWorker from './serviceWorker';
+import Contact from './component/Contact';
 
 const language = localStorage.getItem('lang');
 
@@ -10,9 +11,27 @@ if (!language) {
   localStorage.setItem('lang', 'en');
 }
 
+const HandlerComponent = (name) => {
+  if (name === 'Contact') {
+    ReactDOM.render(
+      <React.StrictMode>
+        <Contact componentHandler={HandlerComponent} />
+      </React.StrictMode>,
+      document.getElementById('root'),
+    );
+  } else if (name === 'Home') {
+    ReactDOM.render(
+      <React.StrictMode>
+        <Home componentHandler={HandlerComponent} />
+      </React.StrictMode>,
+      document.getElementById('root'),
+    );
+  }
+};
+
 ReactDOM.render(
   <React.StrictMode>
-    <Home />
+    <Home componentHandler={HandlerComponent} />
   </React.StrictMode>,
   document.getElementById('root'),
 );

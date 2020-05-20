@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import BrandLogo from '../media/header/logo.png';
 
 export default class Footer extends Component {
-
+  
 
   render() {
     return (

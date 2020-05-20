@@ -55,7 +55,7 @@ export default class Mid extends Component {
 
   render() {
     return (
-      <section className="contact">
+      <section>
         <ImgSection images={this.images} />
         <div className="contact-now wrapper">
           <img src={smallLogo} alt="small-logo" />

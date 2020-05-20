@@ -1,0 +1,94 @@
+@import './global';
+
+$c-bg-header: #312121;
+$border-vertical-line: 2px solid #a3a3a3;
+
+.contact {
+  background-color: $c-bg-header;
+  height: auto;
+  position: relative;
+
+  >:first-child {
+    >menu,
+    >div {
+      position: relative;
+      top: auto;
+    }
+  }
+}
+
+.contact-main {
+  display: flex;
+  flex-direction: column;
+  font-family: $gilda-font;
+  width: 100%;
+
+
+  >div {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .cover {
+    height: calc(100% + 150px);
+    position: absolute;
+    width: 100%;
+  }
+
+  embed {
+    border: 0;
+    height: calc(100% + 150px);
+    margin-right: -50px;
+    margin-top: -150px;
+    min-height: 500px;
+    width: calc(100% + 50px);
+  }
+}
+
+.contact-main-info {
+  padding: 5vh 15vw;
+
+  h2 {
+    font-size: 250%;
+    font-weight: normal;
+    position: relative;
+
+    &::before {
+      border-top: $border-vertical-line;
+      content: '';
+      position: absolute;
+      right: 105%;
+      top: 35%;
+      width: 10%;
+    }
+  }
+
+  p {
+    font-size: 120%;
+  }
+
+  h3 {
+    font-size: 200%;
+    font-weight: normal;
+  }
+}
+
+@media only screen and (min-width: $pad-width){
+  .contact-main {
+    flex-direction: row;
+
+    >div {
+      width: 50%;
+    }
+  }
+
+  .contact-main-info {
+    padding: 5vh 10vw;
+
+    h2 {
+      &::before {
+        width: 15%;
+      }
+    }
+  }
+}
