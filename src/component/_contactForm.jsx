@@ -35,7 +35,7 @@ export default class ContactForm extends Component {
             <input type="text" name="phone" required />
           </label>
           <label htmlFor="email">
-            Email 
+            Email
             <input type="email" name="email" required />
           </label>
           <label htmlFor="comment">

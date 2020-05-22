@@ -92,10 +92,10 @@ export default class Header extends Component {
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', (event) => {
+    window.addEventListener('scroll', () => {
       const menu = document.getElementById('menu');
-      const { pageY } = event;
-      if (pageY > 50) {
+      const { scrollY } = window;
+      if (scrollY > 50) {
         menu.classList.add('scrolling-menu');
       } else {
         menu.classList.remove('scrolling-menu');
