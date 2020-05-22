@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 
 import languagesPack from '../languages/home.json';
 
+import ContactForm from './_contactForm';
 import Header from './_Header';
 import Slider from './_Slider';
 import PracticeAreas from './_Areas';
@@ -17,8 +18,8 @@ export default class Home extends Component {
   constructor(props) {
     super(props);
     this.handler = props.componentHandler;
+    this.state = { createFrom: ' ' };
   }
-
 
   componentDidMount() {
     const btn = document.getElementsByClassName('page-menu-items');
@@ -32,6 +33,14 @@ export default class Home extends Component {
     header.classList.remove('contact');
 
     document.title = 'NDM Law Firm | Home';
+
+    const frmBtns = document.getElementsByClassName('btns-section')[0].getElementsByTagName('div');
+    frmBtns[0].onclick = () => { this.formHandler(frmBtns[0]); };
+  }
+
+  formHandler(arg) {
+    this.setState({ createFrom: arg.getAttribute('name') });
+    document.body.classList.add('pop-form');
   }
 
   render() {
@@ -45,8 +54,11 @@ export default class Home extends Component {
       },
     } = content;
 
+    const { state: { createFrom } } = this;
+
     return (
       <div className="top-section">
+        <ContactForm type={createFrom} />
         <Header menu={JSON.stringify(menu)} changeComponent={this.handler} />
         <Slider content={topSection} btns={btns} />
         <PracticeAreas brief={brief} areas={practiceAreas} />

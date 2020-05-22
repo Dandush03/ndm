@@ -52,7 +52,7 @@ const BottomSection = (arg) => {
 
   Object.keys(btns).forEach((btn, index) => {
     content.push(
-      <div key={`btnIcon${index.toString()}`}>
+      <div key={`btnIcon${index.toString()}`} name={`form-${index}`}>
         <img src={btnGroup[index]} alt="Icon" className="icon" />
         <div className="content">
           <span>{btns[btn].span}</span>
