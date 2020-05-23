@@ -34,8 +34,13 @@ export default class Home extends Component {
 
     document.title = 'NDM Law Firm | Home';
 
-    const frmBtns = document.getElementsByClassName('btns-section')[0].getElementsByTagName('div');
-    frmBtns[0].onclick = () => { this.formHandler(frmBtns[0]); };
+    const frmBtns = document.getElementsByClassName('btns-section')[0].childNodes;
+
+    Object.keys(frmBtns).forEach((obj, index) => {
+      if ((index + 1) % 3 !== 0) {
+        frmBtns[obj].onclick = () => { this.formHandler(frmBtns[obj]); };
+      }
+    });
   }
 
   formHandler(arg) {
@@ -51,14 +56,14 @@ export default class Home extends Component {
       header: { menu }, home: {
         topSection, btns, brief,
         practiceAreas, mid, bottom,
-      },
+      }, forms,
     } = content;
 
     const { state: { createFrom } } = this;
 
     return (
       <div className="top-section">
-        <ContactForm type={createFrom} />
+        <ContactForm type={createFrom} data={forms} />
         <Header menu={JSON.stringify(menu)} changeComponent={this.handler} />
         <Slider content={topSection} btns={btns} />
         <PracticeAreas brief={brief} areas={practiceAreas} />

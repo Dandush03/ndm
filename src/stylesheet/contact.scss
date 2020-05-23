@@ -17,23 +17,52 @@ $c-font: #000;
     }
   }
 }
+.contact-main-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 
+  :nth-child(n+1) {
+    align-self: center;
+    width: fit-content;
+  }
+
+  h3,
+  h2 {
+    margin: 0;
+  }
+}
 .contact-main {
   display: flex;
   flex-direction: column;
   font-family: $gilda-font;
   width: 100%;
-
+  padding: 2px 3px;
+  background-color: whitesmoke;
 
   >div {
     overflow: hidden;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  >:last-child {
+    border: 1px solid black;
   }
 
   .cover {
     height: calc(100% + 150px);
     position: absolute;
     width: 100%;
+    z-index: 1;
+
+    a {
+      left: 0;
+      top: 0;
+    }
   }
 
   embed {
@@ -53,15 +82,6 @@ $c-font: #000;
     font-size: 250%;
     font-weight: normal;
     position: relative;
-
-    &::before {
-      border-top: $border-vertical-line;
-      content: '';
-      position: absolute;
-      right: 105%;
-      top: 35%;
-      width: 10%;
-    }
   }
 
   p {
@@ -98,13 +118,11 @@ $c-font: #000;
     }
   }
 
+  .contact-main+.contact-main {
+    flex-direction: row-reverse;
+  }
+
   .contact-main-info {
     padding: 5vh 10vw;
-
-    h2 {
-      &::before {
-        width: 15%;
-      }
-    }
   }
 }

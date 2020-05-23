@@ -40,7 +40,7 @@
           "text": "evaluation"
         },
         "pay": {
-          "span": "pay bill",
+          "span": "Log in",
           "text": "online"
         }
       },
@@ -101,89 +101,44 @@
     },
     "contact": {
       "title": "Our Contacts",
-      "brief": "We have world-class, flexible support via live chat, email, and phone. We guarantee that you’ll be able to have any issue resolved within 24 hours. You can contact our support immediately here.",
-      "lblAddress": "Address",
-      "address": "Oceania Business Plaza, Torre 1000, 15th floor, Office 15-C1",
+      "brief": "We have world-class, flexible support via chat, email, and phone. We guarantee that you’ll be able to have any issue resolved within 24 hours. You can contact our support immediately here.",
       "lblPhone": "Phones",
       "phone": "+(507) 830 2656",
       "fax": "+(597) 830 2655",
       "lblEmail": "Email",
-      "email": "info@ndm.com.pa"
-    }
-  },
-  "sp": {
-    "header": {
-      "menu": {
-        "home": "Home",
-        "about": "About",
-        "work": "Work",
-        "new": "News",
-        "contact": "Contacts"
-      }
+      "email": "info@ndm.com.pa",
+      "lblAddress": "Address",
+      "brand1": "Panama City",
+      "brand2": "Playa Venado",
+      "address1": "Oceania Business Plaza, Torre 1000, 15th floor, Office 15-C1",
+      "address2": "Playa Venado God knows where"
     },
-    "home": {
-      "topSection": {
-        "slide0": {
-          "span": "Este es un Texto en espanol",
-          "title": "Este es un Texto en espanol",
-          "btn": "Este es un"
-        },
-        "slide1": {
-          "span": "Este es un Texto en espanol",
-          "title": "Este es un Texto en espanol",
-          "btn": "get in touch"
-        },
-        "slide2": {
-          "span": "Leading Criminal Defense Lawyer Team",
-          "title": "You Deserve Fair Trial",
-          "btn": "get in touch"
-        }
+    "forms":{
+      "contact":{
+        "title": "Book An Apointment",
+        "brief": "We have world-class, flexible support via chat, email, and phone.",
+        "lblName": "Full Name",
+        "lblPhone": "Phones",
+        "lblEmail": "Email",
+        "lblContent": "Reason",
+        "btnClose": "Close",
+        "btnCancel": "Cancel",
+        "btnSubmit": "Submit",
+        "success": "Thanks!",
+        "error": "Ooops! There was an error."
       },
-      "btns": {
-        "app": {
-          "span": "book an",
-          "text": "appointment"
-        },
-        "ev": {
-          "span": "get free case",
-          "text": "evaluation"
-        },
-        "pay": {
-          "span": "pay bill",
-          "text": "online"
-        }
-      },
-      "brief": {
-        "content": {
-          "title": "Why You Need the Top Lawyers in NDM",
-          "firstContent": {
-            "firstLetter": "W",
-            "content": "e're a financial and consulting business company of professional thinkers, strategist, digital innovators, designers, and problem solvers"
-          },
-          "secondContent": "(everyone gets a mention). Our sense of curiosity brings brands to life. gets them talking, and makes sure they're heard above"
-        }
-      },
-      "practiceAreas": {
-        "content": {
-          "title": "Practice Areas",
-          "brief": "If you are accused of committing a crime, you will need the very beset criminal defense attorneys in Panama. We are especially as killed in the following practice areas",
-          "list1": {
-            "1": "Domestics Violence",
-            "2": "Fraud",
-            "3": "Domestic Violence",
-            "4": "Driving Crimes & DUI",
-            "5": "Drug Crimes",
-            "6": "Personal Injury"
-          },
-          "list2": {
-            "7": "Gun Crime",
-            "8": "Administrative Hearings",
-            "9": "Gun Crimes",
-            "10": "Theft",
-            "11": "Juvenile Crimes",
-            "12": "Theft"
-          }
-        }
+      "info":{
+        "title": "Get A Free Evaluation",
+        "brief": "We have world-class, flexible support via chat, email, and phone.",
+        "lblName": "Full Name",
+        "lblPhone": "Phones",
+        "lblEmail": "Email",
+        "lblContent": "Reason",
+        "btnClose": "Close",
+        "btnCancel": "Cancel",
+        "btnSubmit": "Submit",
+        "success": "Thanks!",
+        "error": "Ooops! There was an error."
       }
     }
   }

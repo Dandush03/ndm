@@ -1,3 +1,5 @@
+@import './global';
+
 $c-bg: rgba(61, 32, 32, .486);
 $c-bg-frm: #f5f5f5;
 
@@ -29,12 +31,32 @@ $c-bg-frm: #f5f5f5;
   width: 100%;
   z-index: 99999;
 
+  h2 {
+    text-align: center;
+  }
+
   form {
+    align-self: center;
     background-color: $c-bg-frm;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    max-width: 90%;
     padding: 15px;
+
+    >:last-child {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  button {
+    margin: 10px;
+    padding: 5px 15px;
+  }
+
+  input {
+    padding: 10px;
   }
 
   label {
@@ -44,5 +66,14 @@ $c-bg-frm: #f5f5f5;
 
   textarea {
     min-height: 70px;
+    resize: vertical;
+  }
+}
+
+@media only screen and (min-width: $pad-width) {
+  .form-container {
+    form {
+      max-width: 350px;
+    }
   }
 }

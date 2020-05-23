@@ -12,8 +12,8 @@ import img3 from '../media/slider/panama3.jpg';
 import img4 from '../media/slider/panama4.jpg';
 
 import icon1 from '../media/slider/check.png';
-import icon2 from '../media/slider/user.png';
-import icon3 from '../media/slider/pay.png';
+import icon2 from '../media/slider/info.png';
+import icon3 from '../media/slider/user.png';
 
 const imgGroup = [img1, img2, img3, img4];
 const btnGroup = [icon1, icon2, icon3];

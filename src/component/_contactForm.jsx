@@ -10,6 +10,7 @@ export default class ContactForm extends Component {
     this.state = {
       status: '',
     };
+    this.data = props.data;
   }
 
   cancelBtn() {
@@ -41,9 +42,11 @@ export default class ContactForm extends Component {
     const { state: { status }, props: { type } } = this;
     let url = 'https://formspree.io/mbjzdvlr';
     let subject = 'Free Evaluation';
+    let data = this.data.info;
     if (type === 'form-0') {
       url = 'https://formspree.io/xnqbewlq';
       subject = 'Apointment';
+      data = this.data.contact;
     }
     return (
       <div className="form-container active">
@@ -54,30 +57,31 @@ export default class ContactForm extends Component {
         >
           <label htmlFor="subject" style={{ display: 'none' }}>
             subject
-            <input type="text" name="subject" required value={subject} />
+            <input type="text" name="subject" required value={subject} readOnly />
           </label>
-          <h2>Contact Form</h2>
-          <p>We have world-class, flexible support via live chat, email, and phone. We guarantee that you’ll be able to have any issue resolved within 24 hours. You can contact our support immediately here. Just leave us your information and we'll get right back to you</p>
+          <h2>{data.title}</h2>
+          {/* eslint-disable-next-line */}
+          <p>{data.brief}</p>
           <label htmlFor="name">
-            Full Name
+            {data.lblName}
             <input type="text" name="name" required />
           </label>
           <label htmlFor="phone">
-            Phone
+            {data.lblPhone}
             <input type="text" name="phone" required />
           </label>
           <label htmlFor="email">
-            Email
+            {data.lblEmail}
             <input type="email" name="email" required />
           </label>
           <label htmlFor="comment">
-            Reason
+            {data.lblContent}
             <textarea type="textarea" name="comment" cols="50" required />
           </label>
           <div>
-            {status === 'SUCCESS' ? <p>Thanks!</p> : <button type="submit">submit</button>}
-            {status === 'ERROR' && <p>Ooops! There was an error.</p>}
-            {status === 'SUCCESS' ? <button type="button" onClick={this.cancelBtn.bind(this)}>close</button> : <button type="button" onClick={this.cancelBtn.bind(this)}>Cancel</button>}
+            {status === 'SUCCESS' ? <p>{data.success}</p> : <button type="submit">{data.btnSubmit}</button>}
+            {status === 'ERROR' && <p>{data.error}</p>}
+            {status === 'SUCCESS' ? <button type="button" onClick={this.cancelBtn.bind(this)}>{data.btnClose}</button> : <button type="button" onClick={this.cancelBtn.bind(this)}>{data.btnCancel}</button>}
           </div>
         </form>
       </div>
@@ -87,4 +91,5 @@ export default class ContactForm extends Component {
 
 ContactForm.propTypes = {
   type: PropTypes.string.isRequired,
+  data: PropTypes.objectOf(PropTypes.object).isRequired,
 };
