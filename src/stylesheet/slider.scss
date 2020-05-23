@@ -192,8 +192,10 @@ $border-btns-section: 1px solid #727272;
   }
 
   .active,
-  .dot:hover {
-    background-color: $c-slide-dots-active;
+  .dot {
+    &:hover {
+      background-color: $c-slide-dots-active;
+    }
   }
 }
 
@@ -240,7 +242,7 @@ $border-btns-section: 1px solid #727272;
   }
 }
 
-@media only screen and (min-width: $pad-width){
+@media only screen and (min-width: $pad-width) {
   .slider {
     height: 80vh;
   }

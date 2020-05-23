@@ -4,6 +4,7 @@ $border-images: 2px solid #fff;
 $background-c: rgba(0, 0, 0, .349);
 $font-c: #fff;
 $c-button: #bdac86;
+$border-btn: 1px solid #424242;
 
 .row-images {
   overflow: hidden;
@@ -125,6 +126,7 @@ $c-button: #bdac86;
   button {
     align-self: center;
     background-color: $c-button;
+    border: $border-btn;
     color: $font-c;
     font-family: $suez-font;
     margin: 15px;
@@ -134,7 +136,7 @@ $c-button: #bdac86;
   }
 }
 
-@media only screen and (min-width: $pad-width){
+@media only screen and (min-width: $pad-width) {
   .row-images {
     display: flex;
     height: 25vw;
