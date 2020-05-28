@@ -1,8 +1,9 @@
 @import './global';
 
-$c-bg-header: #312121;
+$c-bg-header: #0e182c;
 $border-vertical-line: 2px solid #a3a3a3;
 $c-font: #000;
+$border: 1px solid #000;
 
 .contact {
   background-color: $c-bg-header;
@@ -17,10 +18,13 @@ $c-font: #000;
     }
   }
 }
+
 .contact-main-info {
   display: flex;
   flex-direction: column;
+  padding: 5vh 15vw;
   text-align: center;
+
 
   :nth-child(n+1) {
     align-self: center;
@@ -31,26 +35,42 @@ $c-font: #000;
   h2 {
     margin: 0;
   }
+
+  h2 {
+    font-size: 250%;
+    font-weight: normal;
+    position: relative;
+  }
+
+  p {
+    font-size: 120%;
+  }
+
+  h3 {
+    font-size: 200%;
+    font-weight: normal;
+  }
 }
+
 .contact-main {
+  background-color: whitesmoke;
   display: flex;
   flex-direction: column;
   font-family: $gilda-font;
-  width: 100%;
   padding: 2px 3px;
-  background-color: whitesmoke;
+  width: 100%;
 
   >div {
-    overflow: hidden;
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
+    position: relative;
     text-align: center;
   }
 
   >:last-child {
-    border: 1px solid black;
+    border: $border;
   }
 
   .cover {
@@ -75,25 +95,6 @@ $c-font: #000;
   }
 }
 
-.contact-main-info {
-  padding: 5vh 15vw;
-
-  h2 {
-    font-size: 250%;
-    font-weight: normal;
-    position: relative;
-  }
-
-  p {
-    font-size: 120%;
-  }
-
-  h3 {
-    font-size: 200%;
-    font-weight: normal;
-  }
-}
-
 .media-contact-icons {
   display: flex;
   justify-content: center;
@@ -109,7 +110,7 @@ $c-font: #000;
   }
 }
 
-@media only screen and (min-width: $pad-width){
+@media only screen and (min-width: $pad-width) {
   .contact-main {
     flex-direction: row;
 

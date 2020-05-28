@@ -1,6 +1,7 @@
 @import './global';
 
-$c-bg: #271818;
+$c-header-bg: rgba(20, 33, 61, .624);
+$c-bg: #0e182c;
 $c-bars: #fff;
 $c-font: #fff;
 $border-header: 1px rgba(255, 255, 255, .363) solid;
@@ -9,6 +10,7 @@ $line: 1px #fff solid;
 $active-bg-color: rgba(0, 0, 0, .5);
 
 header {
+  background-color: $c-header-bg;
   color: $c-font;
   height: 50px;
   position: relative;
@@ -124,18 +126,19 @@ li >button {
 menu {
   display: flex;
   justify-content: space-between;
-  position: fixed;
   top: 50px;
-  transition: all .3s ease-in;
+  transition-duration: .3s;
+  transition-property: background-color, top;
+  transition-timing-function: ease-in-out;
   width: 100%;
 
   .brand-logo {
     padding: 5px 0;
 
     img {
+      max-width: 250px;
       width: 20vw;
       z-index: 2;
-      max-width: 250px;
     }
   }
 
@@ -199,8 +202,10 @@ menu {
     width: 100%;
   }
 
-  .media-icons svg {
-    height: 35px;
+  .media-icons {
+    svg {
+      height: 35px;
+    }
   }
 
   .hamburger {
@@ -222,16 +227,18 @@ menu {
     }
   }
 
-  .change .bar1 {
-    transform: rotate(-45deg) translate(-6px, 6px);
-  }
+  .change {
+    .bar1 {
+      transform: rotate(-45deg) translate(-6px, 6px);
+    }
 
-  .change .bar2 {
-    opacity: 0;
-  }
+    .bar2 {
+      opacity: 0;
+    }
 
-  .change .bar3 {
-    transform: rotate(45deg) translate(-6px, -6px);
+    .bar3 {
+      transform: rotate(45deg) translate(-6px, -6px);
+    }
   }
 }
 
@@ -287,9 +294,9 @@ menu {
 
 
 
-@media only screen and (min-width: $pad-width){
+@media only screen and (min-width: $pad-width) {
   header {
-    height: 0;
+    height: auto;
     position: absolute;
     top: 0;
     width: 100%;

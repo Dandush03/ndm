@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 import toggleFunction from '../javascript/header';
 
-import BrandLogo from '../media/header/logo.png';
+import BrandLogo from '../media/header/logo';
 
 const Media = () => (
   <div className="media-icons">
@@ -63,7 +63,7 @@ const MenuElement = (arg) => {
 const MenuDiv = (arg) => (
   <menu id="menu">
     <div className="brand-logo">
-      <img src={BrandLogo} alt="Company Logo" className="brand-img" />
+      <BrandLogo></BrandLogo>
     </div>
     <div className="items">
       <MenuElement menu={arg.menu} handler={arg.handler} />

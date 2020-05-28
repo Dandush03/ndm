@@ -3,7 +3,7 @@
 $border-images: 2px solid #fff;
 $background-c: rgba(0, 0, 0, .349);
 $font-c: #fff;
-$c-button: #bdac86;
+$c-button: #a5864c;
 $border-btn: 1px solid #424242;
 
 .row-images {
@@ -94,6 +94,16 @@ $border-btn: 1px solid #424242;
   min-height: 440px;
   padding: 40px;
 
+  .brand-logo-svg {
+    align-self: center;
+    height: auto;
+    width: 350px;
+
+    .cls-12 {
+      fill: #14123d;
+    }
+  }
+
   img {
     align-self: center;
     width: 70px;
@@ -144,7 +154,7 @@ $border-btn: 1px solid #424242;
 
   .contact-now {
     height: 30vh;
-    min-height: 360px;
+    min-height: 400px;
 
     p,
     h3,

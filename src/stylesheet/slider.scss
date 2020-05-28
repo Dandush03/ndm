@@ -3,17 +3,18 @@
 $image-cover: rgba(0, 0, 0, .397);
 
 $c-font: #fff;
+$c-btn-font: #fff;
 $c-btns-font: #ad8f57;
 $c-slide-dots: #bbb;
 $c-slide-dots-active: #fff;
 $c-bg: #000;
-$c-button: #bdac86;
-$c-btn-bg: #463e3e;
-$c-btn-bg-hover: #362323;
+$c-button: #a5864c;
+$c-btn-bg: #343b4e;
+$c-btn-bg-hover: #14213d;
 
 $border-vertical-line: 2px solid #d4d4d4;
 $border-btn: 1px solid #424242;
-$border-btns-section: 1px solid #727272;
+$border-btns-section: 1px solid #504f5f;
 
 @keyframes showIn {
   0% {
@@ -141,7 +142,7 @@ $border-btns-section: 1px solid #727272;
   button {
     background-color: $c-button;
     border: $border-btn;
-    color: $c-font;
+    color: $c-btn-font;
     cursor: pointer;
     font-family: $suez-font;
     font-size: 100%;

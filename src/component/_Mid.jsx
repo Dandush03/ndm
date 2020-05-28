@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import '../stylesheet/mid.scss';
 
-import logo from '../media/header/logo.png';
+import logo from '../media/header/logo.svg';
 
 import img1 from '../media/bottom/gallery_01.jpg';
 import img2 from '../media/bottom/gallery_02.jpg';
@@ -12,6 +12,7 @@ import img4 from '../media/bottom/gallery_04.jpg';
 
 
 import smallLogo from '../media/header/logo-small.png';
+import BrandLogo from '../media/header/logo';
 
 const imgGroup = [img1, img2, img3, img4];
 
@@ -58,7 +59,7 @@ export default class Mid extends Component {
       <section>
         <ImgSection images={this.images} />
         <div className="contact-now wrapper">
-          <img src={smallLogo} alt="small-logo" />
+          <BrandLogo />
           <p>{this.span1}</p>
           <h3>{this.phone}</h3>
           <p>{this.span2}</p>
