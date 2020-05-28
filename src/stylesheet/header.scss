@@ -227,6 +227,13 @@ menu {
     }
   }
 
+  img {
+    align-self: center;
+    height: auto;
+    margin: 30px 0;
+    width: 70%;
+  }
+
   .change {
     .bar1 {
       transform: rotate(-45deg) translate(-6px, 6px);
@@ -243,7 +250,7 @@ menu {
 }
 
 .expand {
-  height: 310px;
+  height: 370px;
 }
 
 .phone-link {
@@ -254,7 +261,6 @@ menu {
   width: 250px;
 
   >.languages {
-    border-top: $line;
     padding-left: 1rem;
   }
 
@@ -276,6 +282,7 @@ menu {
 
   >ul {
     align-self: center;
+    border-top: $border-header;
     margin: 0;
     padding: 20px 0;
     width: 100%;

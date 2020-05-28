@@ -11,9 +11,6 @@ import img3 from '../media/bottom/gallery_03.jpg';
 import img4 from '../media/bottom/gallery_04.jpg';
 
 
-import smallLogo from '../media/header/logo-small.png';
-import BrandLogo from '../media/header/logo';
-
 const imgGroup = [img1, img2, img3, img4];
 
 const ImgSection = (args) => {
@@ -59,7 +56,7 @@ export default class Mid extends Component {
       <section>
         <ImgSection images={this.images} />
         <div className="contact-now wrapper">
-          <BrandLogo />
+          <img src={logo} alt="small-logo" />
           <p>{this.span1}</p>
           <h3>{this.phone}</h3>
           <p>{this.span2}</p>

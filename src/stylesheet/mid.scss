@@ -94,19 +94,10 @@ $border-btn: 1px solid #424242;
   min-height: 440px;
   padding: 40px;
 
-  .brand-logo-svg {
-    align-self: center;
-    height: auto;
-    width: 350px;
-
-    .cls-12 {
-      fill: #14123d;
-    }
-  }
-
   img {
     align-self: center;
-    width: 70px;
+    margin: 15px;
+    width: 320px;
   }
 
   p,
@@ -154,7 +145,11 @@ $border-btn: 1px solid #424242;
 
   .contact-now {
     height: 30vh;
-    min-height: 400px;
+    min-height: 440px;
+
+    img {
+      width: 370px;
+    }
 
     p,
     h3,

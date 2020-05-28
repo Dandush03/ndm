@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import toggleFunction from '../javascript/header';
 
 import BrandLogo from '../media/header/logo';
+import logo from '../media/header/menu-logo.png';
 
 const Media = () => (
   <div className="media-icons">
@@ -28,7 +29,7 @@ const languagesChanger = (id) => {
 };
 
 const MenuElement = (arg) => {
-  const { menu: { home, about, contact } } = arg;
+  const { menu: { home, /* about , */ contact } } = arg;
 
   return (
     <ul>
@@ -40,14 +41,14 @@ const MenuElement = (arg) => {
           <p>{home}</p>
         </button>
       </li>
-      <li className="page-menu-items">
+      {/* <li className="page-menu-items">
         <button type="button" onClick={() => arg.handler('About')}>
           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="eject" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
             <path fill="currentColor" d="M448 384v64c0 17.673-14.327 32-32 32H32c-17.673 0-32-14.327-32-32v-64c0-17.673 14.327-32 32-32h384c17.673 0 32 14.327 32 32zM48.053 320h351.886c41.651 0 63.581-49.674 35.383-80.435L259.383 47.558c-19.014-20.743-51.751-20.744-70.767 0L12.67 239.565C-15.475 270.268 6.324 320 48.053 320z" />
           </svg>
           <p>{about}</p>
         </button>
-      </li>
+      </li> */}
       <li className="page-menu-items">
         <button type="button" onClick={() => arg.handler('Contact')}>
           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-signature" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -63,7 +64,7 @@ const MenuElement = (arg) => {
 const MenuDiv = (arg) => (
   <menu id="menu">
     <div className="brand-logo">
-      <BrandLogo></BrandLogo>
+      <BrandLogo />
     </div>
     <div className="items">
       <MenuElement menu={arg.menu} handler={arg.handler} />
@@ -128,6 +129,7 @@ export default class Header extends Component {
             <Media />
           </div>
           <div className="phone-link">
+            <img src={logo} alt="BrandLogo" />
             <MenuElement menu={this.menu} handler={this.changeComponent} />
             <Languages />
           </div>
