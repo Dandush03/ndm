@@ -9,6 +9,10 @@ $border-btn: 1px solid #424242;
 .row-images {
   overflow: hidden;
 
+  .video-container {
+    display: none;
+  }
+
   >div {
     position: relative;
     width: calc(100%/4);
@@ -141,6 +145,17 @@ $border-btn: 1px solid #424242;
   .row-images {
     display: flex;
     height: 25vw;
+
+    .video-container {
+      display: block;
+      width: 50%;
+
+      video {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+    }
   }
 
   .contact-now {

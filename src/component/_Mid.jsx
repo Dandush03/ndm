@@ -6,28 +6,38 @@ import '../stylesheet/mid.scss';
 import logo from '../media/header/logo.svg';
 
 import img1 from '../media/bottom/gallery_01.jpg';
-import img2 from '../media/bottom/gallery_02.jpg';
-import img3 from '../media/bottom/gallery_03.jpg';
-import img4 from '../media/bottom/gallery_04.jpg';
+import img2 from '../media/bottom/gallery_04.jpg';
+import video from '../media/mid/ndm-english.mp4';
 
 
-const imgGroup = [img1, img2, img3, img4];
+const imgGroup = [img1, video, img2];
 
 const ImgSection = (args) => {
   const { images } = args;
   const imagesContainer = [];
   Object.keys(imgGroup).forEach((img, index) => {
-    imagesContainer.push(
-      <div className="images-container" key={`image-container-${index.toString()}`}>
-        <img src={imgGroup[img]} alt="images" className="bg-image" />
-        <div>
-          <img src={logo} alt="brand-logo" className="logo" />
-          <div className="images-text">
-            <p>{images[`image${index + 1}`]}</p>
+    if (imgGroup[img] !== video) {
+      imagesContainer.push(
+        <div className="images-container" key={`image-container-${index.toString()}`}>
+          <img src={imgGroup[img]} alt="images" className="bg-image" />
+          <div>
+            <img src={logo} alt="brand-logo" className="logo" />
+            <div className="images-text">
+              <p>{images[`image${index + 1}`]}</p>
+            </div>
           </div>
-        </div>
-      </div>,
-    );
+        </div>,
+      );
+    } else {
+      imagesContainer.push(
+        <div className="video-container">
+          <video autoPlay loop muted>
+            <track kind="captions" srcLang="en" label="English" />
+            <source src={video} type="video/mp4" />
+          </video>
+        </div>,
+      );
+    }
   });
 
   return (
