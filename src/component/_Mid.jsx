@@ -7,8 +7,18 @@ import logo from '../media/header/logo.svg';
 
 import img1 from '../media/bottom/gallery_01.jpg';
 import img2 from '../media/bottom/gallery_04.jpg';
-import video from '../media/mid/ndm-english.mp4';
 
+import videoEn from '../media/mid/ndm-english.mp4';
+import videoSp from '../media/bottom/gallery_04.jpg';
+
+const lang = localStorage.getItem('lang');
+let video;
+
+if (lang === 'sp') {
+  video = videoSp;
+} else {
+  video = videoEn;
+}
 
 const imgGroup = [img1, video, img2];
 
