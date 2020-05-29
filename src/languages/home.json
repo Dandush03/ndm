@@ -139,6 +139,11 @@
         "success": "Thanks!",
         "error": "Ooops! There was an error."
       }
+    },
+    "footer":{
+      "termCodition": "Terms and Coditions",
+      "policy": "Privacy Policy",
+      "reserved": "All rights reserved."
     }
   }
 }

@@ -1,5 +1,6 @@
 @import './global';
 
+$c-svg: #0e182c;
 $border-images: 2px solid #fff;
 $background-c: rgba(0, 0, 0, .349);
 $font-c: #fff;
@@ -98,10 +99,15 @@ $border-btn: 1px solid #424242;
   min-height: 440px;
   padding: 40px;
 
-  img {
+  .brand-logo-svg {
     align-self: center;
+    height: 140px;
     margin: 15px;
     width: 320px;
+
+    .cls-12 {
+      fill: $c-svg;
+    }
   }
 
   p,

@@ -3,7 +3,7 @@
 $c-header-bg: rgba(20, 33, 61, .624);
 $c-bg: #0e182c;
 $c-bars: #fff;
-$c-font: #fff;
+$c-font: #9e9e9e;
 $border-header: 1px rgba(255, 255, 255, .363) solid;
 $border-header-active: 3px #fff solid;
 $line: 1px #fff solid;
@@ -16,9 +16,17 @@ header {
   position: relative;
   width: 100%;
 
+  .top {
+    >:first-child,
+    .items {
+      display: none;
+    }
+  }
+
   >:first-child {
-    display: none;
+    display: flex;
     flex-direction: column;
+    opacity: 0;
 
     >div,
     menu {
@@ -227,9 +235,8 @@ menu {
     }
   }
 
-  img {
+  .brand-logo-svg {
     align-self: center;
-    height: auto;
     margin: 30px 0;
     width: 70%;
   }
@@ -299,8 +306,6 @@ menu {
   }
 }
 
-
-
 @media only screen and (min-width: $pad-width) {
   header {
     height: auto;
@@ -309,8 +314,15 @@ menu {
     width: 100%;
     z-index: 99;
 
+    .top {
+      >:first-child,
+      .items {
+        display: flex;
+      }
+    }
+
     >:first-child {
-      display: flex;
+      opacity: 1;
     }
 
     >:last-child {

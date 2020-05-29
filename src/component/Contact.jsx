@@ -16,12 +16,13 @@ export default class Contact extends Component {
   }
 
   componentDidMount() {
+    window.scrollTo(0, 0);
     const btn = document.getElementsByClassName('page-menu-items');
     Object.keys(btn).forEach((element) => {
       btn[element].classList.remove('active');
     });
-    btn[2].classList.add('active');
-    btn[5].classList.add('active');
+    btn[1].classList.add('active');
+    btn[3].classList.add('active');
 
     const header = document.getElementsByTagName('header')[0];
     header.classList.add('contact');
@@ -34,7 +35,7 @@ export default class Contact extends Component {
 
     const content = languagesPack[language];
     const {
-      header: { menu }, contact,
+      header: { menu }, contact, footer,
     } = content;
 
     return (
@@ -103,7 +104,7 @@ export default class Contact extends Component {
             <embed title="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.290558340991!2d-80.19771768467344!3d7.433065313981651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMjUnNTkuMCJOIDgwwrAxMSc0My45Ilc!5e0!3m2!1sen!2sve!4v1590192703840!5m2!1sen!2sve" aria-hidden="false" tabIndex="0" />
           </div>
         </div>
-        <Footer />
+        <Footer content={footer} />
       </div>
     );
   }

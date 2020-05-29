@@ -3,13 +3,12 @@ import PropTypes from 'prop-types';
 
 import '../stylesheet/mid.scss';
 
-import logo from '../media/header/logo.svg';
-
 import img1 from '../media/bottom/gallery_01.jpg';
-import img2 from '../media/bottom/gallery_04.jpg';
+import img2 from '../media/bottom/gallery_02.jpg';
 
 import videoEn from '../media/mid/ndm-english.mp4';
 import videoSp from '../media/bottom/gallery_04.jpg';
+import BrandLogo from '../media/header/logo';
 
 const lang = localStorage.getItem('lang');
 let video;
@@ -31,7 +30,7 @@ const ImgSection = (args) => {
         <div className="images-container" key={`image-container-${index.toString()}`}>
           <img src={imgGroup[img]} alt="images" className="bg-image" />
           <div>
-            <img src={logo} alt="brand-logo" className="logo" />
+            <BrandLogo />
             <div className="images-text">
               <p>{images[`image${index + 1}`]}</p>
             </div>
@@ -40,7 +39,7 @@ const ImgSection = (args) => {
       );
     } else {
       imagesContainer.push(
-        <div className="video-container">
+        <div className="video-container" key={`image-container-${index.toString()}`}>
           <video autoPlay loop muted>
             <track kind="captions" srcLang="en" label="English" />
             <source src={video} type="video/mp4" />
@@ -76,7 +75,7 @@ export default class Mid extends Component {
       <section>
         <ImgSection images={this.images} />
         <div className="contact-now wrapper">
-          <img src={logo} alt="small-logo" />
+          <BrandLogo />
           <p>{this.span1}</p>
           <h3>{this.phone}</h3>
           <p>{this.span2}</p>

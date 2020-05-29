@@ -22,12 +22,13 @@ export default class Home extends Component {
   }
 
   componentDidMount() {
+    window.scrollTo(0, 0);
     const btn = document.getElementsByClassName('page-menu-items');
     Object.keys(btn).forEach((element) => {
       btn[element].classList.remove('active');
     });
     btn[0].classList.add('active');
-    btn[3].classList.add('active');
+    btn[2].classList.add('active');
 
     const header = document.getElementsByTagName('header')[0];
     header.classList.remove('contact');
@@ -46,6 +47,7 @@ export default class Home extends Component {
   formHandler(arg) {
     this.setState({ createFrom: arg.getAttribute('name') });
     document.body.classList.add('pop-form');
+    window.scrollTo(0, 0);
   }
 
   render() {
@@ -56,7 +58,7 @@ export default class Home extends Component {
       header: { menu }, home: {
         topSection, btns, brief,
         practiceAreas, mid, bottom,
-      }, forms,
+      }, forms, footer,
     } = content;
 
     const { state: { createFrom } } = this;
@@ -69,7 +71,7 @@ export default class Home extends Component {
         <PracticeAreas brief={brief} areas={practiceAreas} />
         <Mid data={mid} />
         <Bottom data={bottom} />
-        <Footer />
+        <Footer content={footer} />
       </div>
     );
   }
