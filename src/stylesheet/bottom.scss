@@ -14,6 +14,7 @@ $small-line: 1px solid #fff;
     font-family: $gilda-font;
     height: 80vh;
     justify-content: center;
+    min-height: 850px;
     overflow: hidden;
     position: relative;
   }
@@ -102,6 +103,7 @@ $small-line: 1px solid #fff;
   .quote-container {
     >:first-child {
       height: 65vh;
+      min-height: 750px;
     }
   }
 

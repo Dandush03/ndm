@@ -1,0 +1,149 @@
+{
+  "en": {
+    "header": {
+      "menu": {
+        "home": "Home",
+        "about": "About",
+        "contact": "Contacts"
+      }
+    },
+    "home": {
+      "topSection": {
+        "slide0": {
+          "span": "Leading Criminal Defense Lawyer Team",
+          "title": "You Deserve Fair Trial",
+          "btn": "get in touch"
+        },
+        "slide1": {
+          "span": "Leading Criminal Defense Lawyer Team",
+          "title": "You Deserve Fair Trial",
+          "btn": "get in touch"
+        },
+        "slide2": {
+          "span": "Leading Criminal Defense Lawyer Team",
+          "title": "You Deserve Fair Trial",
+          "btn": "get in touch"
+        },
+        "slide3": {
+          "span": "Leading Criminal Defense Lawyer Team",
+          "title": "You Deserve Fair Trial",
+          "btn": "get in touch"
+        }
+      },
+      "btns": {
+        "app": {
+          "span": "book an",
+          "text": "appointment"
+        },
+        "ev": {
+          "span": "get free case",
+          "text": "evaluation"
+        },
+        "pay": {
+          "span": "Log in",
+          "text": "online"
+        }
+      },
+      "brief": {
+        "content": {
+          "title": "Why You Need the Top Lawyers in NDM",
+          "firstContent": {
+            "firstLetter": "W",
+            "content": "e're a financial and consulting business company of professional thinkers, strategist, digital innovators, designers, and problem solvers"
+          },
+          "secondContent": "(everyone gets a mention). Our sense of curiosity brings brands to life. gets them talking, and makes sure they're heard above"
+        }
+      },
+      "practiceAreas": {
+        "content": {
+          "title": "Practice Areas",
+          "brief": "If you are accused of committing a crime, you will need the very beset criminal defense attorneys in Panama. We are especially as killed in the following practice areas",
+          "list1": {
+            "1": "Domestics Violence",
+            "2": "Fraud",
+            "3": "Domestic Violence",
+            "4": "Driving Crimes & DUI",
+            "5": "Drug Crimes",
+            "6": "Personal Injury"
+          },
+          "list2": {
+            "7": "Gun Crime",
+            "8": "Administrative Hearings",
+            "9": "Gun Crimes",
+            "10": "Theft",
+            "11": "Juvenile Crimes",
+            "12": "Theft"
+          }
+        }
+      },
+      "mid": {
+        "images": {
+          "image1": "some text over here and here",
+          "emptyString": "",
+          "image2": "some text over here and here"
+        },
+        "content": {
+          "span1": "call us 24/7",
+          "phone": "0800-DALE-NISIM",
+          "span2": "OR",
+          "h4": "Schedule a Free Consultation",
+          "btn": "make an appointment"
+        }
+      },
+      "bottom": {
+        "quote": {
+          "title": "What People Say",
+          "content":"Nisim dale dale dale dale dale dale dale dale dale dale dale dale",
+          "author": "by Nisim Lici, Company CEO"
+        }
+      }
+    },
+    "contact": {
+      "title": "Our Contacts",
+      "brief": "We have world-class, flexible support via chat, email, and phone. We guarantee that you’ll be able to have any issue resolved within 24 hours. You can contact our support immediately here.",
+      "lblPhone": "Phones",
+      "phone": "+(507) 830 2656",
+      "fax": "+(597) 830 2655",
+      "lblEmail": "Email",
+      "email": "info@ndm.com.pa",
+      "lblAddress": "Address",
+      "brand1": "Panama City",
+      "brand2": "Playa Venado",
+      "address1": "Oceania Business Plaza, Torre 1000, 15th floor, Office 15-C1",
+      "address2": "Playa Venado God knows where"
+    },
+    "forms":{
+      "contact":{
+        "title": "Book An Apointment",
+        "brief": "We have world-class, flexible support via chat, email, and phone.",
+        "lblName": "Full Name",
+        "lblPhone": "Phones",
+        "lblEmail": "Email",
+        "lblContent": "Reason",
+        "btnClose": "Close",
+        "btnCancel": "Cancel",
+        "btnSubmit": "Submit",
+        "success": "Thanks!",
+        "error": "Ooops! There was an error."
+      },
+      "info":{
+        "title": "Get A Free Evaluation",
+        "brief": "We have world-class, flexible support via chat, email, and phone.",
+        "lblName": "Full Name",
+        "lblPhone": "Phones",
+        "lblEmail": "Email",
+        "lblContent": "Reason",
+        "btnClose": "Close",
+        "btnCancel": "Cancel",
+        "btnSubmit": "Submit",
+        "success": "Thanks!",
+        "error": "Ooops! There was an error."
+      }
+    },
+    "footer":{
+      "termCodition": "Terms and Coditions",
+      "policy": "Privacy Policy",
+      "reserved": "All rights reserved."
+    }
+  }
+}
