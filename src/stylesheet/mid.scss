@@ -58,6 +58,10 @@ $border-btn: 1px solid #424242;
   justify-items: center;
   overflow: hidden;
 
+  svg {
+    margin: 20px;
+  }
+
   >div {
     background-color: $background-c;
     color: $font-c;

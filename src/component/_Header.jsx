@@ -29,8 +29,14 @@ const MenuElement = (arg) => {
       </li>
       {/* <li className="page-menu-items">
         <button type="button" onClick={() => arg.handler('About')}>
-          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="eject" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <path fill="currentColor" d="M448 384v64c0 17.673-14.327 32-32 32H32c-17.673 0-32-14.327-32-32v-64c0-17.673 14.327-32 32-32h384c17.673 0 32 14.327 32 32zM48.053 320h351.886c41.651 0 63.581-49.674 35.383-80.435L259.383 47.558c-19.014-20.743-51.751-20.744-70.767 0L12.67 239.565C-15.475 270.268 6.324 320 48.053 320z" />
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="eject" role="img"
+           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="currentColor" d="M448 384v64c0 17.673-14.327 32-32 32H32c-17.673
+             0-32-14.327-32-32v
+            -64c0-17.673 14.327-32 32-32h384c17.673 0
+            32 14.327 32 32zM48.053 320h351.886c41.651 0 63.581-49.674 35.383-80.435L259.383
+            47.558c-19.014-20.743-51.751-20.744-70.767 0L12.67 239.565C-15.475 270.268 6.324
+            320 48.053 320z" />
           </svg>
           <p>{about}</p>
         </button>
@@ -62,10 +68,13 @@ const MenuDiv = (arg) => (
 const Languages = () => (
   <ul className="languages">
     <li className="menu-items">
-      <button type="button" onClick={() => languagesChanger('sp')}>spanish</button>
+      <button type="button" onClick={() => languagesChanger('sp')}>Español</button>
     </li>
     <li className="menu-items">
-      <button type="button" onClick={() => languagesChanger('en')}>english</button>
+      <button type="button" onClick={() => languagesChanger('en')}>English</button>
+    </li>
+    <li className="menu-items">
+      <button type="button" onClick={() => languagesChanger('tr')}>Türkçe</button>
     </li>
   </ul>
 );

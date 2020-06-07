@@ -21,8 +21,7 @@ if (lang === 'sp') {
 
 const imgGroup = [img1, video, img2];
 
-const ImgSection = (args) => {
-  const { images } = args;
+const ImgSection = () => {
   const imagesContainer = [];
   Object.keys(imgGroup).forEach((img, index) => {
     if (imgGroup[img] !== video) {
@@ -31,9 +30,6 @@ const ImgSection = (args) => {
           <img src={imgGroup[img]} alt="images" className="bg-image" />
           <div>
             <BrandLogo />
-            <div className="images-text">
-              <p>{images[`image${index + 1}`]}</p>
-            </div>
           </div>
         </div>,
       );

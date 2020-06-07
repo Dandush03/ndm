@@ -29,6 +29,10 @@ $border-practices: 1px solid #8d7e7e;
     }
   }
 
+  h2 {
+    color: $c-brief * .7;
+  }
+
   p {
     align-self: center;
     font-size: 100%;
@@ -64,6 +68,7 @@ $border-practices: 1px solid #8d7e7e;
     }
 
     ul {
+      align-self: center;
       margin: 0 auto;
     }
   }
