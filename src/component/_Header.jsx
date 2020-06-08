@@ -74,6 +74,9 @@ const Languages = () => (
       <button type="button" onClick={() => languagesChanger('en')}>English</button>
     </li>
     <li className="menu-items">
+      <button type="button" onClick={() => languagesChanger('hb')}>עברית</button>
+    </li>
+    <li className="menu-items">
       <button type="button" onClick={() => languagesChanger('tr')}>Türkçe</button>
     </li>
   </ul>

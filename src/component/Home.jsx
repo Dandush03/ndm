@@ -42,12 +42,16 @@ export default class Home extends Component {
         frmBtns[obj].onclick = () => { this.formHandler(frmBtns[obj]); };
       }
     });
+
+    const contact = document.getElementsByName('getApointment');
+    Object.keys(contact).forEach((obj) => {
+      contact[obj].onclick = () => { this.formHandler(contact[obj]); };
+    });
   }
 
   formHandler(arg) {
     this.setState({ createFrom: arg.getAttribute('name') });
     document.body.classList.add('pop-form');
-    window.scrollTo(0, 0);
   }
 
   render() {

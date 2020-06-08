@@ -391,7 +391,7 @@
         "content": {
           "span1": "Llamenos 24/7",
           "phone": "+(507) 8302656 & + 1 678 999 2694",
-          "span2": "OR",
+          "span2": "O",
           "h4": "Programe una consulta gratuita",
           "btn": "Haga una cita"
         }
@@ -450,6 +450,157 @@
       "termCodition": "Términos y condiciones",
       "policy": "Política de privacidad",
       "reserved": "Todos los derechos reservados."
+    }
+  },
+  "hb": {
+    "header": {
+      "menu": {
+        "home": "עמוד הבית",
+        "about": "על המשרד",
+        "contact": "צור קשר"
+      }
+    },
+    "home": {
+      "topSection": {
+        "slide0": {
+          "span": "פתרונות חכמים זקוקים לעורכי דין יצירתיים",
+          "title": "מגיע לך השירות הטוב ביותר",
+          "btn": "צור קשר"
+        },
+        "slide1": {
+          "span": "פתרונות חכמים זקוקים לעורכי דין יצירתיים",
+          "title": "מגיע לך השירות הטוב ביותר",
+          "btn": "צור קשר"
+        },
+        "slide2": {
+          "span": "פתרונות חכמים זקוקים לעורכי דין יצירתיים",
+          "title": "מגיע לך השירות הטוב ביותר",
+          "btn": "צור קשר"
+        },
+        "slide3": {
+          "span": "Leading Criminal Defense Lawyer Team",
+          "title": "מגיע לך השירות הטוב ביותר",
+          "btn": "צור קשר"
+        }
+      },
+      "btns": {
+        "app": {
+          "span": "להזמין עכשיו",
+          "text": "פגישה"
+        },
+        "ev": {
+          "span": "get free case",
+          "text": "evaluation"
+        },
+        "pay": {
+          "span": "כניסה לחשבון ",
+          "text": "באינטרנט"
+        }
+      },
+      "brief": {
+        "content": {
+          "title": "למה אתה זקוק לפתרונות יצירתיים כדי להגיע למטרה שלך?",
+          "firstContent": {
+            "firstLetter": "N",
+            "content": "DM הוא משרד עורכי דין בינלאומי המשרת יחידים, חברות, ממשלות ומוסדות פיננסיים. ההיסטוריה הארוכה שלנו כמשרד עולמי פירושה שאנו ממוקמים באופן ייחודי לעזור ללקוחותינו"
+          },
+          "secondContent": "האתגרים המשפטיים המורכבים ביותר שלהם באשר הם. אנו שמים את לקוחותינו ראשונים ואנחנו תמיד מגיבים לצרכים שלך, לסדרי העדיפויות ולחצים שלך. אנו מבינים את נקודת המבט שלך ומראים שאנחנו חושבים ודואגים לדאגות שלך כמוך"
+        }
+      },
+      "practiceAreas": {
+        "content": {
+          "title": "תחומי עיסוק",
+          "brief": "אנו זריזים, ממציאים ונחושים לנווט את לקוחותינו בסביבה העסקית המורכבת של ימינו. אנו מחפשים גישות שאולי לא ברור מאליו למצוא פתרונות מקוריים",
+          "list1": {
+            "1": "מסחריוחברות",
+            "2": "נדלן מסחרי",
+            "3": "הגירה ו אשורי עבודה",
+            "4": "ליטיגציה ובוררות",
+            "5": "משפט פרוצדוראלי ואזרחי",
+            "6": "קניין רוחני ",
+            "7": "חוק הגנת הצרכן ",
+            "8": "דיני משפחה "
+          },
+          "list2": {
+            "9": "מיסים",
+            "10": "עסקאות בינלאומיות",
+            "11": "בנקאות ומימון",
+            "12": "רישומי בריאות",
+            "13": "רכישות של מכירות פומביות חוקיות",
+            "14": "שירותי אופשור",
+            "15": "תחומי עיסוק אחרים",
+            "16": "פילילי"
+          }
+        }
+      },
+      "mid": {
+        "images": {
+          "image1": "",
+          "emptyString": "",
+          "image2": ""
+        },
+        "content": {
+          "span1": "התקשר אלינו 24/7",
+          "phone": "+(507) 8302656 & + 1 678 999 2694",
+          "span2": "ן",
+          "h4": "קבעו פגישת ייעוץ חינם",
+          "btn": "לקבוע פגישה"
+        }
+      },
+      "bottom": {
+        "quote": {
+          "title": "מדוע לקוחות בעדיפות שלנו?",
+          "content": "אנו מיישמים את הידע הגלובלי שלנו על צרכי הלקוחות שלנו. בעולם שמתקשר יותר ויותר, אתה מסתכל עלינו לשלב נקודת מבט בינלאומית עם תובנה מקומית כדי לעזור בפתרון האתגרים שלך.",
+          "author": "by Melva Herrera De Lici , Founder"
+        }
+      }
+    },
+    "contact": {
+      "title": "צור קשר",
+      "brief": "We have world-class, flexible support via chat, email, and phone. We guarantee that you’ll be able to have any issue resolved within 24 hours. You can contact our support immediately here.",
+      "lblPhone": "טלפונים שלנו",
+      "phone": "+(507) 830 2656",
+      "fax": "+(597) 830 2655",
+      "lblEmail": "מאייל",
+      "email": "info@ndm.com.pa",
+      "lblAddress": "כתובת",
+      "brand1": "פנמה סיטי",
+      "brand2": "פליה וואנאו",
+      "address1": "Oceania Business Plaza, Torre 1000, 15th floor, Office 15-C1",
+      "address2": "פליה וואנאו פדאסי "
+    },
+    "forms": {
+      "contact": {
+        "title": "קבע פגישה",
+        "brief": "We have world-class, flexible support via chat, email, and phone.",
+        "lblName": "שם מלה",
+        "lblPhone": "טלפון",
+        "lblEmail": "מאייל",
+        "lblContent": "סיבה",
+        "btnClose": "סגור",
+        "btnCancel": "בטל",
+        "btnSubmit": "שלח",
+        "success": "תודה!",
+        "error": "Ooops! There was an error."
+      },
+      "info": {
+        "title": "Get A Free Evaluation",
+        "brief": "We have world-class, flexible support via chat, email, and phone.",
+        "lblName": "Full Name",
+        "lblPhone": "Phones",
+        "lblEmail": "Email",
+        "lblContent": "Reason",
+        "btnClose": "Close",
+        "btnCancel": "Cancel",
+        "btnSubmit": "Submit",
+        "success": "Thanks!",
+        "error": "Ooops! There was an error."
+      }
+    },
+    "footer": {
+      "termCodition": "Terms and Coditions",
+      "policy": "Privacy Policy",
+      "reserved": "All rights reserved."
     }
   }
 }

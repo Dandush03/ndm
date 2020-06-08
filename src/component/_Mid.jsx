@@ -7,7 +7,7 @@ import img1 from '../media/bottom/gallery_01.jpg';
 import img2 from '../media/bottom/gallery_02.jpg';
 
 import videoEn from '../media/mid/ndm-english.mp4';
-import videoSp from '../media/bottom/gallery_04.jpg';
+import videoSp from '../media/mid/ndm-spanish.mp4';
 import BrandLogo from '../media/header/logo';
 
 const lang = localStorage.getItem('lang');
@@ -76,7 +76,7 @@ export default class Mid extends Component {
           <h3>{this.phone}</h3>
           <p>{this.span2}</p>
           <h4>{this.h4}</h4>
-          <button type="button">{this.btn}</button>
+          <button type="button" name="getApointment">{this.btn}</button>
         </div>
       </section>
     );

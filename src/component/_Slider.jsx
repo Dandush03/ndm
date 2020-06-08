@@ -33,7 +33,7 @@ const ImageElement = (arg) => {
           <p>{topSection[e].span}</p>
           <h2>{topSection[e].span}</h2>
           <div className="btn-container">
-            <button type="button">{topSection[e].btn}</button>
+            <button type="button" name="getApointment">{topSection[e].btn}</button>
           </div>
         </div>
       </div>,
