@@ -1,68 +1,128 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# react-capstone
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![LinkedIn][linkedin-shield2]][linkedin-url2]
+[![Hireable][hireable]][hireable-url]
 
-## Available Scripts
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+ <h2 align="center"> NDM Law Firm & Associates </h2>
 
-In the project directory, you can run:
+  <p align="center">
+    <br />
+    <a href="https://github.com/Dandush03/ndm"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="www.ndm.com.pa">View Live</a>
+    ·
+    <a href="https://github.com/Dandush03/ndm/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Dandush03/ndm/issues">Request Feature</a>
+  </p>
 
-### `yarn start`
+</p>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Table of Contents
+* [About the Project](#about-the-project)
+  * [Built With](#built-with)
+* [Required Installations](#Required-Installations)
+  * [Installing](#Installing)
+  * [Instructions](#Instructions)
+* [Contact](#contact)
+* [Contributing](#Contributing)
+* [Show your support](#Show-your-support)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## About The Project
 
-### `yarn test`
+This project is a multi-languages of a buffet that allows its customers to create a new request to make an appointment. This page was written in 4 different languages through loading the necessary data through a JSON file
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="center">
+  <img width="1187" alt="demo" src="https://user-images.githubusercontent.com/51087936/84189226-f0b2fb80-aa62-11ea-937c-1f98c49f97cd.png">
+</p>
 
-### `yarn build`
+### Built With
+The project was developed using the following technologies:
+- [React](https://es.reactjs.org/)
+- [JSX](https://reactjs.org/docs/introducing-jsx.html)
+- [Sass](https://sass-lang.com/)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Required Installations
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Installing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p>Install the following to get this project running in your machine:</p>
 
-### `yarn eject`
+### Instructions
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<p>Follow these steps:</p>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Clone the Repository
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```Shell
+user@pc:~$ git clone https://github.com/Dandush03/ndm.git
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Click on the console and to go to the folder that was created
 
-## Learn More
+```Shell
+user@pc:~$ cd react-capstone
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+user@pc:~$ npm install or yarn
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+user@pc:~$ npm run start or yarn start
+```
 
-### Code Splitting
+Open your browser on [http://localhost:3000](http://localhost:3000)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Contact
 
-### Analyzing the Bundle Size
+👤 **Daniel Laloush**
+ - Portfolio: [dlaloush.me](https://dlaloush.me) 
+ - LinkedIn: [Daniel Laloush](https://www.linkedin.com/in/daniel-laloush-0a7331a9) 
+ - Github: [@Dandush03](https://github.com/Dandush03) 
+ - Twitter: [@d_laloush](https://twitter.com/d_laloush) 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+<p align="center">
 
-### Making a Progressive Web App
+  Project Link: [https://github.com/Dandush03/ndm](https://github.com/Dandush03/ndm)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+</p>
 
-### Advanced Configuration
+## Special Thanks
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Thanks to [Microveser](https://www.microverse.org/) for this great learning experience and for guiding me on my path as a full stack developer
 
-### Deployment
+Thanks to [NDM Law Firm & Associates](https://www.ndm.com.pa/) for choosing me for this amazing project
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+## 🤝 Contributing
 
-### `yarn build` fails to minify
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Feel free to check the [issues page](https://github.com/Dandush03/ndm/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[contributors-shield]: https://img.shields.io/github/contributors/Dandush03/ndm.svg?style=flat-square
+[contributors-url]: https://github.com/Dandush03/ndm/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Dandush03/ndm.svg?style=flat-square
+[forks-url]: https://github.com/Dandush03/ndm/network/members
+[stars-shield]: https://img.shields.io/github/stars/Dandush03/ndm.svg?style=flat-square
+[stars-url]: https://github.com/Dandush03/ndm/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Dandush03/ndm.svg?style=flat-square
+[issues-url]: https://github.com/Dandush03/ndm/issues
+[license-shield]: https://img.shields.io/github/license/Dandush03/ndm.svg?style=flat-square
+[license-url]: https://github.com/Dandush03/ndm/blob/master/LICENSE.txt
+[linkedin-shield2]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url2]: https://www.linkedin.com/in/daniel-laloush/
+[hireable]: https://cdn.rawgit.com/hiendv/hireable/master/styles/flat/yes.svg
+[hireable-url]: https://www.linkedin.com/in/daniel-laloush/

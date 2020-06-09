@@ -8,7 +8,7 @@ import Contact from './component/Contact';
 const language = localStorage.getItem('lang');
 
 if (!language) {
-  localStorage.setItem('lang', 'en');
+  localStorage.setItem('lang', 'sp');
 }
 
 const HandlerComponent = (name) => {

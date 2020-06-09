@@ -111,13 +111,15 @@ $small-line: 1px solid #fff;
     width: 40%;
 
     h2 {
+      padding: 0;
+
       &::before {
         border-top: $line;
         content: '';
         padding: 0;
         position: absolute;
         right: 105%;
-        top: 30px;
+        top: 25px;
         width: 40px;
       }
     }

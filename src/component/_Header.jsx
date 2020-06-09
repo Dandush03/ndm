@@ -2,6 +2,7 @@ import '../stylesheet/header.scss';
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Helmet } from 'react-helmet';
 
 import toggleFunction from '../javascript/header';
 
@@ -16,9 +17,9 @@ const languagesChanger = (id) => {
 
 const MenuElement = (arg) => {
   const { menu: { home, /* about , */ contact } } = arg;
-
   return (
     <ul>
+      {localStorage.getItem('lang') === 'hb' ? <Helmet htmlAttributes={{ dir: 'rtl' }} /> : null}
       <li className="page-menu-items">
         <button type="button" onClick={() => arg.handler('Home')}>
           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">

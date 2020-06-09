@@ -47,6 +47,12 @@ export default class Home extends Component {
     Object.keys(contact).forEach((obj) => {
       contact[obj].onclick = () => { this.formHandler(contact[obj]); };
     });
+
+    if (localStorage.getItem('lang') === 'hb') {
+      const hebrew = document.body;
+      console.log(hebrew);
+      hebrew.classList.add('hebrew');
+    }
   }
 
   formHandler(arg) {
