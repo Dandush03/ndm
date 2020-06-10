@@ -270,7 +270,7 @@
     "forms": {
       "contact": {
         "title": "Randevu Talep Et",
-        "brief": "We have world-class, flexible support via chat, email, and phone.",
+        "brief": "Size yüksek standartlarda canlı destek veriyoruz , elektronik posta ,Telefon ve Chat vasıtası ile bize ulaşın ",
         "lblName": "Ad & Soyad",
         "lblPhone": "Telefon",
         "lblEmail": "Elektronik Posta",
@@ -282,23 +282,23 @@
         "error": "Ooops! There was an error."
       },
       "info": {
-        "title": "Get A Free Evaluation",
-        "brief": "We have world-class, flexible support via chat, email, and phone.",
-        "lblName": "Full Name",
-        "lblPhone": "Phones",
-        "lblEmail": "Email",
-        "lblContent": "Reason",
-        "btnClose": "Close",
-        "btnCancel": "Cancel",
-        "btnSubmit": "Submit",
-        "success": "Thanks!",
+        "title": "Ücretsiz değerlendirme talep edin",
+        "brief": "Size yüksek standartlarda canlı destek veriyoruz , elektronik posta ,Telefon ve Chat vasıtası ile bize ulaşın.",
+        "lblName": "Ad & Soyad",
+        "lblPhone": "Telefon",
+        "lblEmail": "Elektronik Posta ",
+        "lblContent": "Neden ",
+        "btnClose": "Kapali",
+        "btnCancel": "İptal",
+        "btnSubmit": "Onayla",
+        "success": "Teşekkürler!",
         "error": "Ooops! There was an error."
       }
     },
     "footer": {
-      "termCodition": "Terms and Coditions",
-      "policy": "Privacy Policy",
-      "reserved": "All rights reserved."
+      "termCodition": "şartlar ve koşullar",
+      "policy": "Gizlilik Politikası",
+      "reserved": "Tüm hakları saklıdır."
     }
   },
   "sp": {
