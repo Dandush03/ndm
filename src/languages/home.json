@@ -478,7 +478,7 @@
           "btn": "צור קשר"
         },
         "slide3": {
-          "span": "Leading Criminal Defense Lawyer Team",
+          "span": "פתרונות חכמים זוקוקים לעורכ דין יצירתיים",
           "title": "מגיע לך השירות הטוב ביותר",
           "btn": "צור קשר"
         }
@@ -486,15 +486,15 @@
       "btns": {
         "app": {
           "span": "להזמין עכשיו",
-          "text": "פגישה"
+          "text": "בדיקת מצב משפתי"
         },
         "ev": {
-          "span": "get free case",
-          "text": "evaluation"
+          "span": "בדיקה מצבך משפתית ",
+          "text": "במשרדינו"
         },
         "pay": {
-          "span": "כניסה לחשבון ",
-          "text": "באינטרנט"
+          "span": "כניסה לחשבונך ",
+          "text": "אונלינה"
         }
       },
       "brief": {
@@ -557,7 +557,7 @@
     },
     "contact": {
       "title": "צור קשר",
-      "brief": "We have world-class, flexible support via chat, email, and phone. We guarantee that you’ll be able to have any issue resolved within 24 hours. You can contact our support immediately here.",
+      "brief": "צור קשר",
       "lblPhone": "טלפונים שלנו",
       "phone": "+(507) 830 2656",
       "fax": "+(597) 830 2655",
@@ -572,7 +572,7 @@
     "forms": {
       "contact": {
         "title": "קבע פגישה",
-        "brief": "We have world-class, flexible support via chat, email, and phone.",
+        "brief": "יש לנו תמיכה גמישה ברמה עולמית באמצעות צ'אט, דואר אלקטרוני וטלפון.",
         "lblName": "שם מלה",
         "lblPhone": "טלפון",
         "lblEmail": "מאייל",
@@ -584,23 +584,23 @@
         "error": "Ooops! There was an error."
       },
       "info": {
-        "title": "Get A Free Evaluation",
-        "brief": "We have world-class, flexible support via chat, email, and phone.",
-        "lblName": "Full Name",
-        "lblPhone": "Phones",
-        "lblEmail": "Email",
-        "lblContent": "Reason",
-        "btnClose": "Close",
-        "btnCancel": "Cancel",
-        "btnSubmit": "Submit",
-        "success": "Thanks!",
+        "title": "בדיקת ייעוץ משפטי חינם",
+        "brief": "יש לנו תמיכה גמישה ברמה עולמית באמצעות צ'אט, דואר אלקטרוני וטלפון.",
+        "lblName": "שם מלה",
+        "lblPhone": "טלפון",
+        "lblEmail": "אימייל",
+        "lblContent": "סיבה",
+        "btnClose": "סגור",
+        "btnCancel": "מבותל",
+        "btnSubmit": "תאשר",
+        "success": "תודה!",
         "error": "Ooops! There was an error."
       }
     },
     "footer": {
-      "termCodition": "Terms and Coditions",
-      "policy": "Privacy Policy",
-      "reserved": "All rights reserved."
+      "termCodition": "תנאים",
+      "policy": "מדיניות פרטיות",
+      "reserved": "כל הזכויות שמורות."
     }
   }
 }
