@@ -73,7 +73,7 @@ export default class Mid extends Component {
         <div className="contact-now wrapper">
           <BrandLogo />
           <p>{this.span1}</p>
-          <h3>{this.phone}</h3>
+          <h3 className="phone">{this.phone}</h3>
           <p>{this.span2}</p>
           <h4>{this.h4}</h4>
           <button type="button" name="getApointment">{this.btn}</button>

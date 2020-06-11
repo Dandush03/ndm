@@ -45,8 +45,8 @@ export default class Contact extends Component {
           <h2>{contact.title}</h2>
           <p>{contact.brief}</p>
           <h3>{contact.lblPhone}</h3>
-          <p>{contact.phone}</p>
-          <p>{contact.fax}</p>
+          <p className="phone">{contact.phone}</p>
+          <p className="phone">{contact.fax}</p>
           <h3>{contact.lblEmail}</h3>
           <p>{contact.email}</p>
         </div>

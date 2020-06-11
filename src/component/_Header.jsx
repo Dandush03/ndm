@@ -61,7 +61,7 @@ const MenuDiv = (arg) => (
     </div>
     <div className="items">
       <MenuElement menu={arg.menu} handler={arg.handler} />
-      <p>+(507) 830 2656</p>
+      <p className="phone">+(507) 830 2656</p>
     </div>
   </menu>
 );
