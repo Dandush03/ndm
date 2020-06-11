@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b3ddf69b.chunk.css",
+    "main.js": "/static/js/main.880ba56b.chunk.js",
+    "main.js.map": "/static/js/main.880ba56b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.808b8eee.js",
+    "runtime-main.js.map": "/static/js/runtime-main.808b8eee.js.map",
+    "static/js/2.35d68b6a.chunk.js": "/static/js/2.35d68b6a.chunk.js",
+    "static/js/2.35d68b6a.chunk.js.map": "/static/js/2.35d68b6a.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.67730cdb00e0aea29e5ee3ea49145288.js": "/precache-manifest.67730cdb00e0aea29e5ee3ea49145288.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.b3ddf69b.chunk.css.map": "/static/css/main.b3ddf69b.chunk.css.map",
+    "static/js/2.35d68b6a.chunk.js.LICENSE.txt": "/static/js/2.35d68b6a.chunk.js.LICENSE.txt",
+    "static/media/contact.scss": "/static/media/SuezOne-Regular.0d5f74db.ttf",
+    "static/media/gallery_01.jpg": "/static/media/gallery_01.609707bb.jpg",
+    "static/media/gallery_02.jpg": "/static/media/gallery_02.28749e82.jpg",
+    "static/media/info.png": "/static/media/info.cb0b212b.png",
+    "static/media/areas.scss": "/static/media/list-type.c91343f2.svg",
+    "static/media/ndm-english.mp4": "/static/media/ndm-english.9715e239.mp4",
+    "static/media/ndm-spanish.mp4": "/static/media/ndm-spanish.cb1b4c5d.mp4",
+    "static/media/panama1.png": "/static/media/panama1.694ba676.png",
+    "static/media/panama2.jpg": "/static/media/panama2.2444d6b0.jpg",
+    "static/media/panama3.jpg": "/static/media/panama3.ff15a53e.jpg",
+    "static/media/panama4.jpg": "/static/media/panama4.8a4bb5b2.jpg",
+    "static/media/quote.jpg": "/static/media/quote.761b0943.jpg",
+    "static/media/sub-hero.jpg": "/static/media/sub-hero.ea5e2552.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.808b8eee.js",
+    "static/js/2.35d68b6a.chunk.js",
+    "static/css/main.b3ddf69b.chunk.css",
+    "static/js/main.880ba56b.chunk.js"
+  ]
+}
