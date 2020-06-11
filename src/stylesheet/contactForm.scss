@@ -1,0 +1,79 @@
+@import './global';
+
+$c-bg: rgba(61, 32, 32, .486);
+$c-bg-frm: #f5f5f5;
+
+@keyframes form-pop {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.pop-form {
+  overflow: hidden;
+
+  .active {
+    display: flex;
+  }
+}
+
+.form-container {
+  animation: form-pop .5s ease-in;
+  background-color: $c-bg;
+  display: none;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  transition: height .5s ease-in-out;
+  width: 100%;
+  z-index: 99999;
+
+  h2 {
+    text-align: center;
+  }
+
+  form {
+    align-self: center;
+    background-color: $c-bg-frm;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    padding: 15px;
+
+    >:last-child {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  button {
+    margin: 10px;
+    padding: 5px 15px;
+  }
+
+  input {
+    padding: 10px;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+  }
+
+  textarea {
+    min-height: 70px;
+    resize: vertical;
+  }
+}
+
+@media only screen and (min-width: $pad-width) {
+  .form-container {
+    form {
+      max-width: 350px;
+    }
+  }
+}

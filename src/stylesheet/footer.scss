@@ -1,0 +1,63 @@
+@import './global';
+
+$c-bg: #02050c;
+$white: #9e9e9e;
+$vertical-line: 1px rgb(60, 54, 93) solid;
+$separator: rgb(214, 231, 116);
+
+footer {
+  background-color: $c-bg;
+
+  .brand {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+  }
+
+  .media-icons {
+    path {
+      fill: $white;
+    }
+  }
+
+  .reserverd {
+    border-top: $vertical-line;
+    padding: 0 20px;
+
+    .wrapper {
+      color: $white;
+      display: flex;
+      flex-wrap: wrap;
+      font-weight: 300;
+      height: 50px;
+      justify-content: center;
+      margin: 15px auto;
+      white-space: nowrap;
+    }
+
+    span {
+      margin: 0 10px;
+      position: relative;
+
+      &::before {
+        background-color: $separator;
+        content: '';
+        height: 1.3rem;
+        position: absolute;
+        right: calc(100% + 10px);
+        top: 0;
+        width: 1px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $pad-width) {
+  footer {
+    .reserverd {
+      .wrapper {
+        justify-content: flex-end;
+      }
+    }
+  }
+}

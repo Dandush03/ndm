@@ -1,0 +1,276 @@
+@import './global';
+
+$image-cover: rgba(0, 0, 0, .397);
+
+$c-font: #fff;
+$c-btn-font: #fff;
+$c-btns-font: #ad8f57;
+$c-slide-dots: #bbb;
+$c-slide-dots-active: #fff;
+$c-bg: #000;
+$c-button: #a5864c;
+$c-btn-bg: #343b4e;
+$c-btn-bg-hover: #14213d;
+
+$border-vertical-line: 2px solid #d4d4d4;
+$border-btn: 1px solid #424242;
+$border-btns-section: 1px solid #504f5f;
+
+@keyframes showIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bottomToTop {
+  0% {
+    transform: translateY(5000px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes topToBottom {
+  0% {
+    transform: translateY(-2700px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes leftToRight {
+  0% {
+    transform: translateX(-5000px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slider {
+  background-color: $c-bg;
+  display: flex;
+  height: 50vh;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    bottom: -9999px;
+    left: -9999px;
+    margin: auto;
+    min-height: 100%;
+    position: absolute;
+    right: -9999px;
+    top: -9999px;
+    width: 100%;
+  }
+
+  .enactive {
+    animation-duration: 2s;
+    animation-name: showOut;
+    opacity: 0;
+  }
+
+  .active {
+    animation-duration: 2s;
+    animation-name: showIn;
+    opacity: 1;
+
+    p {
+      animation: topToBottom 3s ease;
+    }
+
+    h2 {
+      animation: leftToRight 3s ease;
+    }
+
+    button {
+      animation: bottomToTop 3s ease;
+    }
+  }
+}
+
+.slide-img-content {
+  animation: downToTop 2s;
+  color: $c-font;
+  display: none;
+  left: 20%;
+  position: absolute;
+  top: 20%;
+  width: 35%;
+  z-index: 2;
+
+  p {
+    font-size: 150%;
+    position: relative;
+
+    &::before {
+      border-top: $border-vertical-line;
+      content: '';
+      position: absolute;
+      right: 105%;
+      top: 35%;
+      width: 15%;
+    }
+  }
+
+  h2 {
+    font-family: $gilda-font;
+    font-size: 250%;
+    margin-top: 0;
+  }
+
+  button {
+    background-color: $c-button;
+    border: $border-btn;
+    color: $c-btn-font;
+    cursor: pointer;
+    font-family: $suez-font;
+    font-size: 100%;
+    font-weight: 500;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    z-index: 2;
+  };
+}
+
+.slider-changer {
+  background-color: $image-cover;
+  display: none;
+  height: 80vh;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  .prev,
+  .next {
+    background-color: transparent;
+    border: 0;
+    color: $c-font;
+    cursor: pointer;
+    font-size: xx-large;
+    z-index: 1;
+  }
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 90%;
+  width: 100%;
+  z-index: 2;
+
+  .dot {
+    background-color: $c-slide-dots;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 15px;
+    margin: 0 3px 3px 0;
+    transition: background-color .6s ease;
+    width: 15px;
+  }
+
+  .active,
+  .dot {
+    &:hover {
+      background-color: $c-slide-dots-active;
+    }
+  }
+}
+
+.btns-section {
+  background-color: $c-btn-bg;
+  width: 100%;
+
+  >div {
+    border: $border-btns-section;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    transition: background-color 1s ease;
+  }
+
+  img {
+    margin: auto 0;
+  }
+
+  .content {
+    color: $c-font;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 20px;
+    width: 50%;
+  }
+
+  span {
+    color: $c-btns-font;
+    font-family: $suez-font;
+    font-size: 80%;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-family: $gilda-font;
+    margin: 0;
+    text-transform: capitalize;
+  }
+
+  >:hover {
+    background-color: $c-btn-bg-hover;
+  }
+}
+
+@media only screen and (min-width: $pad-width) {
+  .slider {
+    height: 80vh;
+  }
+
+  .slide-img-content {
+    display: block;
+  }
+
+  .slider-changer {
+    display: flex;
+  }
+
+  .dots-container {
+    top: 95%;
+  }
+
+  .btns-section {
+    display: flex;
+    height: 20vh;
+
+    >div {
+      width: calc(100% / 3);
+
+      >:nth-child(even) {
+        border-left: 0;
+        border-right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,188 @@
+@import './stylesheet/global.scss';
+
+@keyframes rigthToLeft {
+  0% {
+    transform: translateX(5000px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.hebrew {
+  .phone {
+    direction: ltr;
+  }
+
+  .page-menu-items {
+    svg {
+      margin-left: 5px;
+      margin-right: unset;
+    }
+  }
+
+  .items {
+    >p {
+      margin-left: unset;
+      margin-right: 25px;
+      text-align: right;
+    }
+  }
+
+  .slider {
+    .active {
+      animation-duration: 2s;
+      animation-name: showIn;
+      opacity: 1;
+
+      h2 {
+        animation: rigthToLeft 3s ease;
+      }
+    }
+  }
+
+  .slide-img-content {
+    left: unset;
+    position: absolute;
+    right: 20%;
+    text-align: right;
+
+    p {
+      &::before {
+        left: 105%;
+        right: unset;
+      }
+    }
+  }
+
+  .brief-section {
+    h3 {
+      float: right;
+    }
+
+    h2 {
+      text-align: right;
+
+      &::before {
+        left: 105%;
+        right: unset;
+      }
+    }
+
+    p {
+      text-align: right;
+    }
+  }
+
+  .btns-section {
+
+    >div {
+      text-align: right;
+    }
+  }
+
+  .practice-areas {
+    h2 {
+      &::before {
+        left: 105%;
+        right: unset;
+      }
+    }
+
+    li {
+      &::before {
+        left: 95%;
+        right: unset;
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .quote-container {
+    img {
+      transform: scaleX(-1);
+    }
+  }
+
+  .quote-content {
+    margin-left: unset;
+    margin-right: 12%;
+    text-align: right;
+
+    p {
+      margin-left: unset;
+      margin-right: 5%;
+      padding-right: 10%;
+
+      &::before {
+        left: 90%;
+        right: unset;
+      }
+    }
+
+    span {
+      margin-left: unset;
+      margin-right: 40px;
+      padding-left: 20%;
+      padding-right: unset;
+
+      &::before {
+        left: 105%;
+        right: unset;
+      }
+    }
+
+    @media only screen and (min-width: $pad-width) {
+      margin-left: unset;
+      margin-right: 12%;
+      text-align: right;
+
+      h2 {
+        &::before {
+          left: 105%;
+          right: unset;
+        }
+      }
+
+      p {
+        margin-left: unset;
+        margin-right: 14%;
+        padding-right: 0;
+
+        &::before {
+          left: 103%;
+          right: unset;
+        }
+      }
+
+      span {
+        margin-left: unset;
+        margin-right: 40px;
+        padding-left: 20%;
+        padding-right: unset;
+
+        &::before {
+          left: 105%;
+          right: unset;
+        }
+      }
+    }
+  }
+}

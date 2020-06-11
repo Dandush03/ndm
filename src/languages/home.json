@@ -1,0 +1,606 @@
+{
+  "en": {
+    "header": {
+      "menu": {
+        "home": "Home",
+        "about": "About",
+        "contact": "Contacts"
+      }
+    },
+    "home": {
+      "topSection": {
+        "slide0": {
+          "span": "Smart solutions need creative lawyers",
+          "title": "You Deserve best service",
+          "btn": "get in touch"
+        },
+        "slide1": {
+          "span": "Smart solutions need creative lawyers",
+          "title": "You Deserve best service",
+          "btn": "get in touch"
+        },
+        "slide2": {
+          "span": "Smart solutions needs creative lawyers",
+          "title": "You Deserve best service",
+          "btn": "get in touch"
+        },
+        "slide3": {
+          "span": "Leading Criminal Defense Lawyer Team",
+          "title": "You Deserve best service",
+          "btn": "get in touch"
+        }
+      },
+      "btns": {
+        "app": {
+          "span": "book an",
+          "text": "appointment"
+        },
+        "ev": {
+          "span": "get free case",
+          "text": "evaluation"
+        },
+        "pay": {
+          "span": "Log in",
+          "text": "online"
+        }
+      },
+      "brief": {
+        "content": {
+          "title": "Why you need creative solutions to reach your goal?",
+          "firstContent": {
+            "firstLetter": "N",
+            "content": "DM is an international law firm that serves individuals,companies, governments and financial institutions. Our long history as a global firm means we are uniquely placed to help our clients resolve"
+          },
+          "secondContent": "their most complex legal challenges wherever they are. We put our clients first and we are always responsive to your needs, priorities and pressures. We understand your perspective and show that we think and care about your concerns as much as you do."
+        }
+      },
+      "practiceAreas": {
+        "content": {
+          "title": "Practice Areas",
+          "brief": "We are agile, inventive and determined to navigate our clients through today's complex business environment. We look for approaches that might not be obvious to find original solutions.",
+          "list1": {
+            "1": "Business & Corprate Law",
+            "2": "Commercial & Real Estate",
+            "3": "Immigration & Labor",
+            "4": "Litigation & Arbitration",
+            "5": "Procedural  & Civil Law",
+            "6": "Intellectual Property ",
+            "7": "Consumer Protection ",
+            "8": "Family Law "
+          },
+          "list2": {
+            "9": "Taxation",
+            "10": "International Law",
+            "11": "Banking & Finance",
+            "12": "Health Registrations",
+            "13": "Legal Auctions perchases",
+            "14": "Offshore Legal services",
+            "15": "Other Practice Areas",
+            "16": "Criminal Law"
+          }
+        }
+      },
+      "mid": {
+        "images": {
+          "image1": "",
+          "emptyString": "",
+          "image2": ""
+        },
+        "content": {
+          "span1": "call us 24/7",
+          "phone": "+(507) 8302656 & + 1 678 999 2694",
+          "span2": "OR",
+          "h4": "Schedule a Free Consultation",
+          "btn": "make an appointment"
+        }
+      },
+      "bottom": {
+        "quote": {
+          "title": "Why clients are our priority?",
+          "content": "We apply our global knowledge to our clients' needs. In an increasingly interconnected world, you look to us to combine an international perspective with local insight to help resolve your  challenges.",
+          "author": "by Melva Herrera De Lici , Founder"
+        }
+      }
+    },
+    "contact": {
+      "title": "Our Contacts",
+      "brief": "We have world-class, flexible support via chat, email, and phone. We guarantee that you’ll be able to have any issue resolved within 24 hours. You can contact our support immediately here.",
+      "lblPhone": "Phones",
+      "phone": "+(507) 830 2656",
+      "fax": "+(597) 830 2655",
+      "lblEmail": "Email",
+      "email": "info@ndm.com.pa",
+      "lblAddress": "Address",
+      "brand1": "Panama City",
+      "brand2": "Playa Venado",
+      "address1": "Oceania Business Plaza, Torre 1000, 15th floor, Office 15-C1",
+      "address2": "Playa Venado God knows where"
+    },
+    "forms": {
+      "contact": {
+        "title": "Book An Apointment",
+        "brief": "We have world-class, flexible support via chat, email, and phone.",
+        "lblName": "Full Name",
+        "lblPhone": "Phones",
+        "lblEmail": "Email",
+        "lblContent": "Reason",
+        "btnClose": "Close",
+        "btnCancel": "Cancel",
+        "btnSubmit": "Submit",
+        "success": "Thanks!",
+        "error": "Ooops! There was an error."
+      },
+      "info": {
+        "title": "Get A Free Evaluation",
+        "brief": "We have world-class, flexible support via chat, email, and phone.",
+        "lblName": "Full Name",
+        "lblPhone": "Phones",
+        "lblEmail": "Email",
+        "lblContent": "Reason",
+        "btnClose": "Close",
+        "btnCancel": "Cancel",
+        "btnSubmit": "Submit",
+        "success": "Thanks!",
+        "error": "Ooops! There was an error."
+      }
+    },
+    "footer": {
+      "termCodition": "Terms and Coditions",
+      "policy": "Privacy Policy",
+      "reserved": "All rights reserved."
+    }
+  },
+  "tr": {
+    "header": {
+      "menu": {
+        "home": "Ana Sayfa ",
+        "about": "Bizi Tanıyın",
+        "contact": "İletişim"
+      }
+    },
+    "home": {
+      "topSection": {
+        "slide0": {
+          "span": "Akıllı çözümler yaratıcı avukatlar gerektirir",
+          "title": "Siz en iyi servisi hak ediyorsunuz",
+          "btn": "İletişime geçin"
+        },
+        "slide1": {
+          "span": "Akıllı çözümler yaratıcı avukatlar gerektirir",
+          "title": "Siz en iyi servisi hak ediyorsunuz",
+          "btn": "İletişime geçin"
+        },
+        "slide2": {
+          "span": "Akıllı çözümler yaratıcı avukatlar gerektirir",
+          "title": "Siz en iyi servisi hak ediyorsunuz",
+          "btn": "İletişime geçin"
+        },
+        "slide3": {
+          "span": "Akıllı çözümler yaratıcı avukatlar gerektirir",
+          "title": "Siz en iyi servisi hak ediyorsunuz",
+          "btn": "İletişime geçin"
+        }
+      },
+      "btns": {
+        "app": {
+          "span": "Talep et",
+          "text": "Randevu"
+        },
+        "ev": {
+          "span": "Ücretsiz Ön Görüşme",
+          "text": "Değerlendirme"
+        },
+        "pay": {
+          "span": "Giriş Yap",
+          "text": "Hesabınıza Giriş"
+        }
+      },
+      "brief": {
+        "content": {
+          "title": "Neden bizim yaratıcı cözümlerimize ihtiyacınız var?",
+          "firstContent": {
+            "firstLetter": "N ",
+            "content": "DM bireylere, şirketlere, hükümetlere ve finans kuruluşlarına hizmet veren uluslararası bir hukuk bürosudur. Küresel bir firma olarak uzun geçmişimiz, müşterilerimizin nerede olurlarsa olsunlar en karmaşık yasal zorluklarını çözmelerine"
+          },
+          "secondContent": "yardımcı olmak bizim en önemli hedefimizdir. Müşterilerimizi ilk sıraya koyarız ve her zaman ihtiyaçlarına, önceliklerine ve sorunlarına  cevap veririz. Bakış açınızı anlar ve endişelerinizi sizin kadar düşündüğümüzü ve önemsediğimizi hissettiririz."
+        }
+      },
+      "practiceAreas": {
+        "content": {
+          "title": "Faliyet alanlarımız ",
+          "brief": "Çevik, yaratıcı ve günümüzün karmaşık iş ortamında müşterilerimiz doğru yönlendirmeye kararlıyız. Müşterilerimize her zaman orijinal çözümler ve açık yaklaşımlar arıyoruz.",
+          "list1": {
+            "1": "İş hukuku ve Şirketler hukuku",
+            "2": "Ticaret hukuku & Emlak",
+            "3": "Göç & İş Vizesi",
+            "4": "Dava & Tahkim Hukuku",
+            "5": "Usul ve Medeni Kukuk",
+            "6": "Fikri Mülkiyet",
+            "7": "Tüketici koruma ",
+            "8": "Aile Hukuku"
+          },
+          "list2": {
+            "9": "Vergi Kanunu",
+            "10": "Uluslar arası hukuk",
+            "11": "Bankacılık ve Finans",
+            "12": "Sağlık & Malpractice hukuku",
+            "13": "İcra Takibinden Mülk alımı",
+            "14": "OffShore şirket servisi",
+            "15": "Diğer Faliyet alanları ",
+            "16": "Suç Hukuku"
+          }
+        }
+      },
+      "mid": {
+        "images": {
+          "image1": "",
+          "emptyString": "",
+          "image2": ""
+        },
+        "content": {
+          "span1": "Bizi arayın 24/7",
+          "phone": "+(507) 8302656 & + 1 678 999 2694",
+          "span2": "YADA",
+          "h4": "Ücretsiz Ön görüşme talep edin",
+          "btn": "Randevu talep edin "
+        }
+      },
+      "bottom": {
+        "quote": {
+          "title": "Neden önceliğimiz hep müşterilerimizdir?",
+          "content": "Global bilgimizi müşterilerimizin ihtiyaçlarına uyguluyoruz. Giderek daha fazla birbirine bağlı bir dünyada, bizden beklenen sorunlarınızı çözmemize yardımcı olmak için uluslararası bir bakış açısını yerel bilgilerle birleştiriyoruz.",
+          "author": "by Melva Herrera De Lici , Kurucu Uye"
+        }
+      }
+    },
+    "contact": {
+      "title": "Bize ulaşın",
+      "brief": "Bize ulaşabilmeniz için size elektronik posta , canlı sohpet ve telefon aracılığı ile birinci sınıf destek vermeye çalışıyoruz,bize hemen ulaşın.",
+      "lblPhone": "Telefon numaralarımız",
+      "phone": "+(507) 830 2656",
+      "fax": "+(507) 830 2655",
+      "lblEmail": "Elektronik posta ",
+      "email": "info@ndm.com.pa",
+      "lblAddress": "Adres",
+      "brand1": "Panama City",
+      "brand2": "Playa Venao",
+      "address1": "Oceania Business Plaza, Gökdelen 1000, 15.kat, Ofis 15-C1",
+      "address2": "Playa Veano ana yol"
+    },
+    "forms": {
+      "contact": {
+        "title": "Randevu Talep Et",
+        "brief": "Size yüksek standartlarda canlı destek veriyoruz , elektronik posta ,Telefon ve Chat vasıtası ile bize ulaşın ",
+        "lblName": "Ad & Soyad",
+        "lblPhone": "Telefon",
+        "lblEmail": "Elektronik Posta",
+        "lblContent": "Neden",
+        "btnClose": "Kapalı",
+        "btnCancel": "İptal",
+        "btnSubmit": "Onayla",
+        "success": "Teşekkürler",
+        "error": "Ooops! There was an error."
+      },
+      "info": {
+        "title": "Ücretsiz değerlendirme talep edin",
+        "brief": "Size yüksek standartlarda canlı destek veriyoruz , elektronik posta ,Telefon ve Chat vasıtası ile bize ulaşın.",
+        "lblName": "Ad & Soyad",
+        "lblPhone": "Telefon",
+        "lblEmail": "Elektronik Posta ",
+        "lblContent": "Neden ",
+        "btnClose": "Kapali",
+        "btnCancel": "İptal",
+        "btnSubmit": "Onayla",
+        "success": "Teşekkürler!",
+        "error": "Ooops! There was an error."
+      }
+    },
+    "footer": {
+      "termCodition": "şartlar ve koşullar",
+      "policy": "Gizlilik Politikası",
+      "reserved": "Tüm hakları saklıdır."
+    }
+  },
+  "sp": {
+    "header": {
+      "menu": {
+        "home": "Inicio",
+        "about": "Nosotros",
+        "contact": "Contacto"
+      }
+    },
+    "home": {
+      "topSection": {
+        "slide0": {
+          "span": "Soluciones inteligentes necesitan abogados creativos",
+          "title": "Usted merece el mejor servicio",
+          "btn": "póngase en contacto"
+        },
+        "slide1": {
+          "span": "Soluciones inteligentes necesitan abogados creativos",
+          "title": "Usted merece el mejor servicio",
+          "btn": "póngase en contacto"
+        },
+        "slide2": {
+          "span": "Soluciones inteligentes necesitan abogados creativos",
+          "title": "Usted merece el mejor servicio",
+          "btn": "Póngase en contacto"
+        },
+        "slide3": {
+          "span": "Equipo de abogados líder en defensa criminal",
+          "title": "Usted merece el mejor servicio",
+          "btn": "Póngase en contacto"
+        }
+      },
+      "btns": {
+        "app": {
+          "span": "Reserve su",
+          "text": "cita"
+        },
+        "ev": {
+          "span": "Obtenga una evaluación",
+          "text": "gratuita"
+        },
+        "pay": {
+          "span": "Inicie sesión",
+          "text": "en línea"
+        }
+      },
+      "brief": {
+        "content": {
+          "title": "Porqué usted necesita nuestras soluciones creativas?",
+          "firstContent": {
+            "firstLetter": "N",
+            "content": "DM es una Firma de Abogados Internacional que ofrece sus servicios a personas, empresas, gobiernos e instituciones financieras. Nuestra larga historia como una Firma global significa que nos mantenemos en una ubicación única para ayudar a nuestros clientes a resolver sus desafíos"
+          },
+          "secondContent": "legales más complejos donde sea que se encuentren. Nosotros ubicamos a nuestros clientes de primero y siempre estamos sensibles ante sus necesidades, prioridades y presiones. Entendemos su perspectiva y le mostramos que pensamos y nos preocupamos por sus asuntos tanto como usted."
+        }
+      },
+      "practiceAreas": {
+        "content": {
+          "title": "Áreas de práctica",
+          "brief": "Somos ágiles, inventivos y determinados para guiar a nuestros clientes a través del hoy complejo entorno empresarial. Nosotros buscamos enfoques que no podrían ser obvios para encontrar soluciones originales.",
+          "list1": {
+            "1": "Asuntos Corporativos",
+            "2": "Comercial y Bienes Raíces",
+            "3": "Migración y Laboral",
+            "4": "Litigio y Arbitraje",
+            "5": "Procesal y Derecho Civil",
+            "6": "Propiedad Intelectual",
+            "7": "Protección al Consumidor",
+            "8": "Derecho de Familia "
+          },
+          "list2": {
+            "9": "Impuestos",
+            "10": "Derecho Internacional",
+            "11": "Banca y Financiamiento",
+            "12": "Registro sanitario",
+            "13": "Remates judiciales",
+            "14": "Servicios Offshore",
+            "15": "Otras áreas de práctica",
+            "16": "Derecho Penal"
+          }
+        }
+      },
+      "mid": {
+        "images": {
+          "image1": "some text over here and here",
+          "emptyString": "",
+          "image2": "some text over here and here"
+        },
+        "content": {
+          "span1": "Llamenos 24/7",
+          "phone": "+(507) 8302656 & + 1 678 999 2694",
+          "span2": "O",
+          "h4": "Programe una consulta gratuita",
+          "btn": "Haga una cita"
+        }
+      },
+      "bottom": {
+        "quote": {
+          "title": "Porque los clientes son nuestra prioridad?",
+          "content": "Aplicamos nuestro conocimiento global a lo que nuestros clientes necesitan. En un mundo cada vez más interconectado, nos buscas para combinar una perspectiva internacional con la visión local y así ayudarte a resolver tus desafíos.",
+          "author": "Por Melva Herrera De Lici , Fundadora"
+        }
+      }
+    },
+    "contact": {
+      "title": "Nuestros contactos",
+      "brief": "Nosotros tenemos clase mundial, soporte flexible por chat, correo electrónico y teléfonos.  Usted puede contactar con nuestro soporte inmediatamente aquí.",
+      "lblPhone": "Teléfonos",
+      "phone": "+(507) 830 2656",
+      "fax": "+(597) 830 2655",
+      "lblEmail": "Correo Electrónico",
+      "email": "info@ndm.com.pa",
+      "lblAddress": "Dirección",
+      "brand1": "Ciudad de Panamá",
+      "brand2": "Playa Venao",
+      "address1": "Oceania Business Plaza, Torre 1000, 15th floor, Office 15-C1",
+      "address2": "Playa Venao Dios sabe donde"
+    },
+    "forms": {
+      "contact": {
+        "title": "Reserva una cita",
+        "brief": "Nosotros tenemos clase mundial, soporte flexible via chat, correo electrónico y teléfonos.",
+        "lblName": "Nombre completo",
+        "lblPhone": "Teléfonos",
+        "lblEmail": "Correo Electrónico",
+        "lblContent": "Motivo",
+        "btnClose": "Cerrar",
+        "btnCancel": "Cancelar",
+        "btnSubmit": "Enviar",
+        "success": "Gracias!",
+        "error": "Ooops! Hubo un error."
+      },
+      "info": {
+        "title": "Obtenga una evaluación gratuita",
+        "brief": "Nosotros tenemos clase mundial, soporte flexible via chat, correo electrónico y teléfonos.",
+        "lblName": "Nombre completo",
+        "lblPhone": "Teléfonos",
+        "lblEmail": "Correo electrónico",
+        "lblContent": "Motivo",
+        "btnClose": "Cerrar",
+        "btnCancel": "Cancelar",
+        "btnSubmit": "Enviar",
+        "success": "Gracias!",
+        "error": "Ooops! Hubo un error."
+      }
+    },
+    "footer": {
+      "termCodition": "Términos y condiciones",
+      "policy": "Política de privacidad",
+      "reserved": "Todos los derechos reservados."
+    }
+  },
+  "hb": {
+    "header": {
+      "menu": {
+        "home": "עמוד הבית",
+        "about": "על המשרד",
+        "contact": "צור קשר"
+      }
+    },
+    "home": {
+      "topSection": {
+        "slide0": {
+          "span": "פתרונות חכמים זקוקים לעורכי דין יצירתיים",
+          "title": "מגיע לך השירות הטוב ביותר",
+          "btn": "צור קשר"
+        },
+        "slide1": {
+          "span": "פתרונות חכמים זקוקים לעורכי דין יצירתיים",
+          "title": "מגיע לך השירות הטוב ביותר",
+          "btn": "צור קשר"
+        },
+        "slide2": {
+          "span": "פתרונות חכמים זקוקים לעורכי דין יצירתיים",
+          "title": "מגיע לך השירות הטוב ביותר",
+          "btn": "צור קשר"
+        },
+        "slide3": {
+          "span": "פתרונות חכמים זוקוקים לעורכ דין יצירתיים",
+          "title": "מגיע לך השירות הטוב ביותר",
+          "btn": "צור קשר"
+        }
+      },
+      "btns": {
+        "app": {
+          "span": "להזמין עכשיו",
+          "text": "בדיקת מצב משפתי"
+        },
+        "ev": {
+          "span": "בדיקה מצבך משפתית ",
+          "text": "במשרדינו"
+        },
+        "pay": {
+          "span": "כניסה לחשבונך ",
+          "text": "אונלינה"
+        }
+      },
+      "brief": {
+        "content": {
+          "title": "למה אתה זקוק לפתרונות יצירתיים כדי להגיע למטרה שלך?",
+          "firstContent": {
+            "firstLetter": "N",
+            "content": "DM הוא משרד עורכי דין בינלאומי המשרת יחידים, חברות, ממשלות ומוסדות פיננסיים. ההיסטוריה הארוכה שלנו כמשרד עולמי פירושה שאנו ממוקמים באופן ייחודי לעזור ללקוחותינו"
+          },
+          "secondContent": "האתגרים המשפטיים המורכבים ביותר שלהם באשר הם. אנו שמים את לקוחותינו ראשונים ואנחנו תמיד מגיבים לצרכים שלך, לסדרי העדיפויות ולחצים שלך. אנו מבינים את נקודת המבט שלך ומראים שאנחנו חושבים ודואגים לדאגות שלך כמוך"
+        }
+      },
+      "practiceAreas": {
+        "content": {
+          "title": "תחומי עיסוק",
+          "brief": "אנו זריזים, ממציאים ונחושים לנווט את לקוחותינו בסביבה העסקית המורכבת של ימינו. אנו מחפשים גישות שאולי לא ברור מאליו למצוא פתרונות מקוריים",
+          "list1": {
+            "1": "מסחריוחברות",
+            "2": "נדלן מסחרי",
+            "3": "הגירה ו אשורי עבודה",
+            "4": "ליטיגציה ובוררות",
+            "5": "משפט פרוצדוראלי ואזרחי",
+            "6": "קניין רוחני ",
+            "7": "חוק הגנת הצרכן ",
+            "8": "דיני משפחה "
+          },
+          "list2": {
+            "9": "מיסים",
+            "10": "עסקאות בינלאומיות",
+            "11": "בנקאות ומימון",
+            "12": "רישומי בריאות",
+            "13": "רכישות של מכירות פומביות חוקיות",
+            "14": "שירותי אופשור",
+            "15": "תחומי עיסוק אחרים",
+            "16": "פילילי"
+          }
+        }
+      },
+      "mid": {
+        "images": {
+          "image1": "",
+          "emptyString": "",
+          "image2": ""
+        },
+        "content": {
+          "span1": "התקשר אלינו 24/7",
+          "phone": "+(507) 8302656 & + 1 678 999 2694",
+          "span2": "ן",
+          "h4": "קבעו פגישת ייעוץ חינם",
+          "btn": "לקבוע פגישה"
+        }
+      },
+      "bottom": {
+        "quote": {
+          "title": "מדוע לקוחות בעדיפות שלנו?",
+          "content": "אנו מיישמים את הידע הגלובלי שלנו על צרכי הלקוחות שלנו. בעולם שמתקשר יותר ויותר, אתה מסתכל עלינו לשלב נקודת מבט בינלאומית עם תובנה מקומית כדי לעזור בפתרון האתגרים שלך.",
+          "author": "by Melva Herrera De Lici , Founder"
+        }
+      }
+    },
+    "contact": {
+      "title": "צור קשר",
+      "brief": "צור קשר",
+      "lblPhone": "טלפונים שלנו",
+      "phone": "+(507) 830 2656",
+      "fax": "+(597) 830 2655",
+      "lblEmail": "מאייל",
+      "email": "info@ndm.com.pa",
+      "lblAddress": "כתובת",
+      "brand1": "פנמה סיטי",
+      "brand2": "פליה וואנאו",
+      "address1": "Oceania Business Plaza, Torre 1000, 15th floor, Office 15-C1",
+      "address2": "פליה וואנאו פדאסי "
+    },
+    "forms": {
+      "contact": {
+        "title": "קבע פגישה",
+        "brief": "יש לנו תמיכה גמישה ברמה עולמית באמצעות צ'אט, דואר אלקטרוני וטלפון.",
+        "lblName": "שם מלה",
+        "lblPhone": "טלפון",
+        "lblEmail": "מאייל",
+        "lblContent": "סיבה",
+        "btnClose": "סגור",
+        "btnCancel": "בטל",
+        "btnSubmit": "שלח",
+        "success": "תודה!",
+        "error": "Ooops! There was an error."
+      },
+      "info": {
+        "title": "בדיקת ייעוץ משפטי חינם",
+        "brief": "יש לנו תמיכה גמישה ברמה עולמית באמצעות צ'אט, דואר אלקטרוני וטלפון.",
+        "lblName": "שם מלה",
+        "lblPhone": "טלפון",
+        "lblEmail": "אימייל",
+        "lblContent": "סיבה",
+        "btnClose": "סגור",
+        "btnCancel": "מבותל",
+        "btnSubmit": "תאשר",
+        "success": "תודה!",
+        "error": "Ooops! There was an error."
+      }
+    },
+    "footer": {
+      "termCodition": "תנאים",
+      "policy": "מדיניות פרטיות",
+      "reserved": "כל הזכויות שמורות."
+    }
+  }
+}

@@ -1,52 +1,55 @@
 {
-  "name": "ndm",
-  "version": "0.0.1",
-  "description": "NDM Law Firm & Associate",
+  "name": "ndm-law-firm",
+  "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "test": "jest",
-    "w-jest": "jest --watch",
-    "dev": "webpack --mode development",
-    "w-web": "webpack --watch --mode development",
-    "build": "webpack --mode production"
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "gh-pages": "^2.2.0",
+    "node-sass": "^4.14.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
+    "react-scripts": "3.4.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Dandush03/Microverse-JS-Capstone.git"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.11.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^2.5.1",
+    "sass-lint": "^1.13.1"
   },
   "author": "Daniel Laloush",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Dandush03/Microverse-JS-Capstone/issues"
+    "url": "https://github.com/Dandush03/ndm/issues"
   },
-  "homepage": "https://github.com/Dandush03/Microverse-JS-Capstone#readme",
-  "devDependencies": {
-    "@babel/preset-env": "^7.9.6",
-    "css-loader": "^3.5.2",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.2",
-    "identity-obj-proxy": "^3.0.0",
-    "jest": "^25.5.1",
-    "sass": "^1.26.3",
-    "sass-loader": "^8.0.2",
-    "style-loader": "^1.1.4",
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
-  },
-  "dependencies": {
-    "file-loader": "^6.0.0",
-    "url-loader": "^4.1.0",
-    "@fortawesome/fontawesome-free": "^5.13.0",
-    "@fortawesome/fontawesome-svg-core": "^1.2.28",
-    "@fortawesome/free-brands-svg-icons": "^5.13.0",
-    "@fortawesome/free-regular-svg-icons": "^5.13.0",
-    "@fortawesome/free-solid-svg-icons": "^5.13.0"
-  },
-  "jest": {
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
-      "\\.(s?css|less)$": "identity-obj-proxy"
-    }
-  }
+  "homepage": "https://dandush03.github.io/ndm-test-repo/"
 }

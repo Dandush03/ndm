@@ -1,0 +1,154 @@
+@import './global';
+
+$c-font: #fff;
+$c-first-letter: #bdac86;
+$c-bg: #14213d;
+$c-brief: #ad8f57;
+
+$line: 1px solid #afafaf;
+$border-practices: 1px solid #8d7e7e;
+
+.practice-areas-section {
+  font-family: $gilda-font;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.brief-section {
+  padding: 0 40px;
+  width: 100%;
+
+  >div {
+    height: fit-content;
+
+    >div {
+      height: fit-content;
+      padding: 25px;
+    }
+  }
+
+  h2 {
+    color: $c-brief * .7;
+  }
+
+  p {
+    align-self: center;
+    font-size: 100%;
+    hyphens: auto;
+    margin: 0;
+    text-align: left;
+    text-justify: inter-word;
+  }
+
+  h3 {
+    color: $c-first-letter;
+    float: left;
+    font-size: 300%;
+    font-weight: normal;
+    margin: 0 10px;
+  }
+}
+
+.practice-areas {
+  background-color: $c-bg;
+  display: flex;
+
+  >div {
+    padding: 0 40px;
+
+    >div,
+    ul {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      margin-top: 5%;
+      padding: 0 25px;
+    }
+
+    ul {
+      align-self: center;
+      margin: 0 auto;
+    }
+  }
+
+  h2 {
+    color: $c-font;
+    font-size: 200%;
+  }
+
+  p {
+    color: $c-brief;
+    font-size: 130%;
+    line-height: 2rem;
+  }
+
+  li {
+    border-top: $border-practices;
+    color: $c-font;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 90%;
+    padding: 10px 10%;
+    position: relative;
+    width: 100%;
+
+    &::before {
+      color: $c-font;
+      content: url('../media/list-type.svg');
+      position: absolute;
+      right: 95%;
+      top: 30%;
+    }
+  }
+}
+
+@media only screen and (min-width: $pad-width) {
+
+  .practice-areas-section {
+
+    h2 {
+      position: relative;
+
+      &::before {
+        border-top: $line;
+        content: '';
+        position: absolute;
+        right: 105%;
+        top: 12px;
+        width: 40px;
+      }
+    }
+  }
+
+  .brief-section {
+    display: flex;
+    height: 30vh;
+    justify-content: center;
+
+    >div {
+      align-self: center;
+      display: flex;
+
+      >div {
+        width: calc(100% / 3);
+      }
+    }
+  }
+
+  .practice-areas {
+    height: 50vh;
+    min-height: 420px;
+
+    >div {
+      display: flex;
+
+      >div,
+      ul {
+        margin-top: 5%;
+        width: calc(100% / 3);
+      }
+    }
+  }
+}

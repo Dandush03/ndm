@@ -1,0 +1,134 @@
+@import './global';
+
+$c-bg-header: #0e182c;
+$border-vertical-line: 2px solid #a3a3a3;
+$c-font: #000;
+$border: 1px solid #000;
+$c-container-bg: #f5f5f5;
+
+.contact {
+  background-color: $c-bg-header;
+  height: auto;
+  position: relative;
+
+  >:first-child {
+    >menu,
+    >div {
+      position: relative;
+      top: auto;
+    }
+  }
+}
+
+.contact-main-info {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 1000px;
+  padding: 5vh 15vw;
+  text-align: center;
+
+
+  :nth-child(n+1) {
+    align-self: center;
+    width: fit-content;
+  }
+
+  h3,
+  h2 {
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 250%;
+    font-weight: normal;
+    position: relative;
+  }
+
+  p {
+    font-size: 120%;
+  }
+
+  h3 {
+    font-size: 200%;
+    font-weight: normal;
+  }
+}
+
+.contact-main {
+  background-color: $c-container-bg;
+  display: flex;
+  flex-direction: column;
+  font-family: $gilda-font;
+  margin: auto;
+  max-width: 1000px;
+  padding: 2px 3px;
+  width: 100%;
+
+  >div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+  }
+
+  >:last-child {
+    border: $border;
+  }
+
+  .cover {
+    height: calc(100% + 150px);
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+
+    a {
+      left: 0;
+      top: 0;
+    }
+  }
+
+  embed {
+    border: 0;
+    height: calc(100% + 150px);
+    margin-right: -50px;
+    margin-top: -150px;
+    min-height: 500px;
+    width: calc(100% + 50px);
+  }
+}
+
+.media-contact-icons {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+
+  svg {
+    height: 35px;
+    margin-right: 5px;
+
+    path {
+      fill: $c-font;
+    }
+  }
+}
+
+@media only screen and (min-width: $pad-width) {
+  .contact-main {
+    flex-direction: row;
+
+    >div {
+      width: 50%;
+    }
+  }
+
+  .contact-main+.contact-main {
+    flex-direction: row-reverse;
+  }
+
+  .contact-main-info {
+    padding: 5vh 0;
+  }
+}
