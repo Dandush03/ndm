@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 import BrandLogo from '../media/header/logo';
 
-import Media from './_Media';
+import Media from './Media';
 
 export default class Footer extends Component {
   constructor(props) {

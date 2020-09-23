@@ -6,8 +6,8 @@ import PropTypes from 'prop-types';
 
 import languagesPack from '../languages/home.json';
 
-import Header from './_Header';
-import Footer from './_Footer';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 export default class Contact extends Component {
   constructor(props) {

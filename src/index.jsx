@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-import Home from './component/Home';
+import Home from './pages/Home';
 import * as serviceWorker from './serviceWorker';
-import Contact from './component/Contact';
+import Contact from './pages/Contact';
 
 const language = localStorage.getItem('lang');
 
