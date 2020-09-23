@@ -8,7 +8,7 @@ import languagesPack from '../languages/home.json';
 import ContactForm from '../components/contactForm';
 import Header from '../components/Header';
 import Slider from '../components/Slider';
-import PracticeAreas from '../components/Areas';
+import PracticeAreas from '../components/PracticeAreas';
 import Mid from '../components/Mid';
 import Bottom from '../components/Bottom';
 import Footer from '../components/Footer';
