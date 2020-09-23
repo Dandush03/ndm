@@ -81,7 +81,7 @@ export default function Home({ componentHandler }) {
       />
       <Slider content={topSection} btns={btns} />
       <PracticeAreas brief={brief} areas={practiceAreas} />
-      <Mid data={mid} />
+      <Mid data={mid} language={language} />
       <Bottom data={bottom} />
       <Footer content={footer} />
     </div>

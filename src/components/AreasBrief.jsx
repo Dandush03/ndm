@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import PropTypes, { oneOfType } from 'prop-types';
 
 const AreasBrief = ({ content }) => {
   const div = [];
@@ -26,7 +26,7 @@ const AreasBrief = ({ content }) => {
 };
 
 AreasBrief.propTypes = {
-  content: PropTypes.objectOf(PropTypes.string).isRequired,
+  content: PropTypes.objectOf(oneOfType([PropTypes.object, PropTypes.string])).isRequired,
 };
 
 export default AreasBrief;
