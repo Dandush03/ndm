@@ -14,7 +14,7 @@ import Languages from './Languages';
 
 
 export default function Header({
-  menu, changeComponent, setLanguage,
+  menu, setLanguage,
 }) {
   const menuParse = JSON.parse(menu);
 
@@ -42,7 +42,7 @@ export default function Header({
           <Media />
           <Languages setLanguage={setLanguage} />
         </div>
-        <MenuDiv menu={menuParse} handler={changeComponent} />
+        <MenuDiv menu={menuParse} />
       </div>
       <div className="phone-menu">
         <div>
@@ -55,7 +55,7 @@ export default function Header({
         </div>
         <div className="phone-link">
           <BrandLogo />
-          <MenuElement menu={menuParse} handler={changeComponent} />
+          <MenuElement menu={menuParse} />
           <Languages setLanguage={setLanguage} />
         </div>
       </div>
@@ -65,6 +65,5 @@ export default function Header({
 
 Header.propTypes = {
   menu: PropTypes.string.isRequired,
-  changeComponent: PropTypes.func.isRequired,
   setLanguage: PropTypes.func.isRequired,
 };

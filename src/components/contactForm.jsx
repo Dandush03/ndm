@@ -1,27 +1,24 @@
 import '../stylesheet/contactForm.scss';
 
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-export default class ContactForm extends Component {
-  constructor(props) {
-    super(props);
-    this.submitForm = this.submitForm.bind(this);
-    this.state = {
-      status: '',
-    };
-    this.data = props.data;
-  }
 
-  cancelBtn() {
+export default function ContactForm({ data, type }) {
+  const [status, setStatus] = useState('');
+  const [dataType, setDataType] = useState(data.info);
+  const [url, setUrl] = useState('https://formspree.io/mbjzdvlr');
+  const [subject, setSubject] = useState('Free Evaluation');
+
+  const cancelBtn = () => {
     document.body.classList.remove('pop-form');
-    this.setState({ status: '' });
-  }
+    setStatus('');
+  };
 
-  submitForm(ev) {
+  const submitForm = (ev) => {
     ev.preventDefault();
     const form = ev.target;
-    const data = new FormData(form);
+    const formData = new FormData(form);
     const xhr = new XMLHttpRequest();
 
     xhr.open(form.method, form.action);
@@ -30,63 +27,64 @@ export default class ContactForm extends Component {
       if (xhr.readyState !== XMLHttpRequest.DONE) return;
       if (xhr.status === 200) {
         form.reset();
-        this.setState({ status: 'SUCCESS' });
+        setStatus('SUCCESS');
       } else {
-        this.setState({ status: 'ERROR' });
+        setStatus('ERROR');
       }
     };
-    xhr.send(data);
-  }
+    xhr.send(formData);
+  };
 
-  render() {
-    const { state: { status }, props: { type } } = this;
-    let url = 'https://formspree.io/mbjzdvlr';
-    let subject = 'Free Evaluation';
-    let data = this.data.info;
+  useEffect(() => {
     if (type === 'form-0') {
-      url = 'https://formspree.io/xnqbewlq';
-      subject = 'Apointment';
-      data = this.data.contact;
+      setDataType(data.contact);
+      setUrl('https://formspree.io/xnqbewlq');
+      setSubject('Apointment');
+    } else {
+      setDataType(data.info);
+      setUrl('https://formspree.io/mbjzdvlr');
+      setSubject('Free Evaluation');
     }
-    return (
-      <div className="form-container active">
-        <form
-          action={url}
-          onSubmit={this.submitForm}
-          method="POST"
-        >
-          <label htmlFor="subject" style={{ display: 'none' }}>
-            subject
-            <input type="text" name="subject" required value={subject} readOnly />
-          </label>
-          <h2>{data.title}</h2>
-          {/* eslint-disable-next-line */}
-          <p>{data.brief}</p>
-          <label htmlFor="name">
-            {data.lblName}
-            <input type="text" name="name" required />
-          </label>
-          <label htmlFor="phone">
-            {data.lblPhone}
-            <input type="text" name="phone" required />
-          </label>
-          <label htmlFor="email">
-            {data.lblEmail}
-            <input type="email" name="email" required />
-          </label>
-          <label htmlFor="comment">
-            {data.lblContent}
-            <textarea type="textarea" name="comment" cols="50" required />
-          </label>
-          <div>
-            {status === 'SUCCESS' ? <p>{data.success}</p> : <button type="submit">{data.btnSubmit}</button>}
-            {status === 'ERROR' && <p>{data.error}</p>}
-            {status === 'SUCCESS' ? <button type="button" onClick={this.cancelBtn.bind(this)}>{data.btnClose}</button> : <button type="button" onClick={this.cancelBtn.bind(this)}>{data.btnCancel}</button>}
-          </div>
-        </form>
-      </div>
-    );
-  }
+  }, [data.contact, data.info, type]);
+
+  return (
+    <div className="form-container active">
+      <form
+        action={url}
+        onSubmit={submitForm}
+        method="POST"
+      >
+        <label htmlFor="subject" style={{ display: 'none' }}>
+          subject
+          <input type="text" name="subject" required value={subject} readOnly />
+        </label>
+        <h2>{dataType.title}</h2>
+        {/* eslint-disable-next-line */}
+          <p>{dataType.brief}</p>
+        <label htmlFor="name">
+          {dataType.lblName}
+          <input type="text" name="name" required />
+        </label>
+        <label htmlFor="phone">
+          {dataType.lblPhone}
+          <input type="text" name="phone" required />
+        </label>
+        <label htmlFor="email">
+          {dataType.lblEmail}
+          <input type="email" name="email" required />
+        </label>
+        <label htmlFor="comment">
+          {dataType.lblContent}
+          <textarea type="textarea" name="comment" cols="50" required />
+        </label>
+        <div>
+          {status === 'SUCCESS' ? <p>{dataType.success}</p> : <button type="submit">{dataType.btnSubmit}</button>}
+          {status === 'ERROR' && <p>{dataType.error}</p>}
+          {status === 'SUCCESS' ? <button type="button" onClick={cancelBtn.bind(this)}>{dataType.btnClose}</button> : <button type="button" onClick={cancelBtn.bind(this)}>{dataType.btnCancel}</button>}
+        </div>
+      </form>
+    </div>
+  );
 }
 
 ContactForm.propTypes = {

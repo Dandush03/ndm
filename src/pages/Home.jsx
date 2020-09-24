@@ -1,7 +1,6 @@
 import '../stylesheet/app.scss';
 
 import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
 
 import languagesPack from '../languages/home.json';
 
@@ -14,7 +13,7 @@ import Bottom from '../components/Bottom';
 import Footer from '../components/Footer';
 
 
-export default function Home({ componentHandler }) {
+export default function Home() {
   const [createFrom, setCreateFrom] = useState('');
   const [language, setLanguage] = useState(localStorage.getItem('lang'));
   const [content, setContent] = useState(languagesPack[language]);
@@ -55,9 +54,11 @@ export default function Home({ componentHandler }) {
 
   useEffect(() => {
     setLanguage(localStorage.getItem('lang'));
+    const hebrew = document.body;
     if (language === 'hb') {
-      const hebrew = document.body;
       hebrew.classList.add('hebrew');
+    } else {
+      hebrew.classList.remove('hebrew');
     }
 
     setContent(languagesPack[language]);
@@ -75,7 +76,6 @@ export default function Home({ componentHandler }) {
       <ContactForm type={createFrom} data={forms} />
       <Header
         menu={JSON.stringify(menu)}
-        changeComponent={componentHandler}
         setLanguage={setLanguage}
         language={language}
       />
@@ -87,7 +87,3 @@ export default function Home({ componentHandler }) {
     </div>
   );
 }
-
-Home.propTypes = {
-  componentHandler: PropTypes.func.isRequired,
-};
