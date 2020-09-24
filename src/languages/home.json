@@ -104,50 +104,57 @@
       "associates": [
         {
           "photo": "nisim.jpg",
-          "name": "nisim",
-          "lastname": "lici", 
+          "name": "Nisim",
+          "lastname": "Lici", 
           "title":"Socio Fundador de la Firma", 
           "experties": "Especialista en Economía"
         },
         {
           "photo": "melva.png",
-          "name": "melva",
-          "lastname": "herrera de lici", 
+          "name": "Melva",
+          "lastname": "Herrera de Lici", 
           "title":"Socia Fundadora de la Firma", 
           "experties": "Especialista en Derecho Procesal Civil y Derecho Corporativo"
         },
         {
           "photo": "amarelis.jpg",
-          "name": "amarilis",
-          "lastname": "chavez atencio", 
+          "name": "Amarilis",
+          "lastname": "Chavez Atencio", 
           "title":"Socia de la Firma", 
-          "experties": "Especialista en Derecho de Familia y Derecho Penal"
+          "experties": "Especialista en Derecho de Familia"
+        },
+        {
+          "photo": "daniela.jpg",
+          "name": "Daniela",
+          "lastname": "Marcos de Paredes", 
+          "title":"Asociada de la Firma", 
+          "experties": "Especialista en Derecho bancario y Registro Público"
         },
         {
           "photo": "oliver.jpg",
-          "name": "oliver",
-          "lastname": "chacon garcia", 
+          "name": "Oliver",
+          "lastname": "Chacon Garcia", 
           "title":"Asociado de la Firma", 
           "experties": "Especialista en Derecho Comercial y Derecho de Propiedad Horizontal"
         },
         {
           "photo": "francisco.png",
-          "name": "francisco",
-          "lastname": "castillo buenaño", 
+          "name": "Francisco",
+          "lastname": "Castillo Buenaño", 
           "title":"Asociado de la Firma", 
           "experties": "Especialista en Derecho Procesal Penal"
         },
         {
           "photo": "ismael.png",
-          "name": "ismael",
-          "lastname": "barrios arcia", 
+          "name": "Ismael",
+          "lastname": "Barrios Arcia", 
           "title":"Asociado de la Firma", 
           "experties": "Especialista en Derecho Laboral"
         },
         {
           "photo": "mathew.jpg",
-          "name": "mathew",
-          "lastname": "morris", 
+          "name": "Mathew",
+          "lastname": "Morris", 
           "title":"Asociado Internacional", 
           "experties": "Especialista en Derecho Internacional"
         }
@@ -306,50 +313,57 @@
       "associates": [
         {
           "photo": "nisim.jpg",
-          "name": "nisim",
-          "lastname": "lici", 
+          "name": "Nisim",
+          "lastname": "Lici", 
           "title":"Socio Fundador de la Firma", 
           "experties": "Especialista en Economía"
         },
         {
           "photo": "melva.png",
-          "name": "melva",
-          "lastname": "herrera de lici", 
+          "name": "Melva",
+          "lastname": "Herrera de Lici", 
           "title":"Socia Fundadora de la Firma", 
           "experties": "Especialista en Derecho Procesal Civil y Derecho Corporativo"
         },
         {
           "photo": "amarelis.jpg",
-          "name": "amarilis",
-          "lastname": "chavez atencio", 
+          "name": "Amarilis",
+          "lastname": "Chavez Atencio", 
           "title":"Socia de la Firma", 
-          "experties": "Especialista en Derecho de Familia y Derecho Penal"
+          "experties": "Especialista en Derecho de Familia"
+        },
+        {
+          "photo": "daniela.jpg",
+          "name": "Daniela",
+          "lastname": "Marcos de Paredes", 
+          "title":"Asociada de la Firma", 
+          "experties": "Especialista en Derecho bancario y Registro Público"
         },
         {
           "photo": "oliver.jpg",
-          "name": "oliver",
-          "lastname": "chacon garcia", 
+          "name": "Oliver",
+          "lastname": "Chacon Garcia", 
           "title":"Asociado de la Firma", 
           "experties": "Especialista en Derecho Comercial y Derecho de Propiedad Horizontal"
         },
         {
           "photo": "francisco.png",
-          "name": "francisco",
-          "lastname": "castillo buenaño", 
+          "name": "Francisco",
+          "lastname": "Castillo Buenaño", 
           "title":"Asociado de la Firma", 
           "experties": "Especialista en Derecho Procesal Penal"
         },
         {
           "photo": "ismael.png",
-          "name": "ismael",
-          "lastname": "barrios arcia", 
+          "name": "Ismael",
+          "lastname": "Barrios Arcia", 
           "title":"Asociado de la Firma", 
           "experties": "Especialista en Derecho Laboral"
         },
         {
           "photo": "mathew.jpg",
-          "name": "mathew",
-          "lastname": "morris", 
+          "name": "Mathew",
+          "lastname": "Morris", 
           "title":"Asociado Internacional", 
           "experties": "Especialista en Derecho Internacional"
         }
@@ -508,50 +522,57 @@
       "associates": [
         {
           "photo": "nisim.jpg",
-          "name": "nisim",
-          "lastname": "lici", 
+          "name": "Nisim",
+          "lastname": "Lici", 
           "title":"Socio Fundador de la Firma", 
           "experties": "Especialista en Economía"
         },
         {
           "photo": "melva.png",
-          "name": "melva",
-          "lastname": "herrera de lici", 
+          "name": "Melva",
+          "lastname": "Herrera de Lici", 
           "title":"Socia Fundadora de la Firma", 
           "experties": "Especialista en Derecho Procesal Civil y Derecho Corporativo"
         },
         {
           "photo": "amarelis.jpg",
-          "name": "amarilis",
-          "lastname": "chavez atencio", 
+          "name": "Amarilis",
+          "lastname": "Chavez Atencio", 
           "title":"Socia de la Firma", 
-          "experties": "Especialista en Derecho de Familia y Derecho Penal"
+          "experties": "Especialista en Derecho de Familia"
+        },
+        {
+          "photo": "daniela.jpg",
+          "name": "Daniela",
+          "lastname": "Marcos de Paredes", 
+          "title":"Asociada de la Firma", 
+          "experties": "Especialista en Derecho bancario y Registro Público"
         },
         {
           "photo": "oliver.jpg",
-          "name": "oliver",
-          "lastname": "chacon garcia", 
+          "name": "Oliver",
+          "lastname": "Chacon Garcia", 
           "title":"Asociado de la Firma", 
           "experties": "Especialista en Derecho Comercial y Derecho de Propiedad Horizontal"
         },
         {
           "photo": "francisco.png",
-          "name": "francisco",
-          "lastname": "castillo buenaño", 
+          "name": "Francisco",
+          "lastname": "Castillo Buenaño", 
           "title":"Asociado de la Firma", 
           "experties": "Especialista en Derecho Procesal Penal"
         },
         {
           "photo": "ismael.png",
-          "name": "ismael",
-          "lastname": "barrios arcia", 
+          "name": "Ismael",
+          "lastname": "Barrios Arcia", 
           "title":"Asociado de la Firma", 
           "experties": "Especialista en Derecho Laboral"
         },
         {
           "photo": "mathew.jpg",
-          "name": "mathew",
-          "lastname": "morris", 
+          "name": "Mathew",
+          "lastname": "Morris", 
           "title":"Asociado Internacional", 
           "experties": "Especialista en Derecho Internacional"
         }
@@ -710,50 +731,57 @@
       "associates": [
         {
           "photo": "nisim.jpg",
-          "name": "nisim",
-          "lastname": "lici", 
+          "name": "Nisim",
+          "lastname": "Lici", 
           "title":"Socio Fundador de la Firma", 
           "experties": "Especialista en Economía"
         },
         {
           "photo": "melva.png",
-          "name": "melva",
-          "lastname": "herrera de lici", 
+          "name": "Melva",
+          "lastname": "Herrera de Lici", 
           "title":"Socia Fundadora de la Firma", 
           "experties": "Especialista en Derecho Procesal Civil y Derecho Corporativo"
         },
         {
           "photo": "amarelis.jpg",
-          "name": "amarilis",
-          "lastname": "chavez atencio", 
+          "name": "Amarilis",
+          "lastname": "Chavez Atencio", 
           "title":"Socia de la Firma", 
-          "experties": "Especialista en Derecho de Familia y Derecho Penal"
+          "experties": "Especialista en Derecho de Familia"
+        },
+        {
+          "photo": "daniela.jpg",
+          "name": "Daniela",
+          "lastname": "Marcos de Paredes", 
+          "title":"Asociada de la Firma", 
+          "experties": "Especialista en Derecho bancario y Registro Público"
         },
         {
           "photo": "oliver.jpg",
-          "name": "oliver",
-          "lastname": "chacon garcia", 
+          "name": "Oliver",
+          "lastname": "Chacon Garcia", 
           "title":"Asociado de la Firma", 
           "experties": "Especialista en Derecho Comercial y Derecho de Propiedad Horizontal"
         },
         {
           "photo": "francisco.png",
-          "name": "francisco",
-          "lastname": "castillo buenaño", 
+          "name": "Francisco",
+          "lastname": "Castillo Buenaño", 
           "title":"Asociado de la Firma", 
           "experties": "Especialista en Derecho Procesal Penal"
         },
         {
           "photo": "ismael.png",
-          "name": "ismael",
-          "lastname": "barrios arcia", 
+          "name": "Ismael",
+          "lastname": "Barrios Arcia", 
           "title":"Asociado de la Firma", 
           "experties": "Especialista en Derecho Laboral"
         },
         {
           "photo": "mathew.jpg",
-          "name": "mathew",
-          "lastname": "morris", 
+          "name": "Mathew",
+          "lastname": "Morris", 
           "title":"Asociado Internacional", 
           "experties": "Especialista en Derecho Internacional"
         }

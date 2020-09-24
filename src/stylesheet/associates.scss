@@ -16,13 +16,13 @@ $color: #fff;
 
   .info {
     align-items: center;
+    background-color: $bg-color;
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
     opacity: 1;
     text-align: center;
-    text-transform: capitalize;
     transition: opacity .5s ease-in;
     width: 100%;
 
@@ -32,7 +32,6 @@ $color: #fff;
   }
 
   .associate {
-    background-color: $bg-color;
     height: 300px;
     margin: 10px;
     overflow: hidden;
@@ -48,6 +47,7 @@ $color: #fff;
       height: 4rem;
       margin: 0;
       padding-left: 10px;
+      padding-right: 10px;
       padding-top: 10px;
       text-align: left;
     }
@@ -56,7 +56,7 @@ $color: #fff;
       background-color: $underline;
       font-size: small;
       margin: 0;
-      padding: 20px 0;
+      padding: 10px 0;
       width: 100%;
     }
   }
