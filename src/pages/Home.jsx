@@ -11,6 +11,7 @@ import PracticeAreas from '../components/PracticeAreas';
 import Mid from '../components/Mid';
 import Bottom from '../components/Bottom';
 import Footer from '../components/Footer';
+import AssociatesContainer from '../components/AssociatesContainer';
 
 
 export default function Home() {
@@ -67,7 +68,7 @@ export default function Home() {
   const {
     header: { menu }, home: {
       topSection, btns, brief,
-      practiceAreas, mid, bottom,
+      practiceAreas, mid, bottom, associates,
     }, forms, footer,
   } = content;
 
@@ -83,6 +84,7 @@ export default function Home() {
       <PracticeAreas brief={brief} areas={practiceAreas} />
       <Mid data={mid} language={language} />
       <Bottom data={bottom} />
+      <AssociatesContainer content={associates} />
       <Footer content={footer} />
     </div>
   );
