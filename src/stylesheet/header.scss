@@ -85,8 +85,11 @@ header {
   }
 }
 
-li >button {
+li >a {
+  color: $c-font;
   display: flex;
+  margin: 0 15px;
+  text-decoration: none;
 
   >p {
     margin: 0;
@@ -238,7 +241,7 @@ menu {
 
   .brand-logo-svg {
     align-self: center;
-    margin: 30px 0;
+    margin: 5px 0;
     width: 70%;
   }
 
