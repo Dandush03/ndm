@@ -100,7 +100,58 @@
           "content": "We apply our global knowledge to our clients' needs. In an increasingly interconnected world, you look to us to combine an international perspective with local insight to help resolve your  challenges.",
           "author": "by Melva Herrera De Lici , Founder"
         }
-      }
+      },
+      "associates": [
+        {
+          "photo": "nisim.jpg",
+          "name": "nisim",
+          "lastname": "lici", 
+          "title":"Socio Fundador de la Firma", 
+          "experties": "Especialista en Economía"
+        },
+        {
+          "photo": "melva.png",
+          "name": "melva",
+          "lastname": "herrera de lici", 
+          "title":"Socia Fundadora de la Firma", 
+          "experties": "Especialista en Derecho Procesal Civil y Derecho Corporativo"
+        },
+        {
+          "photo": "amarelis.jpg",
+          "name": "amarilis",
+          "lastname": "chavez atencio", 
+          "title":"Socia de la Firma", 
+          "experties": "Especialista en Derecho de Familia y Derecho Penal"
+        },
+        {
+          "photo": "oliver.jpg",
+          "name": "oliver",
+          "lastname": "chacon garcia", 
+          "title":"Asociado de la Firma", 
+          "experties": "Especialista en Derecho Comercial y Derecho de Propiedad Horizontal"
+        },
+        {
+          "photo": "francisco.png",
+          "name": "francisco",
+          "lastname": "castillo buenaño", 
+          "title":"Asociado de la Firma", 
+          "experties": "Especialista en Derecho Procesal Penal"
+        },
+        {
+          "photo": "ismael.png",
+          "name": "ismael",
+          "lastname": "barrios arcia", 
+          "title":"Asociado de la Firma", 
+          "experties": "Especialista en Derecho Laboral"
+        },
+        {
+          "photo": "mathew.jpg",
+          "name": "mathew",
+          "lastname": "morris", 
+          "title":"Asociado Internacional", 
+          "experties": "Especialista en Derecho Internacional"
+        }
+      ]
     },
     "contact": {
       "title": "Our Contacts",
@@ -251,7 +302,58 @@
           "content": "Global bilgimizi müşterilerimizin ihtiyaçlarına uyguluyoruz. Giderek daha fazla birbirine bağlı bir dünyada, bizden beklenen sorunlarınızı çözmemize yardımcı olmak için uluslararası bir bakış açısını yerel bilgilerle birleştiriyoruz.",
           "author": "by Melva Herrera De Lici , Kurucu Uye"
         }
-      }
+      },
+      "associates": [
+        {
+          "photo": "nisim.jpg",
+          "name": "nisim",
+          "lastname": "lici", 
+          "title":"Socio Fundador de la Firma", 
+          "experties": "Especialista en Economía"
+        },
+        {
+          "photo": "melva.png",
+          "name": "melva",
+          "lastname": "herrera de lici", 
+          "title":"Socia Fundadora de la Firma", 
+          "experties": "Especialista en Derecho Procesal Civil y Derecho Corporativo"
+        },
+        {
+          "photo": "amarelis.jpg",
+          "name": "amarilis",
+          "lastname": "chavez atencio", 
+          "title":"Socia de la Firma", 
+          "experties": "Especialista en Derecho de Familia y Derecho Penal"
+        },
+        {
+          "photo": "oliver.jpg",
+          "name": "oliver",
+          "lastname": "chacon garcia", 
+          "title":"Asociado de la Firma", 
+          "experties": "Especialista en Derecho Comercial y Derecho de Propiedad Horizontal"
+        },
+        {
+          "photo": "francisco.png",
+          "name": "francisco",
+          "lastname": "castillo buenaño", 
+          "title":"Asociado de la Firma", 
+          "experties": "Especialista en Derecho Procesal Penal"
+        },
+        {
+          "photo": "ismael.png",
+          "name": "ismael",
+          "lastname": "barrios arcia", 
+          "title":"Asociado de la Firma", 
+          "experties": "Especialista en Derecho Laboral"
+        },
+        {
+          "photo": "mathew.jpg",
+          "name": "mathew",
+          "lastname": "morris", 
+          "title":"Asociado Internacional", 
+          "experties": "Especialista en Derecho Internacional"
+        }
+      ]
     },
     "contact": {
       "title": "Bize ulaşın",
@@ -402,7 +504,58 @@
           "content": "Aplicamos nuestro conocimiento global a lo que nuestros clientes necesitan. En un mundo cada vez más interconectado, nos buscas para combinar una perspectiva internacional con la visión local y así ayudarte a resolver tus desafíos.",
           "author": "Por Melva Herrera De Lici , Fundadora"
         }
-      }
+      },
+      "associates": [
+        {
+          "photo": "nisim.jpg",
+          "name": "nisim",
+          "lastname": "lici", 
+          "title":"Socio Fundador de la Firma", 
+          "experties": "Especialista en Economía"
+        },
+        {
+          "photo": "melva.png",
+          "name": "melva",
+          "lastname": "herrera de lici", 
+          "title":"Socia Fundadora de la Firma", 
+          "experties": "Especialista en Derecho Procesal Civil y Derecho Corporativo"
+        },
+        {
+          "photo": "amarelis.jpg",
+          "name": "amarilis",
+          "lastname": "chavez atencio", 
+          "title":"Socia de la Firma", 
+          "experties": "Especialista en Derecho de Familia y Derecho Penal"
+        },
+        {
+          "photo": "oliver.jpg",
+          "name": "oliver",
+          "lastname": "chacon garcia", 
+          "title":"Asociado de la Firma", 
+          "experties": "Especialista en Derecho Comercial y Derecho de Propiedad Horizontal"
+        },
+        {
+          "photo": "francisco.png",
+          "name": "francisco",
+          "lastname": "castillo buenaño", 
+          "title":"Asociado de la Firma", 
+          "experties": "Especialista en Derecho Procesal Penal"
+        },
+        {
+          "photo": "ismael.png",
+          "name": "ismael",
+          "lastname": "barrios arcia", 
+          "title":"Asociado de la Firma", 
+          "experties": "Especialista en Derecho Laboral"
+        },
+        {
+          "photo": "mathew.jpg",
+          "name": "mathew",
+          "lastname": "morris", 
+          "title":"Asociado Internacional", 
+          "experties": "Especialista en Derecho Internacional"
+        }
+      ]
     },
     "contact": {
       "title": "Nuestros contactos",
@@ -553,7 +706,58 @@
           "content": "אנו מיישמים את הידע הגלובלי שלנו על צרכי הלקוחות שלנו. בעולם שמתקשר יותר ויותר, אתה מסתכל עלינו לשלב נקודת מבט בינלאומית עם תובנה מקומית כדי לעזור בפתרון האתגרים שלך.",
           "author": "by Melva Herrera De Lici , Founder"
         }
-      }
+      },
+      "associates": [
+        {
+          "photo": "nisim.jpg",
+          "name": "nisim",
+          "lastname": "lici", 
+          "title":"Socio Fundador de la Firma", 
+          "experties": "Especialista en Economía"
+        },
+        {
+          "photo": "melva.png",
+          "name": "melva",
+          "lastname": "herrera de lici", 
+          "title":"Socia Fundadora de la Firma", 
+          "experties": "Especialista en Derecho Procesal Civil y Derecho Corporativo"
+        },
+        {
+          "photo": "amarelis.jpg",
+          "name": "amarilis",
+          "lastname": "chavez atencio", 
+          "title":"Socia de la Firma", 
+          "experties": "Especialista en Derecho de Familia y Derecho Penal"
+        },
+        {
+          "photo": "oliver.jpg",
+          "name": "oliver",
+          "lastname": "chacon garcia", 
+          "title":"Asociado de la Firma", 
+          "experties": "Especialista en Derecho Comercial y Derecho de Propiedad Horizontal"
+        },
+        {
+          "photo": "francisco.png",
+          "name": "francisco",
+          "lastname": "castillo buenaño", 
+          "title":"Asociado de la Firma", 
+          "experties": "Especialista en Derecho Procesal Penal"
+        },
+        {
+          "photo": "ismael.png",
+          "name": "ismael",
+          "lastname": "barrios arcia", 
+          "title":"Asociado de la Firma", 
+          "experties": "Especialista en Derecho Laboral"
+        },
+        {
+          "photo": "mathew.jpg",
+          "name": "mathew",
+          "lastname": "morris", 
+          "title":"Asociado Internacional", 
+          "experties": "Especialista en Derecho Internacional"
+        }
+      ]
     },
     "contact": {
       "title": "צור קשר",

@@ -1,0 +1,77 @@
+@import './global';
+
+$bg-color: rgba(0, 0, 0, .6);
+$underline: rgb(30, 23, 65);
+$color: #fff;
+
+.associates-area {
+  color: $color;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  max-width: 1000px;
+  padding: 10px 0;
+  position: relative;
+
+  .info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    opacity: 1;
+    text-align: center;
+    text-transform: capitalize;
+    transition: opacity .5s ease-in;
+    width: 100%;
+
+    &:hover {
+      opacity: 0;
+    }
+  }
+
+  .associate {
+    background-color: $bg-color;
+    height: 300px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    @media only screen and (min-width: $pad-width) {
+      width: calc(25% - (10px*4));
+    }
+
+    h1 {
+      align-self: flex-start;
+      height: 4rem;
+      margin: 0;
+      padding-left: 10px;
+      padding-top: 10px;
+      text-align: left;
+    }
+
+    h4 {
+      background-color: $underline;
+      font-size: small;
+      margin: 0;
+      padding: 20px 0;
+      width: 100%;
+    }
+  }
+
+  .image {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
